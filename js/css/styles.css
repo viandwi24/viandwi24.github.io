@@ -14,62 +14,17 @@ COLOR
 }
 *, *::after, *::before {
     box-sizing: border-box;
-    line-height: 1.6rem;
 }
 html {
-    color: var(--color-grey);
     scroll-behavior: smooth;
 }
 body {
     font-family: 'McLaren', cursive;
-    color: var(--color-grey);
     background: #FFFFFF;
     margin: 0;
     padding: 0;
 }
 
-
-
-/* BASIC */
-h1 {
-    font-size: 3rem;
-    line-height: 3.5rem;
-    margin-bottom: 1.5rem;
-}
-h2 {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    margin-bottom: 1.5rem;
-}
-h3 {
-    font-size: 1.5rem;
-    line-height: 2.0rem;
-    margin-bottom: 1.5rem;
-}
-h4 {
-    font-size: 1rem;
-    line-height: 1.5rem;
-    margin-bottom: 0.6rem;
-}
-ul {
-    padding-left: 1.5rem;
-}
-a {
-    text-decoration: none;
-    color: var(--color-black);
-    border-bottom: 1px solid var(--color-blue);
-    transition: background 0.2s cubic-bezier(.33, .66, .66, 1);
-}
-a:hover {
-    background: var(--color-blue);
-    color: var(--color-white);
-}
-hr {
-    margin: 3rem 0;
-    box-sizing: content-box;
-    height: 0;
-    overflow: visible;
-}
 
 
 /* ALIGN TEXT */
@@ -96,8 +51,6 @@ nav.nav .brand {
     text-decoration: none;
     margin-right: 1rem;
     font-size: 1.25rem;
-    background: transparent;
-    border: none;
 }
 nav.nav .brand img{
     height: 1.5rem;
@@ -116,12 +69,11 @@ nav.nav .items > .item {
     display: list-item;
 }
 nav.nav .items > .item a {
-    background: transparent;
-    border: none;
     color: var(--color-white);
     text-decoration: none;
     padding: 0.25rem 0.75rem 0.25rem 0.75rem;
 }
+nav.nav .items > .item.active > a { color: var(--color-white); }
 nav.nav.top-nav-collapse .items > .item.active > a { color: var(--color-blue); }
 .fixed-top {
     position: fixed;
@@ -190,7 +142,6 @@ nav.nav.top-nav-collapse .items > .item a { color: var(--color-black); }
             opacity: 1; 
         }
     }
-    nav.nav .items > .item.active > a { color: var(--color-blue); }
     nav.nav .items > .item a { color: var(--color-black); }
     nav.nav.with-container {
         padding: 1rem;
@@ -200,6 +151,7 @@ nav.nav.top-nav-collapse .items > .item a { color: var(--color-black); }
     }
 
 }
+
 
 
 
@@ -278,25 +230,9 @@ header .text-container {
     max-width: 50%;
 }
 @media (min-width: 992px) {
-    .col-lg-3 {
-        flex: 0 0 25%;
-        max-width: 25%;
-    }
-    .col-lg-4 {
-        flex: 0 0 33.333333%;
-        max-width: 33.333333%;
-    }
     .col-lg-6 {
         flex: 0 0 50%;
         max-width: 50%;
-    }
-    .col-lg-8 {
-        flex: 0 0 66.666667%;
-        max-width: 66.666667%;
-    }
-    .col-lg-9 {
-        flex: 0 0 75%;
-        max-width: 75%;
     }
     .col-lg-12 {
         flex: 0 0 100%;
@@ -307,14 +243,9 @@ header .text-container {
 
 
 /* COLOR */
-.white { color: var(--color-white) !important; }
-.black { color: var(--color-black) !important; }
-.grey { color: var(--color-grey) !important; }
-.blue { color: var(--color-blue) !important; }
-.bg-white { background-color: var(--color-white) !important; }
-.bg-black { background-color: var(--color-black) !important; }
-.bg-grey { background-color: var(--color-grey) !important; }
-.bg-blue { background-color: var(--color-blue) !important; }
+.white { color: var(--color-white); }
+.black { color: var(--color-black); }
+.grey { color: var(--color-grey); }
 
 
 /* IMAGE */
@@ -334,38 +265,16 @@ header .text-container {
     border: 1px solid var(--color-white);
     padding: 0.5rem 1.25rem;
     box-shadow: 0 0.1rem 0.3rem 0.2rem rgba(0, 0, 0, 0.1);
-    cursor: pointer !important;
-    font-family: 'McLaren', cursive;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
+
 .button.radius {
     border-radius: 2rem;
     padding: 0.7rem 2rem;
 }
+
 .button:hover {
     background: transparent;
     border: 1px solid var(--color-white);
-    color: var(--color-white);
-}
-.button.fluid { width: 100%; }
-.button.blue { background-color: var(--color-blue); color: var(--color-white) !important; border: 1px solid var(--color-blue); }
-.button.blue:hover { background: transparent; color: var(--color-black) !important; }
-
-
-
-/* SHADOW */
-.shadow, .shadow-md {
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
-}
-.shadow-lg { box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important; }
-
-
-
-
-/* FOOTER */
-footer {
-    background: var(--color-grey);
-    text-align: center;
-    font-size: 0.8rem;
     color: var(--color-white);
 }
