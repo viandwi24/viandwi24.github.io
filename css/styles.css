@@ -16,6 +16,7 @@ COLOR
     box-sizing: border-box;
     line-height: 1.6rem;
 }
+* { font-family: 'McLaren', cursive; }
 html {
     color: var(--color-grey);
     scroll-behavior: smooth;
@@ -51,6 +52,11 @@ h4 {
     line-height: 1.5rem;
     margin-bottom: 0.6rem;
 }
+h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.6rem;
+}
 ul {
     padding-left: 1.5rem;
 }
@@ -58,17 +64,23 @@ a {
     text-decoration: none;
     color: var(--color-black);
     border-bottom: 1px solid var(--color-blue);
-    transition: background 0.2s cubic-bezier(.33, .66, .66, 1);
+    transition: all 0.5s cubic-bezier(.33, .66, .66, 1);
 }
 a:hover {
     background: var(--color-blue);
     color: var(--color-white);
 }
 hr {
+    margin-top: 4rem;
     margin: 3rem 0;
     box-sizing: content-box;
     height: 0;
     overflow: visible;
+}
+hr.s-1 {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
 }
 
 
@@ -240,6 +252,14 @@ header .text-container {
     margin: 0 auto;
     padding: 0 15px;
 }
+.container.fluid {
+    max-width: 100%;
+    margin: 0;
+    padding: 0 15px;
+}
+.text-container {
+    margin: 13rem auto;
+}
 .block { display: block; }
 @media (min-width: 768px) {
     .container {
@@ -364,8 +384,56 @@ header .text-container {
 
 /* FOOTER */
 footer {
-    background: var(--color-grey);
+    background: var(--color-blue);
     text-align: center;
     font-size: 0.8rem;
     color: var(--color-white);
+}
+
+
+
+
+
+/* FORM */
+textarea, input[type="text"] {
+    width: 100%;
+    outline: none;
+    display: inline-block;
+    margin: 0.5rem 0.2rem;
+    padding: 0.75rem 1.25rem;
+    border: 1px solid #ddd;
+    border-radius: 0.1rem;
+    transition: all 0.25s ease-in-out;
+}
+textarea:hover, input[type="text"]:hover {
+    background: #fafafa;
+}
+textarea:focus, input[type="text"]:focus {
+    border: 1px solid var(--color-blue);
+}
+
+input[type="text"] {
+}
+textarea {
+}
+
+
+/* BOX */
+.box {
+    margin-bottom: 2rem;
+    border: 1px solid #ddd;
+    background: var(--color-white);
+    padding: 1.5rem;
+    transition: all 0.3s ease-out;
+}
+.box.contact:hover {
+    box-shadow: 0 0 1.2rem 0 rgba(0, 0, 0, 0.23);
+}
+
+.box.contact {
+    text-align: center;
+}
+
+.box > p {
+    margin: 0rem;
 }

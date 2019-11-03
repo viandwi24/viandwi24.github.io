@@ -64,7 +64,7 @@ document.addEventListener("scroll", function(e){
         var elem = document.querySelector('#' + el);
         var bounding = elem.getBoundingClientRect();
 
-        console.log(el + " " + window.innerHeight + "  -  "  + bounding.top + "  -  "  + elem.parentElement.clientHeight);
+        // console.log(el + " " + window.innerHeight + "  -  "  + bounding.top + "  -  "  + elem.parentElement.clientHeight);
     
         if (bounding.top <= 100  && bounding.top >= (130 - elem.parentElement.clientHeight)) {
             e.classList.add("active");
