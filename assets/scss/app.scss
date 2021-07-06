@@ -1,0 +1,237 @@
+// vars
+$backgroundColor: theme('colors.gray.800');
+$textColorDark: theme('colors.gray.700');
+$textColorDarkMuted: theme('colors.gray.600');
+
+// screen
+.screen {
+  background: $backgroundColor;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+
+// name card
+$nameCardBackgroundColor: theme('colors.gray.200');
+$nameCardShadowColor: theme('colors.gray.900');
+$nameCardWidth: 400px;
+$nameCardHeight: 230px;
+.name-card-container {
+  display: flex;
+  height: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  z-index: 2;
+}
+.name-card-wrapper {
+  align-self: center;
+  position: relative;
+  & > .name-card {
+    position: relative;
+    display: block;
+    border-radius: 1rem;
+    margin: 0 auto;
+    width: $nameCardWidth;
+    height: $nameCardHeight;
+    background-color: $nameCardBackgroundColor;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    z-index: 2;
+    overflow: hidden;
+
+    & > .overlay {
+      z-index: -1;
+      width: $nameCardWidth;
+      height: $nameCardHeight;
+      border-radius: 1rem;
+      position: absolute;
+    }
+    & > .profile {
+      display: block;
+      padding: 1rem 1rem 1rem 1rem;
+      display: flex;
+      flex-direction: row;
+      & > .avatar img {
+        border: 1px solid white;
+        border-radius: 50%;
+        width: 64px;
+        height: 64px;
+        margin-right: .4rem;
+      }
+      & > .details {
+        align-self: center;
+        & > .name {
+          font-weight: 600;
+          font-size: 20px;
+          color: $textColorDark;
+          line-height: 1;
+        }
+        & > .email {
+          font-size: 12px;
+          color: $textColorDarkMuted;
+        }
+      }
+      // & > .details {
+      //   & > .name {
+      //     font-weight: 600;
+      //     font-size: 20px;
+      //     color: $textColorDark;
+      //   }
+      //   & > .email {
+      //     font-size: 12px;
+      //     color: $textColorDarkMuted;
+      //   }
+      // }
+    }
+  }
+  & > .bottom-shadow {
+    z-index: 0;
+    position: absolute;
+    border-radius: 50%;
+    display: block;
+    left: -10px;
+    width: calc(#{$nameCardWidth} + 20px);
+    bottom: calc(-#{$nameCardHeight} / 5);
+    height: calc((#{$nameCardHeight}) - #{$nameCardHeight} / 1.5);
+    background-color: $nameCardShadowColor;
+  }
+}
+
+
+
+
+
+// bg
+.bg {
+  z-index: 0;
+  overflow: hidden;
+
+  $colors: (
+    purple: #241379,
+    medium-blue: #2185bf,
+    light-blue: #1fbce1,
+
+    red: #b62f56,
+    orange: #d5764c,
+    yellow: #ffd53e,
+
+    cyan: #78ffba,
+    light-green: #98fd85,
+    lime: #befb46,
+
+    magenta: #6c046c,
+    lightish-red: #f04c81,
+    pink: #ff4293
+  );
+
+  div,
+  div::before,
+  div::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+    transform-origin: top;
+    transition: all 5s linear 0s;
+  }
+
+  @function random-num($min, $max) {
+    @return floor(random() * ($max - $min) + $min);
+  }
+
+  @function random-calc($number) {
+    $max: 100 - $number;
+    $min: $number * -1;
+    @return random-num($min, $max);
+  }
+
+  @each $color-name, $color-hex in $colors {
+    // Initial top and left positions
+    $random1: random(100);
+    $random2: random(100);
+
+    // Animated top and left positions
+    $random3: random(100);
+    $random4: random(100);
+
+    // Animated top and left end positions
+    $random5: random(100);
+    $random6: random(100);
+
+    .#{$color-name} {
+      $size: random-num(5,50) + px;
+      animation: #{$color-name} linear 30s alternate infinite;
+      border: 2px solid #{$color-hex};
+      border-radius: 100%;
+      width: $size;
+      height: $size;
+      transform: translate3d(
+        $random1 + vw,
+        $random2 + vh,
+        0);
+      z-index: random(2);
+    }
+
+    .#{$color-name}::before {
+      animation: #{$color-name}-pseudo linear 15s alternate infinite;
+      background: #{$color-hex};
+      border: 2px solid #{$color-hex};
+      width: random-num(5,50) + px;
+      height: random-num(5,50) + px;
+      transform:
+        translate3d(
+          random-calc($random1) + vw,
+          random-calc($random2) + vh,
+          0)
+        rotate((random(360)) + deg);
+    }
+
+    .#{$color-name}::after{
+      animation: #{$color-name}-pseudo linear 20s alternate infinite;
+      border: 2px solid #{$color-hex};
+      width: random-num(5,50) + px;
+      height: random-num(5,50) + px;
+      transform:
+        translate3d(
+          random-calc($random1) + vw,
+          random-calc($random2) + vh,
+          0)
+        rotate((random(360)) + deg);
+    }
+
+    @keyframes #{$color-name} {
+      50% {
+        transform: translate3d(
+          $random3 + vw,
+          $random4 + vh,
+          0);
+      }
+      100% {
+        transform: translate3d(
+          $random5 + vw,
+          $random6 + vh,
+          0);
+      }
+    }
+
+    @keyframes #{$color-name}-pseudo {
+      33% {
+        transform:
+          translate3d(
+            random-calc($random3) + vw,
+            random-calc($random4) + vh,
+            0)
+          rotate((random(360)) + deg);
+      }
+      100% {
+        transform:
+          translate3d(
+            random-calc($random5) + vw,
+            random-calc($random6) + vh,
+            0)
+          rotate((random(360)) + deg);
+      }
+    }
+  }
+}
