@@ -11,9 +11,9 @@
         </div>
         <div class="navbar-menu flex-1 hidden md:flex space-x-8 justify-end">
           <NuxtLink tag="a" class="item" to="/a">About</NuxtLink>
-          <div class="item">Experience</div>
-          <div class="item">Blog</div>
-          <div class="item">Github</div>
+          <NuxtLink tag="a" class="item" to="/a">Experience</NuxtLink>
+          <a href="https://viandwi24.medium.com" class="item">Blog</a>
+          <a href="https://github.com/viandwi24" class="item">Github</a>
         </div>
       </div>
     </div>
@@ -145,7 +145,11 @@ $paddingContainerMd: 5rem;
       & > .item {
         font-size: 1.125rem/* 18px */;
         line-height: 1.75rem/* 28px */;
-        color: #FFF;
+        color: theme('colors.gray.200');
+
+        &:hover {
+          color: theme('colors.gray.100');
+        }
       }
     }
   }
