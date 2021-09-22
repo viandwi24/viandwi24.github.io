@@ -1,9 +1,14 @@
 [
   {
+    "name": "a",
+    "path": "/a",
+    "component": "/Users/viandwi24/Project/Profile/viandwi24.github.io/pages/a.vue",
+    "chunkName": "pages/a"
+  },
+  {
     "name": "index",
     "path": "/",
-    "component": "/Users/viandwi24/Project/Dev/viandwi24.github.io/pages/index.vue",
-    "chunkName": "pages/index",
-    "_name": "_23e1f064"
+    "component": "/Users/viandwi24/Project/Profile/viandwi24.github.io/pages/index.vue",
+    "chunkName": "pages/index"
   }
 ]
