@@ -1,7 +1,7 @@
 import { wrapFunctional } from './utils'
 
-export { default as NuxtLogo } from '../../components/NuxtLogo.vue'
-export { default as Tutorial } from '../../components/Tutorial.vue'
+export { default as Button } from '../../components/Button.vue'
+export { default as Navbar } from '../../components/Navbar.vue'
 
-export const LazyNuxtLogo = import('../../components/NuxtLogo.vue' /* webpackChunkName: "components/nuxt-logo" */).then(c => wrapFunctional(c.default || c))
-export const LazyTutorial = import('../../components/Tutorial.vue' /* webpackChunkName: "components/tutorial" */).then(c => wrapFunctional(c.default || c))
+export const LazyButton = import('../../components/Button.vue' /* webpackChunkName: "components/button" */).then(c => wrapFunctional(c.default || c))
+export const LazyNavbar = import('../../components/Navbar.vue' /* webpackChunkName: "components/navbar" */).then(c => wrapFunctional(c.default || c))

@@ -1,51 +1,35 @@
 <template>
-  <div class="screen max-h-screen max-w-screen h-screen w-screen flex flex-col">
-    <div class="bg">
-      <div></div>
-      <div></div>
+  <div class="page hero flex-1 max-h-full w-full flex flex-col justify-center md:justify-between md:flex-row relative overflow-hidden pb-10" style="opacity: 0;">
+    <div class="w-full md:w-1/2 flex flex-col justify-center">
+      <div class="content">
+        <h1 class="title font-semibold mb-4 text-gray-50">
+          <span>ALFIAN DWI</span>
+          <span>NUGRAHA</span>
+        </h1>
+        <div class="description-header mb-2 font-semibold italic text-gray-200">// ABOUT ME</div>
+        <div class="description mb-4 text-gray-200">
+          I am a student at "State University of Surabaya" as an Informatics Engineering.
+          19 years old, a web developer and mobile flutter developer and a Blockchain Enthusiast.
+        </div>
+        <div class="action">
+          <Button text="My Projects" class="mr-2" />
+        </div>
+      </div>
     </div>
-    <div class="navbar">
-      <div class="flex justify-between">
-        <div class="font-semibold text-lg text-gray-50">
-          VIANDWI24
-        </div>
-        <div class="navbar-menu flex-1 hidden md:flex space-x-8 justify-end">
-          <NuxtLink tag="a" class="item" to="/a">About</NuxtLink>
-          <NuxtLink tag="a" class="item" to="/a">Experience</NuxtLink>
-          <a href="https://viandwi24.medium.com" class="item">Blog</a>
-          <a href="https://github.com/viandwi24" class="item">Github</a>
-        </div>
+    <div class="hidden md:w-1/2 md:flex flex-col justify-end">
+      <div class="flex justify-center">
+        <img src="/images/me.png" alt="Me">
       </div>
     </div>
-    <div class="hero flex-1 max-h-full w-full flex flex-col justify-center md:justify-between md:flex-row relative overflow-hidden">
-      <div class="w-full md:w-1/2 flex flex-col justify-center">
-        <div class="content">
-          <h1 class="title font-semibold mb-4 text-gray-50">
-            <span>ALFIAN DWI</span>
-            <span>NUGRAHA</span>
-          </h1>
-          <div class="description-header mb-2 font-semibold italic text-gray-200">// ABOUT ME</div>
-          <div class="description text-gray-200">
-            I am a student at "State University of Surabaya" as an Informatics Engineering.
-            19 years old, a web developer and mobile flutter developer and a Blockchain Enthusiast.
-          </div>
-        </div>
-      </div>
-      <div class="hidden md:w-1/2 md:flex flex-col justify-end">
-        <div class="flex justify-center">
-          <img src="/images/me.png" alt="Me">
-        </div>
-      </div>
-      <div
-        class="
-          hireme hidden md:flex flex-col text-center justify-center text-xl font-bold h-32 w-32 rounded-full text-secondary bg-gray-100
-          transition-all duration-500 ease-in-out cursor-pointer
-          hover:shadow-xl hover:scale-105
-        "
-        style="left: 100vw;"
-      >
-        HIRE ME!
-      </div>
+    <div
+      class="
+        hireme hidden md:flex flex-col text-center justify-center text-xl font-bold h-32 w-32 rounded-full text-secondary bg-gray-100
+        transition-all duration-500 ease-in-out cursor-pointer
+        hover:shadow-xl hover:scale-105
+      "
+      style="left: 110vw;"
+    >
+      HIRE ME!
     </div>
   </div>
 </template>
@@ -57,7 +41,9 @@ export default defineComponent({
   setup() {
     const { startAnimation } = useAnimation()
 
-    onMounted(() => startAnimation())
+    onMounted(() => {
+      setTimeout(() => startAnimation(), 100)
+    })
   }
 })
 
@@ -71,6 +57,7 @@ function useAnimation() {
     })
     tl.to('.hireme', {
       scale: 1.5,
+      rotation: 30,
       opacity: 1,
       repeat: 1,
       yoyo: true
@@ -82,23 +69,81 @@ function useAnimation() {
       defaults: { duration: 1, ease: 'power2.inOut' }
     })
 
-    tl.to('.hireme', {
-      left: '50%',
-      top: '50%',
-      opacity: 1,
-      rotation: -30,
-      ease: 'power1.out',
-      onComplete: async () => {
-        await $sleep(500)
-        tl.to('.hireme', {
-          rotation: 15,
-          left: '50%',
-          opacity: 1,
-          ease: 'power2.out',
-        })
-        hiremeBreath()
+    tl.fromTo(
+      '.hero',
+      {
+        opacity: 0,
+        x: 30
+      },
+      {
+        opacity: 1,
+        x: 0,
+        duration: 1,
+        ease: 'power2.inOut',
       }
-    })
+    )
+
+    tl.from(
+      '.hero .title',
+      {
+        opacity: 0,
+        y: -20,
+        duration: 0.5,
+        ease: 'power2.out',
+      },
+    )
+
+    tl.from(
+      '.hero .description-header',
+      {
+        opacity: 0,
+        x: 20,
+        duration: 0.5,
+        ease: 'power2.out',
+      }
+    )
+
+    tl.from(
+      '.hero .description',
+      {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        ease: 'power2.out',
+      }
+    )
+
+    tl.from(
+      '.hero .action',
+      {
+        opacity: 0,
+        x: 20,
+        duration: 0.5,
+        ease: 'power2.out',
+      }
+    )
+
+    tl.fromTo('.hireme',
+      {
+        rotation: -30,
+        left: '120%',
+      },
+      {
+        rotation: 30,
+        left: '50%',
+        duration: 1,
+        ease: 'power3.out',
+        onComplete: async () => {
+          tl.to('.hireme', {
+            rotation: 15,
+            left: '50%',
+            opacity: 1,
+            ease: 'power2.out',
+          })
+          hiremeBreath()
+        }
+      }
+    )
   }
 
   return {
@@ -112,48 +157,6 @@ $paddingContainerSm: 0.6rem;
 $paddingContainerMd: 5rem;
 
 .screen {
-  width: 100vw;
-  height: 100vh;
-
-  & > .bg {
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-
-    & > div {
-      width: 100vw;
-      height: 100vh;
-    }
-    & > div:nth-child(1) {
-      background: #FF8F73;
-    }
-    & > div:nth-child(2) {
-      background: #FF734E;
-      display: none;
-    }
-  }
-
-  & > .navbar {
-    z-index: 2;
-    padding: $paddingContainerSm;
-
-    .navbar-menu {
-      & > .item {
-        font-size: 1.125rem/* 18px */;
-        line-height: 1.75rem/* 28px */;
-        color: theme('colors.gray.200');
-
-        &:hover {
-          color: theme('colors.gray.100');
-        }
-      }
-    }
-  }
-
   & > .hero {
     & > div:nth-child(1) {
       padding-left: $paddingContainerSm;
@@ -170,16 +173,6 @@ $paddingContainerMd: 5rem;
             }
             &:nth-child(2) {
               font-size: 3.5rem;
-            }
-
-            @screen md {
-              text-align: left;
-              &:nth-child(1) {
-                font-size: 6rem;
-              }
-              &:nth-child(2) {
-                font-size: 7rem;
-              }
             }
           }
         }
@@ -200,6 +193,7 @@ $paddingContainerMd: 5rem;
       }
     }
     & > .hireme {
+      z-index: 20;
       position: absolute;
       top: 50%;
       left: 50%;
@@ -210,25 +204,51 @@ $paddingContainerMd: 5rem;
 
 @screen md {
   .screen {
-    & > .navbar {
-      padding-left: $paddingContainerMd;
-      padding-right: $paddingContainerMd;
-      padding-top: 1rem;
-    }
-    & > .bg {
-      & > div:nth-child(2) {
-        display: block;
-      }
-    }
     & > .hero {
       & > div:nth-child(1) {
         padding-left: $paddingContainerMd;
         & > .content {
+          & > .title {
+            span {
+              text-align: left;
+              &:nth-child(1) {
+                font-size: 4rem;
+              }
+              &:nth-child(2) {
+                font-size: 5rem;
+              }
+            }
+          }
           & > .description-header {
             text-align: left;
           }
           & > .description {
             text-align: left;
+            max-width: 450px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@screen 2xl {
+  .screen {
+    & > .hero {
+      & > div:nth-child(1) {
+        padding-left: $paddingContainerMd;
+        & > .content {
+          & > .title {
+            span {
+              text-align: left;
+              &:nth-child(1) {
+                font-size: 6.1rem;
+              }
+              &:nth-child(2) {
+                font-size: 7rem;
+              }
+            }
           }
         }
       }

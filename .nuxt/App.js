@@ -12,7 +12,7 @@ import '../assets/scss/vendor.scss'
 
 import '../assets/scss/app.scss'
 
-import _6f6c098b from './layouts/default.vue'
+import _6f6c098b from '../layouts/default.vue'
 
 const layouts = { "_default": sanitizeComponent(_6f6c098b) }
 

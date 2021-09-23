@@ -1,8 +1,8 @@
 {
-  "NuxtLogo": {
-    "description": "Auto imported from components/NuxtLogo.vue"
+  "Button": {
+    "description": "Auto imported from components/Button.vue"
   },
-  "Tutorial": {
-    "description": "Auto imported from components/Tutorial.vue"
+  "Navbar": {
+    "description": "Auto imported from components/Navbar.vue"
   }
 }

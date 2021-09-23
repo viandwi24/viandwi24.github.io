@@ -1,14 +1,23 @@
 [
   {
-    "name": "a",
-    "path": "/a",
-    "component": "/Users/viandwi24/Project/Profile/viandwi24.github.io/pages/a.vue",
-    "chunkName": "pages/a"
+    "name": "experience",
+    "path": "/experience",
+    "component": "/Users/viandwi24/Project/Profile/viandwi24.github.io/pages/experience.vue",
+    "chunkName": "pages/experience",
+    "_name": "_2e71c7b4"
+  },
+  {
+    "name": "projects",
+    "path": "/projects",
+    "component": "/Users/viandwi24/Project/Profile/viandwi24.github.io/pages/projects.vue",
+    "chunkName": "pages/projects",
+    "_name": "_7b5b0344"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/viandwi24/Project/Profile/viandwi24.github.io/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_7c147a78"
   }
 ]

@@ -12,7 +12,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'viandwi24',
+    title: 'Alfian Dwi Nugraha',
     htmlAttrs: {
       lang: 'en'
     },
