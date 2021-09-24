@@ -8,11 +8,18 @@
         </h1>
         <div class="description-header mb-2 font-semibold italic text-gray-200">// ABOUT ME</div>
         <div class="description mb-4 text-gray-200">
-          I am a student at "State University of Surabaya" as an Informatics Engineering.
+          I am a student at
+          <Tooltip
+            tooltipTitle="State University of Surabaya"
+            :tooltipText="map"
+          >
+            "State University of Surabaya"
+          </Tooltip>
+          as an Informatics Engineering.
           19 years old, a web developer and mobile flutter developer and a Blockchain Enthusiast.
         </div>
         <div class="action">
-          <Button text="My Projects" class="mr-2" />
+          <Button text="My Projects" class="mr-2" :to="{ name: 'projects' }" />
         </div>
       </div>
     </div>
@@ -44,6 +51,12 @@ export default defineComponent({
     onMounted(() => {
       setTimeout(() => startAnimation(), 100)
     })
+
+    return {
+      map: `
+        <iframe height="300px" style="width: 100%!important;" id="gmap_canvas" src="https://maps.google.com/maps?q=universitas%20negeri%20surabaya%20ketintang&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      `
+    }
   }
 })
 

@@ -8,3 +8,4 @@ You can directly use them in pages and other components without the need to impo
 
 - `<Button>` | `<button>` (components/Button.vue)
 - `<Navbar>` | `<navbar>` (components/Navbar.vue)
+- `<Tooltip>` | `<tooltip>` (components/Tooltip.vue)

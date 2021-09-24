@@ -48,42 +48,45 @@ function useBackgroundAnimation({ showParent, showChid, showNuxt }) {
   watch(route, () => {
     showNuxt.value = false
     tl.pause()
-    tl.fromTo(
-      '.bg .bg-primary',
-      {
-        width: '100%',
-      },
-      {
-        width: '0%',
-        opacity: 1,
-        duration: 1,
-        ease: 'power2.out'
+    if (route.value.name === 'index') {
+      if (document.querySelector('.bg .bg-primary').style.width !== '0%') {
+        tl.fromTo(
+          '.bg .bg-primary',
+          {
+            width: '100%',
+          },
+          {
+            width: '0%',
+            opacity: 1,
+            duration: 1,
+            ease: 'power2.out'
+          }
+        )
       }
-    )
-    tl.fromTo(
-      '.bg',
-      {
-        left: '0%',
-        opacity: 1,
-      },
-      {
-        left: '100%',
-        opacity: 0,
-        duration: 1,
-        ease: 'power2.out',
-        onComplete: () => {
-          document.querySelector('.bg-primary').style.width = '100%'
-          animate()
+      tl.fromTo(
+        '.bg',
+        {
+          left: '0%',
+          opacity: 1,
+        },
+        {
+          left: '100%',
+          opacity: 0,
+          duration: 1,
+          ease: 'power2.out',
+          onComplete: () => {
+            document.querySelector('.bg-primary').style.width = '100%'
+            animate()
+          }
         }
-      }
-    )
+      )
+    } else {
+      animate()
+    }
     tl.resume()
   })
 
-  const animate = async () => {
-    showParent.value = true
-    showChid.value = true
-    await $sleep(100)
+  const transitionIndex = () => {
     tl.fromTo(
       '.bg',
       {
@@ -109,6 +112,44 @@ function useBackgroundAnimation({ showParent, showChid, showNuxt }) {
         }
       }
     )
+  }
+
+  const animate = async () => {
+    showParent.value = true
+    showChid.value = true
+    await $sleep(100)
+    if (route.value.name === 'index') {
+      transitionIndex()
+    } else {
+      // document.querySelector('.bg-primary').style.width = '0%'
+      tl.fromTo(
+        '.bg .bg-primary',
+        {
+          width: '100%',
+        },
+        {
+          width: '0%',
+          opacity: 1,
+          duration: 1,
+        }
+      )
+      tl.fromTo(
+        '.bg',
+        {
+          left: '0%',
+          opacity: 1,
+        },
+        {
+          left: '100%',
+          opacity: 0,
+          duration: 1,
+          ease: 'power2.out',
+          onComplete: () => {
+            showNuxt.value = true
+          }
+        }
+      )
+    }
   }
 
   return {

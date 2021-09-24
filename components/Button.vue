@@ -1,20 +1,30 @@
 <template>
-  <button class="btn">
+  <button class="btn" @click.prevent="clicked">
     {{ text }}
   </button>
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
+import { defineComponent, useContext } from '@nuxtjs/composition-api'
 
 export default defineComponent({
   props: {
     text: {
       type: String,
       default: ''
+    },
+    to: {
+      type: Object,
+      default: undefined
     }
   },
-  setup() {
+  setup(props) {
+    const { redirect } = useContext()
+    const clicked = () => {
+      if (props.to) {
+        redirect(props.to)
+      }
+    }
   }
 })
 </script>

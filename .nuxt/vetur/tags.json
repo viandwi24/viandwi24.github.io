@@ -4,5 +4,8 @@
   },
   "Navbar": {
     "description": "Auto imported from components/Navbar.vue"
+  },
+  "Tooltip": {
+    "description": "Auto imported from components/Tooltip.vue"
   }
 }
