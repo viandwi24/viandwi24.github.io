@@ -1,0 +1,109 @@
+<script lang="ts" setup>
+const navbarUpdate = async () => {
+  const navbarEl = document.querySelector('.navbar')
+  const checkCollapsedNavbar = document.querySelector('.navbar .navbar-collapse')
+  if (navbarEl) {
+    if (navbarEl.classList.contains('show')) {
+      navbarEl.classList.add('collapsed')
+    } else {
+      navbarEl.classList.remove('collapsed')
+    }
+  }
+  await new Promise((resolve) => setTimeout(resolve, 1))
+  setTimeout(navbarUpdate, 1)
+}
+const navbarOnScroll = () => {
+  const scrollTop = window.scrollY
+  const navbarEl = document.querySelector('.navbar')
+  if (navbarEl) {
+    if (scrollTop > 0) {
+      navbarEl.classList.add('scrolled')
+    } else {
+      navbarEl.classList.remove('scrolled')
+    }
+  }
+}
+
+let time: NodeJS.Timeout | undefined
+onMounted(() => {
+  time = setTimeout(navbarUpdate, 1)
+  window.addEventListener('scroll', navbarOnScroll)
+})
+onBeforeUnmount(() => {
+  clearTimeout(time)
+  window.removeEventListener('scroll', navbarOnScroll)
+})
+</script>
+
+<template>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <NuxtLink class="navbar-brand" to="/">
+        <svg width="27.71" height="32" viewBox="0 0 167 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M69.8874 125V117.448L82.3034 98.376C83.2421 96.968 84.1168 95.6027 84.9274 94.28C85.7808 92.9573 86.4634 91.6133 86.9754 90.248C87.5301 88.8827 87.8074 87.4533 87.8074 85.96C87.8074 84.4667 87.5088 83.3573 86.9114 82.632C86.3141 81.9067 85.5034 81.544 84.4794 81.544C83.3274 81.544 82.4314 81.864 81.7914 82.504C81.1514 83.144 80.7034 83.9973 80.4474 85.064C80.2341 86.1307 80.1274 87.3253 80.1274 88.648V91.208H69.7594V88.456C69.7594 85.384 70.2501 82.6533 71.2314 80.264C72.2128 77.832 73.7701 75.9333 75.9034 74.568C78.0368 73.16 80.8314 72.456 84.2874 72.456C88.9381 72.456 92.4368 73.672 94.7834 76.104C97.1728 78.4933 98.3674 81.8427 98.3674 86.152C98.3674 88.2427 98.0261 90.184 97.3434 91.976C96.7034 93.768 95.8288 95.5173 94.7194 97.224C93.6528 98.888 92.5008 100.637 91.2634 102.472L81.7914 116.616H96.9594V125H69.8874Z" />
+          <path d="M44.3279 125L34.9839 73.16H44.7759L50.3439 108.36L55.5279 73.16H65.8959L56.4239 125H44.3279Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M116.674 113.352V125H126.658V113.352H131.458V105.416H126.658V73.16H114.242L100.738 105.48V113.352H116.674ZM116.674 105.416H108.866L116.674 83.848V105.416Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M83.1384 0L166.277 48V144L83.1384 192L0 144V48L83.1384 0ZM10 53.7735L83.1384 11.547L156.277 53.7735V138.227L83.1384 180.453L10 138.227V53.7735Z" />
+        </svg>
+      </NuxtLink>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
+        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+        <!-- <span class="navbar-toggler-icon"></span> -->
+        <svg width="16" height="32" viewBox="0 0 120 136" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 25.5C0 20.7984 3.83036 17 8.57143 17H111.429C116.17 17 120 20.7984 120 25.5C120 30.2016 116.17 34 111.429 34H8.57143C3.83036 34 0 30.2016 0 25.5ZM0 68C0 63.2984 3.83036 59.5 8.57143 59.5H111.429C116.17 59.5 120 63.2984 120 68C120 72.7016 116.17 76.5 111.429 76.5H8.57143C3.83036 76.5 0 72.7016 0 68ZM120 110.5C120 115.202 116.17 119 111.429 119H8.57143C3.83036 119 0 115.202 0 110.5C0 105.798 3.83036 102 8.57143 102H111.429C116.17 102 120 105.798 120 110.5Z" fill="#F0F0F0"/>
+        </svg>
+      </button>
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav font-mono mx-auto text-center">
+          <li>
+            <NuxtLink class="dropdown-item" to="/">
+              <span>01.</span>
+              <span>// Home</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="dropdown-item" to="/about">
+              <span>02.</span>
+              <span>// About</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="dropdown-item" to="/experience">
+              <span>03.</span>
+              <span>// Experience</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="dropdown-item" to="/projects">
+              <span>04.</span>
+              <span>// Projects</span>
+            </NuxtLink>
+          </li>
+          <li>
+            <NuxtLink class="dropdown-item" to="/contact">
+              <span>05.</span>
+              <span>// Contact</span>
+            </NuxtLink>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- content -->
+  <slot />
+
+  <!-- bars -->
+  <div class="social-media-bar position-fixed bottom-0 left-0 mx-4 flex-column space-y-2">
+    <a target="_blank" href="https://github.com/viandwi24" class="icon"><i class="bi-github"></i></a>
+    <a target="_blank" href="https://facebook.com/viandwi24" class="icon"><i class="bi-facebook"></i></a>
+    <a target="_blank" href="https://instagram.com/viandwi_24" class="icon"><i class="bi-instagram"></i></a>
+  </div>
+  <div class="social-media-bar position-fixed bottom-0 right-0 mx-4 flex-column space-y-2">
+    <a target="_blank" href="mailto:viandwicyber@gmail.com" class="text-vertical fw-lighter font-mono">viandwicyber@gmail.com</a>
+  </div>
+</template>

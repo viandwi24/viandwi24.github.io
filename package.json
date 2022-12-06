@@ -1,11 +1,22 @@
 {
   "private": true,
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "start": "node .output/server/index.mjs"
+    "build": "nuxt build",
+    "dev": "HOST=0.0.0.0 nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "nuxt3": "latest"
+    "nuxt": "3.0.0",
+    "sass": "^1.56.1"
+  },
+  "dependencies": {
+    "@pinia/nuxt": "0.4.3",
+    "@popperjs/core": "^2.11.6",
+    "@splinetool/runtime": "^0.9.150",
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1",
+    "pinia": "^2.0.27"
   }
 }
