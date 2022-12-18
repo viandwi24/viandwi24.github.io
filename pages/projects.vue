@@ -13,7 +13,7 @@ interface Project {
 
 const projects = ref<Project[]>([])
 const isLoading = ref(true)
-const listingMode = ref<'list' | 'grid'>('grid')
+const listingMode = ref<'list' | 'grid'>('list')
 
 // fetch
 const fetch = async () => {
