@@ -1,4 +1,4 @@
-{
+const client_manifest = {
   "node_modules/.pnpm/bootstrap-icons@1.10.2/node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2": {
     "resourceType": "font",
     "mimeType": "font/woff2",
@@ -229,4 +229,7 @@
     "file": "entry.6f750b67.css",
     "src": "node_modules/.pnpm/nuxt@3.0.0_sass@1.56.1/node_modules/nuxt/dist/app/entry.css"
   }
-}
+};
+
+export { client_manifest as default };
+//# sourceMappingURL=client.manifest.mjs.map
