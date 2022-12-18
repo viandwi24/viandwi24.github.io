@@ -13,6 +13,7 @@ const { isLoading } = useLoading()
   }">
     <!-- <NuxtWelcome /> -->
     <NuxtLayout>
+      <NuxtLoadingIndicator />
       <NuxtPage />
     </NuxtLayout>
     <!-- loader -->

@@ -65,12 +65,12 @@ onBeforeUnmount(() => {
             programming. now focusing on the web front end.
           </div>
           <div class="mb-4 d-flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0 font-mono">
-            <NuxtLink to="about" class="btn btn-primary">
+            <NuxtLink to="about" class="btn btn-primary d-flex gap-1">
               <i class="bi-play-fill"></i>
               <span>Lets Close About Me</span>
             </NuxtLink>
-            <a href="https://github.com/viandwi24" target="_blank" class="btn btn-dark">
-              <i class="bi-github"></i>
+            <a href="https://github.com/viandwi24" target="_blank" class="btn btn-dark d-flex gap-2">
+              <i class="bi-github mr-2"></i>
               <span>Github</span>
             </a>
           </div>
