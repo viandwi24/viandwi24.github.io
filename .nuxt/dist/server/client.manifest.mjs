@@ -214,15 +214,15 @@ export default {
     "src": "node_modules/.pnpm/@splinetool+runtime@0.9.150/node_modules/@splinetool/runtime/build/opentype.js",
     "isDynamicEntry": true
   },
-  "node_modules/.pnpm/@nuxt+ui-templates@1.0.0/node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
-    "resourceType": "style",
-    "file": "error-404.a19a4ebd.css",
-    "src": "node_modules/.pnpm/@nuxt+ui-templates@1.0.0/node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
-  },
   "node_modules/.pnpm/@nuxt+ui-templates@1.0.0/node_modules/@nuxt/ui-templates/dist/templates/error-500.css": {
     "resourceType": "style",
     "file": "error-500.aa2df86e.css",
     "src": "node_modules/.pnpm/@nuxt+ui-templates@1.0.0/node_modules/@nuxt/ui-templates/dist/templates/error-500.css"
+  },
+  "node_modules/.pnpm/@nuxt+ui-templates@1.0.0/node_modules/@nuxt/ui-templates/dist/templates/error-404.css": {
+    "resourceType": "style",
+    "file": "error-404.a19a4ebd.css",
+    "src": "node_modules/.pnpm/@nuxt+ui-templates@1.0.0/node_modules/@nuxt/ui-templates/dist/templates/error-404.css"
   },
   "node_modules/.pnpm/nuxt@3.0.0_sass@1.56.1/node_modules/nuxt/dist/app/entry.css": {
     "resourceType": "style",

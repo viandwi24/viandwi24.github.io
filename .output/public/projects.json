@@ -4,7 +4,7 @@
     "type": "Template",
     "description": "a Nuxt 3 starter template or boilerplate with a lot of useful features. and integrated with TailwindCSS 3",
     "tags": ["Nuxt", "Vue", "Tailwind CSS"],
-    "image": "/projects/1.png",
+    "image": "/images/projects/1.png",
     "links": {
       "github": "https://github.com/viandwi24/nuxt3-awesome-starter",
       "demo": "https://nuxt3-awesome-starter.vercel.app"
@@ -15,7 +15,7 @@
     "type": "Simulator",
     "description": "A Simple Blockchain Simulation with Javascript Nodejs and VueJs as Front End",
     "tags": ["Blockchain", "Simulation", "Nuxt", "Vue", "Tailwind CSS"],
-    "image": "/projects/2.gif",
+    "image": "/images/projects/2.gif",
     "links": {
       "github": "https://github.com/viandwi24/blockchain-simulation",
       "demo": "https://viandwi24.github.io/blockchain-simulation"
@@ -26,7 +26,7 @@
     "type": "Forum",
     "description": "a Opensource Forum Web with Tailwinds and Laravel",
     "tags": ["Laravel", "Vue", "Tailwind CSS"],
-    "image": "/projects/3.gif",
+    "image": "/images/projects/3.gif",
     "links": {
       "github": "https://github.com/devoverid/forum",
       "demo": "https://github.com/devoverid/forum"
@@ -37,7 +37,7 @@
     "type": "Klasse IO",
     "description": "A group video call with a mix of rpg games. Make the group atmosphere more interactive. WebRTC based Video Stream with Peer connection. Then Signaling by WebSocket. With Client Built on NuxtJS as well as NodeJS server.",
     "tags": ["Nuxt", "Vue", "WebRTC"],
-    "image": "/projects/4.png",
+    "image": "/images/projects/4.png",
     "links": {
       "github": "https://github.com/viandwi24/klasse-io-client",
       "demo": "https://github.com/viandwi24/klasse-io-client"
