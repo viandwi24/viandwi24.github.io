@@ -13,7 +13,7 @@ interface Project {
 
 const projects = ref<Project[]>([])
 const isLoading = ref(true)
-const listingMode = ref<'list' | 'grid'>('list')
+const listingMode = ref<'list' | 'grid'>('grid')
 
 // fetch
 const fetch = async () => {
@@ -44,6 +44,9 @@ onMounted(() => {
         <span>My Projects</span>
       </div>
       <div class="d-flex flex-column space-y-4">
+        <div class="fs-6 text-center text-muted fw-bold">
+          Note: not all my projects are listed here. I have a lot of private projects and can't share them.
+        </div>
         <div>
           <div class="d-flex gap-2">
             <button
@@ -131,17 +134,27 @@ onMounted(() => {
             <div class="row">
               <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
                 <div class="col-3 px-2 py-2">
-                  <div class="card">
-                    <div class="relative overflow-hidden card-img-top" :style="{
-                      'height': '200px',
-                    }">
-                      <img :src="item.image" alt="Preview" class="img-fluid img-muted-hover-active position-absolute">
-                    </div>
-                    <div class="card-body" :style="{
-                      color: '#000',
-                    }">
-                      <div class="card-title text-truncate">{{ item.name }}</div>
-                    </div>
+                  <div
+                    :style="{
+                      position: 'relative',
+                      height: '170px',
+                      overflow: 'hidden',
+                      borderRadius: '10px',
+                    }"
+                  >
+                    <img
+                      :src="item.image"
+                      alt="Preview"
+                      :style="{
+                        position: 'absolute',
+                        display: 'block',
+                        width: '100%',
+                        transform: 'scale(1.25) translate(-50%, -50%)',
+                        left: '50%',
+                        top: '50%'
+                      }"
+                    >
+                    <!-- <div class="card-title text-truncate">{{ item.name }}</div> -->
                   </div>
                 </div>
               </template>

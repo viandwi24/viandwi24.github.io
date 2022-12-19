@@ -214,5 +214,17 @@
       "github": "https://github.com/viandwi24/asteroid-guard-java",
       "demo": "https://github.com/viandwi24/asteroid-guard-java"
     }
+  },
+  {
+    "name": "decognition",
+    "type": "Error Handler",
+    "description": "a Pretty Exception Handler for TypeScript Deno. Inspirated from Laravel & Flare Ignition.",
+    "tags": ["Deno", "Typescript"],
+    "image": "/images/projects/17.png",
+    "year": 2020,
+    "links": {
+      "github": "https://github.com/viandwi24/decognition",
+      "demo": "https://github.com/viandwi24/decognition"
+    }
   }
 ]
