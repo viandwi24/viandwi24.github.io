@@ -13,7 +13,7 @@ interface Project {
 
 const projects = ref<Project[]>([])
 const isLoading = ref(true)
-const listingMode = ref<'list' | 'grid'>('list')
+const listingMode = ref<'list' | 'grid'>('grid')
 
 // fetch
 const fetch = async () => {
@@ -23,7 +23,7 @@ const fetch = async () => {
     const data = await $fetch(url)
     if (data && Array.isArray(data) && data.length > 0 && data[0].name) {
       projects.value = data
-      console.log('projects', projects.value)
+      console.log(projects.value)
     }
   } catch (error) {
     console.log('cannot fetch projects')
@@ -37,20 +37,20 @@ onMounted(() => {
 </script>
 
 <template>
-  <section class="flex-1 flex flex-col justify-center page-section page-section-experienc">
-    <div class="w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4">
+  <section class="page-section page-section-experience">
+    <div class="container py-4 px-4 mx-auto md:w-50 mb-4">
       <div class="page-section-header mb-4 text-custom-1">
         <span>04.</span>
         <span>My Projects</span>
       </div>
-      <div class="flex flex-col space-y-4">
+      <div class="d-flex flex-column space-y-4">
         <div class="fs-6 text-center text-muted fw-bold">
           Note: not all my projects are listed here. I have a lot of private projects and can't share them.
         </div>
         <div>
-          <div class="flex space-x-2">
+          <div class="d-flex gap-2">
             <button
-              class="text-lg rounded flex justify-center items-center"
+              class="btn btn-sm text-lg rounded d-flex justify-content-center align-items-center"
               :class="{
                 'btn-primary': listingMode === 'list',
                 'btn-secondary': listingMode === 'grid',
@@ -60,7 +60,7 @@ onMounted(() => {
               <i class="bi bi-card-list"></i>
             </button>
             <button
-              class="text-lg rounded flex justify-center items-center"
+              class="btn btn-sm text-lg rounded d-flex justify-content-center align-items-center"
               :class="{
                 'btn-primary': listingMode === 'grid',
                 'btn-secondary': listingMode === 'list',
@@ -77,14 +77,14 @@ onMounted(() => {
         <template v-if="listingMode === 'list'">
           <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
             <!-- project::left -->
-            <div v-if="i % 2 === 0" class="project-item relative flex items-center mb-4 pb-4 w-full">
-              <div class="w-1/2 absolute right-0 flex w-full" style="top: 50%; transform: translateY(-50%);">
-                <img :src="item.image" alt="Preview" class="">
+            <div v-if="i % 2 === 0" class="project-item position-relative d-block mb-4 pb-4">
+              <div class="col-6 position-absolute right-0 flex justify-end items-end w-full" style="top: 50%; transform: translateY(-50%);">
+                <img :src="item.image" alt="Preview" class="img-fluid img-muted-hover-active self-end">
               </div>
-              <div class="flex-1 project-item-description left p-4 mb-4 pb-4">
+              <div class="project-item-description left p-4 mb-4 pb-4">
                 <div class="text-primary font-mono fw-lighter mb-1">{{ item.type }}</div>
                 <div class="fw-bolder fs-4 mb-2">{{ item.name }}</div>
-                <div class="bg-slate-700 shadow-lg rounded mb-2 md:w-96">
+                <div class="card shadow-lg bg-dark mb-2 md:w-60">
                   <div class="p-4">
                     {{ item.description }}
                   </div>
@@ -103,14 +103,14 @@ onMounted(() => {
               </div>
             </div>
             <!-- project::right -->
-            <div v-else class="project-item relative flex items-center mb-4 pb-4">
-              <div class="w-1/2">
-                <img :src="item.image" alt="Preview" class="">
+            <div v-else class="project-item position-relative d-block mb-4 pb-4">
+              <div class="col-6 position-absolute left-0" style="top: 50%; transform: translateY(-50%);">
+                <img :src="item.image" alt="Preview" class="img-fluid img-muted-hover-active">
               </div>
-              <div class="flex-1 project-item-description right mb-4 pb-4 p-4 w-100">
+              <div class="project-item-description right mb-4 pb-4 p-4 w-100 text-end d-flex flex-column justify-content-end align-items-end">
                 <div class="text-primary font-mono fw-lighter mb-1">{{ item.type }}</div>
                 <div class="fw-bolder fs-4 mb-2">{{ item.name }}</div>
-                <div class="shadow-lg rounded bg-slate-700 mb-2 md:w-96">
+                <div class="card shadow-lg bg-dark mb-2 md:w-60">
                   <div class="p-4">
                     {{ item.description }}
                   </div>
@@ -159,39 +159,8 @@ onMounted(() => {
                 </div>
               </template>
             </div>
-        </template>
+          </template>
       </div>
     </div>
   </section>
 </template>
-
-<style lang="scss">
-// page::experience
-.project-item {
-  border: 1px solid transparent;
-  transition: all 0.3s ease-in-out;
-  overflow: hidden;
-  .img-muted-hover-active {
-    filter: grayscale(100%);
-    transition: all 0.3s ease-in-out;
-  }
-  .project-item-description {
-    transition: all 0.3s ease-in-out;
-  }
-  &:hover {
-    border: 1px solid theme('colors.primary.500');
-    padding: 10px;
-    border-radius: 4px;
-    .img-muted-hover-active {
-      filter: grayscale(0%);
-    }
-    .project-item-description.right {
-      // transform: translateX(50px);
-    }
-    .project-item-description.left {
-      // transform: translateX(-50px);
-      // padding-left: -100px;
-    }
-  }
-}
-</style>

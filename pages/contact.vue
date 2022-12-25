@@ -1,35 +1,27 @@
 <template>
-  <section class="page-section page-section-contact pt-4 position-relative overflow-hidden d-flex flex-column">
-    <div class="container py-4 px-4 mx-auto d-flex flex-column justify-content-center flex-1 text-center">
-      <div class="text-custom-1 text-primary fw-light">05. Contact Me?</div>
-      <div class="display-4 fw-bolder mb-4">
-        <div class="text-custom-2">Get In Touch</div>
+  <section class="flex-1 flex flex-col justify-center page-section page-section-experience">
+    <div class="flex-1 flex flex-col justify-center items-center w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4 py-10">
+      <div class="text-custom-1 text-primary mb-2">05. Contact Me?</div>
+      <div class="text-6xl mb-4 font-bold">
+        <div class="">Get In Touch</div>
       </div>
-      <div class="d-flex justify-content-center align-items-center mb-4">
-        <div class="w-50 text-custom-1">
-          Even though I'm not currently looking for new opportunities, my inbox is always open.
-          Whether you have any questions or just want to say hello, I'll try my best to get back to you!
-        </div>
+      <div class="max-w-screen-sm text-center text-blue-100/50 mb-8">
+        Even though I'm not currently looking for new opportunities, my inbox is always open.
+        Whether you have any questions or just want to say hello, I'll try my best to get back to you!
       </div>
-      <div class="d-flex space-x-4 justify-content-center">
-        <a target="_blank" href="mailto:viandwicyber@gmail.com" class="btn btn-outline-primary d-flex gap-2">
+      <div class="flex space-x-4 justify-center">
+        <a target="_blank" href="mailto:viandwicyber@gmail.com" class="duration-300 transition-all rounded px-4 py-2 border border-primary-500 text-primary-500 flex space-x-2 hover:bg-primary-500 hover:text-gray-100">
           <i class="bi-envelope"></i>
           <span>Email</span>
         </a>
-        <a target="_blank" href="https://facebook.com/viandwi24" class="btn btn-outline-success d-flex gap-2">
+        <a target="_blank" href="https://facebook.com/viandwi24" class="duration-300 transition-all rounded px-4 py-2 border border-blue-300 text-blue-300 flex space-x-2 hover:bg-blue-300 hover:text-gray-100">
           <i class="bi-facebook"></i>
           <span>Facebook</span>
         </a>
-        <a target="_blank" href="https://instagram.com/viandwi_24" class="btn btn-outline-secondary d-flex gap-2">
+        <a target="_blank" href="https://instagram.com/viandwi_24" class="duration-300 transition-all rounded px-4 py-2 border border-purple-300 text-purple-300 flex space-x-2 hover:bg-purple-300 hover:text-gray-100">
           <i class="bi-instagram"></i>
           <span>Instagram</span>
         </a>
-      </div>
-    </div>
-    <div class="text-center">
-      <div class="fs-6 fst-italic text-muted">
-        Design by
-        <a href="https://github.com/viandwi24">@viandwi24</a>
       </div>
     </div>
   </section>

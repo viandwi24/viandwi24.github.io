@@ -1,153 +1,181 @@
 <template>
-  <section class="page-section page-section-experience">
-    <div class="container py-4 px-4 mx-auto md:w-40 mb-4">
+  <section class="flex-1 flex flex-col justify-center page-section page-section-experience">
+    <div class="flex-1 flex flex-col w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4 py-10">
       <div class="page-section-header mb-4 text-custom-1">
         <span>03.</span>
         <span>My Experience</span>
       </div>
-      <div class="row">
-        <div class="col col-md px-4 mb-4">
-          <div class="d-flex align-items-start">
-              <div class="tab-custom-header nav flex-column nav-pills me-3 font-mono" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                  <button class="nav-link active" id="v-pills-school-tab" data-bs-toggle="pill" data-bs-target="#v-pills-school" type="button" role="tab" aria-controls="v-pills-school" aria-selected="true">
-                      Education
-                  </button>
-                  <button class="nav-link" id="v-pills-lsp-tab" data-bs-toggle="pill" data-bs-target="#v-pills-lsp" type="button" role="tab" aria-controls="v-pills-lsp" aria-selected="false">
-                      LSP
-                  </button>
-                  <button class="nav-link" id="v-pills-flagz-tab" data-bs-toggle="pill" data-bs-target="#v-pills-flagz" type="button" role="tab" aria-controls="v-pills-flagz" aria-selected="false">
-                      FLAGZ
-                  </button>
-                  <button class="nav-link" id="v-pills-fastpay-tab" data-bs-toggle="pill" data-bs-target="#v-pills-fastpay" type="button" role="tab" aria-controls="v-pills-fastpay" aria-selected="false">
-                      FASTSYNC
-                  </button>
-                  <button class="nav-link" id="v-pills-gentle-tab" data-bs-toggle="pill" data-bs-target="#v-pills-gentle" type="button" role="tab" aria-controls="v-pills-gentle" aria-selected="false">
-                      GENTLEDESIGN
-                  </button>
-                  <button class="nav-link" id="v-pills-teleal-tab" data-bs-toggle="pill" data-bs-target="#v-pills-teleal" type="button" role="tab" aria-controls="v-pills-teleal" aria-selected="false">
-                      TELEAL
-                  </button>
-              </div>
-              <div class="tab-content tab-custom-content" id="v-pills-tabContent">
-                  <div class="tab-pane fade show active" id="v-pills-school" role="tabpanel" aria-labelledby="v-pills-school-tab" tabindex="0">
-                      <div class="tab-custom-pane-header mb-4">
-                          <div class="tab-custom-pane-title">
-                              a College Student at <span class="mention">@Surabaya State University</span>
-                          </div>
-                          <div class="tab-custom-pane-description font-mono">
-                              Sep 2020 - Now
-                          </div>
-                    </div>
-                      <div>
-                          <ul class="list-custom">
-                              <li>
-                                  <div class="fw-bolder text-primary font-mono">Elementary School</div>
-                                  <div>SDN Kedung Maling 2</div>
-                                  <div class="fw-lighter text-sm text-custom-1">Address: dsn. Kedung Maling, Kec. Sooko, Kab. Mojokerto, Jawa Timur, Indonesia.</div>
-                              </li>
-                              <li>
-                                  <div class="fw-bolder text-primary font-mono">Junior Hight School</div>
-                                  <div>SMPN 1 SOOKO</div>
-                                  <div class="text-sm text-custom-1">Address: Kec. Sooko, Kab. Mojokerto, Jawa Timur, Indonesia.</div>
-                              </li>
-                              <li>
-                                  <div class="fw-bolder text-primary font-mono">High School</div>
-                                  <div>SMKN 1 KOTA MOJOKERTO</div>
-                                  <div>Field: Computer & Network Engineering</div>
-                                  <div class="text-sm text-custom-1">Address: Kec. Magersari, Mojokerto, Jawa Timur, Indonesia.</div>
-                              </li>
-                              <li>
-                                  <div class="fw-bolder text-primary font-mono">Bachelor's Degree (On Progress)</div>
-                                  <div>Surabaya State University</div>
-                                  <div>Field: Informatics Engineering</div>
-                                  <div class="text-sm text-custom-1">Address: Jl. Ketintang, Ketintang, Kec. Gayungan, Kota Surabaya, Jawa Timur 60231.</div>
-                              </li>
-                          </ul>
-                      </div>
+      <div class="px-4 flex-1 pr-6 mb-28">
+        <div class="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-2">
+          <HeadlessTabGroup :vertical="true">
+            <HeadlessTabList class="w-full lg:w-2/8 flex flex-col justify-start items-start">
+              <HeadlessTab #="{ selected }">
+                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected }">EDUCATION</button>
+              </HeadlessTab>
+              <HeadlessTab #="{ selected }">
+                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected }">LSP</button>
+              </HeadlessTab>
+              <HeadlessTab #="{ selected }">
+                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected }">FLAGZ</button>
+              </HeadlessTab>
+              <HeadlessTab #="{ selected }">
+                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected }">FASTSYNC</button>
+              </HeadlessTab>
+              <HeadlessTab #="{ selected }">
+                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected }">GENTLEDESIGN</button>
+              </HeadlessTab>
+              <HeadlessTab #="{ selected }">
+                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected }">TELEAL</button>
+              </HeadlessTab>
+            </HeadlessTabList>
+            <HeadlessTabPanels class="flex-1">
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    a College Student at <span class="text-primary-500">@Surabaya State University</span>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-lsp" role="tabpanel" aria-labelledby="v-pills-lsp-tab" tabindex="1">
-                      <div class="tab-custom-pane-header mb-4">
-                          <div class="tab-custom-pane-title">
-                              Programmer & Web Admin <span class="mention">@LSP SMKN 1 MOJOKERTO</span>
-                          </div>
-                          <div class="tab-custom-pane-description font-mono">
-                              Nov 2019 - Now
-                          </div>
-                    </div>
-                    <div>
-                        <ul class="list-custom">
-                              <li>i design and create web pages for lsp web interface.</li>
-                              <li>I made web services api backend.</li>
-                              <li>I maintain the server system.</li>
-                          </ul>
-                      </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    Sep 2020 - Now
                   </div>
-                  <div class="tab-pane fade" id="v-pills-flagz" role="tabpanel" aria-labelledby="v-pills-flagz-tab" tabindex="2">
-                      <div class="tab-custom-pane-header mb-4">
-                          <div class="tab-custom-pane-title">
-                              Web Game Developer <span class="mention">@FLAGZ</span>
-                          </div>
-                          <div class="tab-custom-pane-description font-mono">
-                              Jan 2022 - Now
-                          </div>
-                    </div>
-                    <div>
-                        <ul class="list-custom">
-                              <li>I am designing a web based game using Phaser.js</li>
-                          </ul>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>
+                      <div class="font-bold text-primary font-mono">Elementary School</div>
+                      <div>SDN Kedung Maling 2</div>
+                      <div class="fw-lighter text-sm text-custom-1">Address: dsn. Kedung Maling, Kec. Sooko, Kab.
+                        Mojokerto, Jawa Timur, Indonesia.</div>
+                    </li>
+                    <li>
+                      <div class="font-bold text-primary font-mono">Junior Hight School</div>
+                      <div>SMPN 1 SOOKO</div>
+                      <div class="text-sm text-custom-1">Address: Kec. Sooko, Kab. Mojokerto, Jawa Timur, Indonesia.
                       </div>
-                  </div>
-                  <div class="tab-pane fade" id="v-pills-fastpay" role="tabpanel" aria-labelledby="v-pills-fastpay-tab" tabindex="2">
-                      <div class="tab-custom-pane-header mb-4">
-                          <div class="tab-custom-pane-title">
-                              FRONTEND Developer <span class="mention">@FASTSYNC</span>
-                          </div>
-                          <div class="tab-custom-pane-description font-mono">
-                              Nov 2022 - Now
-                          </div>
-                    </div>
-                    <div>
-                        <ul class="list-custom">
-                              <li>designing pages for instant restaurant payment web.</li>
-                          </ul>
+                    </li>
+                    <li>
+                      <div class="font-bold text-primary font-mono">High School</div>
+                      <div>SMKN 1 KOTA MOJOKERTO</div>
+                      <div>Field: Computer & Network Engineering</div>
+                      <div class="text-sm text-custom-1">Address: Kec. Magersari, Mojokerto, Jawa Timur, Indonesia.
                       </div>
+                    </li>
+                    <li>
+                      <div class="font-bold text-primary font-mono">Bachelor's Degree (On Progress)</div>
+                      <div>Surabaya State University</div>
+                      <div>Field: Informatics Engineering</div>
+                      <div class="text-sm text-custom-1">Address: Jl. Ketintang, Ketintang, Kec. Gayungan, Kota
+                        Surabaya, Jawa Timur 60231.</div>
+                    </li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    Programmer & Web Admin <span class="text-primary-500">@LSP SMKN 1 MOJOKERTO</span>
                   </div>
-                  <div class="tab-pane fade" id="v-pills-gentle" role="tabpanel" aria-labelledby="v-pills-gentle-tab" tabindex="2">
-                      <div class="tab-custom-pane-header mb-4">
-                          <div class="tab-custom-pane-title">
-                              FRONTEND Developer <span class="mention">@GENTLEDESIGN</span>
-                          </div>
-                          <div class="tab-custom-pane-description font-mono">
-                              Nov 2022 - Now
-                          </div>
-                    </div>
-                    <div>
-                        <ul class="list-custom">
-                              <li>I design a landing page display page for a company.</li>
-                              <li>receive website creation services from related companies.</li>
-                          </ul>
-                      </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    Nov 2019 - Now
                   </div>
-                  <div class="tab-pane fade" id="v-pills-teleal" role="tabpanel" aria-labelledby="v-pills-teleal-tab" tabindex="2">
-                      <div class="tab-custom-pane-header mb-4">
-                          <div class="tab-custom-pane-title">
-                              Fullstack Developers <span class="mention">@TELEAL</span>
-                          </div>
-                          <div class="tab-custom-pane-description font-mono">
-                              OKT 2022 - Now
-                          </div>
-                    </div>
-                    <div>
-                        <ul class="list-custom">
-                              <li>create a business page.</li>
-                              <li>create a telegram bot.</li>
-                          </ul>
-                      </div>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>i design and create web pages for lsp web interface.</li>
+                    <li>I made web services api backend.</li>
+                    <li>I maintain the server system.</li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    Web Game Developer <span class="text-primary-500">@FLAGZ</span>
                   </div>
-              </div>
-          </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    Jan 2022 - Now
+                  </div>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>I am designing a web based game using Phaser.js</li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    FRONTEND Developer <span class="text-primary-500">@FASTSYNC</span>
+                  </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    Nov 2022 - Now
+                  </div>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>designing pages for instant restaurant payment web.</li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    FRONTEND Developer <span class="text-primary-500">@GENTLEDESIGN</span>
+                  </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    Nov 2022 - Now
+                  </div>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>I design a landing page display page for a company.</li>
+                    <li>receive website creation services from related companies.</li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    Fullstack Developers <span class="text-primary-500">@TELEAL</span>
+                  </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    OKT 2022 - Now
+                  </div>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>create a business page.</li>
+                    <li>create a telegram bot.</li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+            </HeadlessTabPanels>
+          </HeadlessTabGroup>
         </div>
       </div>
     </div>
   </section>
 </template>
+
+<style lang="scss">
+ul.list-custom {
+  list-style: none;
+  padding-left: 0;
+  li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    &:before {
+      content: '⤀';
+      position: absolute;
+      left: 0;
+      color: theme('colors.primary.500');
+    }
+  }
+}
+</style>

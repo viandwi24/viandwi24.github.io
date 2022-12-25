@@ -16,13 +16,22 @@ export default defineNuxtConfig({
   },
 
   css: [
-    '~/assets/scss/index.scss'
+    '~/assets/scss/main.scss'
   ],
 
   plugins: [
     '~/plugins/loading.ts',
-    '~/plugins/bs.client.ts'
+    // '~/plugins/bs.client.ts'
+  ],
+
+  modules: [
+    'nuxt-windicss',
+    'nuxt-headlessui'
   ],
 
   ssr: false,
+
+  headlessui: {
+    prefix: 'Headless',
+  },
 })

@@ -46,30 +46,30 @@ onBeforeUnmount(() => {
 </script>
 
 <template>
-  <div class="flex-1 flex flex-col justify-center items-center relative overflow-hidden">
+  <section class="page-section page-section-home pt-4 position-relative overflow-hidden d-flex">
     <div class="page-section-home-canvas-wrapper">
       <canvas id="page-section-home-canvas"></canvas>
     </div>
-    <div class="w-full sm:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 pb-20">
+    <div class="container py-4 px-4 mx-auto d-flex flex-column justify-content-center flex-1">
       <div class="wrapper-with-tag">
         <div class="container-with-tag" style="--tag: 'h1';">
           <div class="mb-4">
             <div class="text-primary font-mono">Hi, my name is</div>
           </div>
-          <div class="text-[3.5rem] font-bold mb-4 leading-[4rem]">
-            <div class="text-blue-200">Alfian Dwi Nugraha.</div>
-            <div class="text-orange-200">A website engraver for artists.</div>
+          <div class="display-4 fw-bolder mb-4">
+            <div class="text-custom-1">Alfian Dwi Nugraha.</div>
+            <div class="text-custom-2">A website engraver for artists.</div>
           </div>
-          <div class="text-sm font-light mb-4 max-w-md leading-[1.3rem]">
+          <div class="text-sm fw-light mb-4 w-50">
             I am a web developer, who can handle web design, server side web, web games, and some desktop
             programming. now focusing on the web front end.
           </div>
-          <div class="mb-4 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 font-mono justify-start items-start">
-            <NuxtLink to="about" class="w-auto px-4 py-2 rounded bg-blue-400 inline-block sm:flex space-x-1">
+          <div class="mb-4 d-flex flex-col md:flex-row space-y-4 md:space-x-4 md:space-y-0 font-mono">
+            <NuxtLink to="about" class="btn btn-primary d-flex gap-1">
               <i class="bi-play-fill"></i>
               <span>Lets Close About Me</span>
             </NuxtLink>
-            <a href="https://github.com/viandwi24" target="_blank" class="w-auto px-4 py-2 rounded bg-slate-500 inline-block sm:flex space-x-1">
+            <a href="https://github.com/viandwi24" target="_blank" class="btn btn-dark d-flex gap-2">
               <i class="bi-github mr-2"></i>
               <span>Github</span>
             </a>
@@ -77,5 +77,5 @@ onBeforeUnmount(() => {
         </div>
       </div>
     </div>
-  </div>
+  </section>
 </template>
