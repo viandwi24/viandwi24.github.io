@@ -62,7 +62,7 @@ onBeforeUnmount(() => {
           </p>
           <ul>
             <li>🔭 I’m currently working on Freelance as <span class="text-primary">Web Dev Programmer</span></li>
-            <li>🌱 I’m currently learning Golang and Python</li>
+            <li>🌱 I’m currently learning Golang, Python and Web3 Solana</li>
             <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
           </ul>
         </div>

@@ -10,28 +10,28 @@
           <HeadlessTabGroup :vertical="true">
             <HeadlessTabList class="w-full lg:w-2/8 flex flex-col justify-start items-start">
               <HeadlessTab #="{ selected }">
-                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
-                  :class="{ 'border-primary-500': selected }">EDUCATION</button>
+                <button class="border-l-4 transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected, 'border-slate-600': !selected }">EDUCATION</button>
               </HeadlessTab>
               <HeadlessTab #="{ selected }">
-                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
-                  :class="{ 'border-primary-500': selected }">LSP</button>
+                <button class="border-l-4 outline-none ring-transparent transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected, 'border-slate-600': !selected }">LSP</button>
               </HeadlessTab>
               <HeadlessTab #="{ selected }">
-                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
-                  :class="{ 'border-primary-500': selected }">FLAGZ</button>
+                <button class="border-l-4 outline-none ring-transparent transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected, 'border-slate-600': !selected }">FLAGZ</button>
               </HeadlessTab>
               <HeadlessTab #="{ selected }">
-                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
-                  :class="{ 'border-primary-500': selected }">FASTSYNC</button>
+                <button class="border-l-4 outline-none ring-transparent transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected, 'border-slate-600': !selected }">GENTLEDESIGN</button>
               </HeadlessTab>
               <HeadlessTab #="{ selected }">
-                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
-                  :class="{ 'border-primary-500': selected }">GENTLEDESIGN</button>
+                <button class="border-l-4 outline-none ring-transparent transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected, 'border-slate-600': !selected }">TELEAL</button>
               </HeadlessTab>
               <HeadlessTab #="{ selected }">
-                <button class="border-l-4 border-slate-600 transition-all duration-300 pl-4 py-2"
-                  :class="{ 'border-primary-500': selected }">TELEAL</button>
+                <button class="border-l-4 outline-none ring-transparent transition-all duration-300 pl-4 py-2"
+                  :class="{ 'border-primary-500': selected, 'border-slate-600': !selected }">NOKIAMON</button>
               </HeadlessTab>
             </HeadlessTabList>
             <HeadlessTabPanels class="flex-1">
@@ -103,22 +103,7 @@
                 </div>
                 <div>
                   <ul class="list-custom">
-                    <li>I am designing a web based game using Phaser.js</li>
-                  </ul>
-                </div>
-              </HeadlessTabPanel>
-              <HeadlessTabPanel>
-                <div class="tab-custom-pane-header mb-4">
-                  <div class="text-blue-200">
-                    FRONTEND Developer <span class="text-primary-500">@FASTSYNC</span>
-                  </div>
-                  <div class="text-sm text-slate-400 font-mono">
-                    Nov 2022 - Now
-                  </div>
-                </div>
-                <div>
-                  <ul class="list-custom">
-                    <li>designing pages for instant restaurant payment web.</li>
+                    <li>I am designing a multiplayer rpg top down pixel web based game using Phaser.js and Voice call</li>
                   </ul>
                 </div>
               </HeadlessTabPanel>
@@ -151,6 +136,26 @@
                   <ul class="list-custom">
                     <li>create a business page.</li>
                     <li>create a telegram bot.</li>
+                    <li>create a tradingview scrapper</li>
+                  </ul>
+                </div>
+              </HeadlessTabPanel>
+              <HeadlessTabPanel>
+                <div class="tab-custom-pane-header mb-4">
+                  <div class="text-blue-200">
+                    Web3 Developer <span class="text-primary-500">@NOKIAMON</span>
+                  </div>
+                  <div class="text-sm text-slate-400 font-mono">
+                    Jan 2022 - Now
+                  </div>
+                </div>
+                <div>
+                  <ul class="list-custom">
+                    <li>maintance server</li>
+                    <li>create mobile apps with react native and connect to solana wallet</li>
+                    <li>create xnft apps in backpack wallet</li>
+                    <li>create smart contract for Badges Features</li>
+                    <li>create smart contract for Burn 2 Mint Events</li>
                   </ul>
                 </div>
               </HeadlessTabPanel>

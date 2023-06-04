@@ -10,7 +10,7 @@
         Whether you have any questions or just want to say hello, I'll try my best to get back to you!
       </div>
       <div class="flex space-x-4 justify-center">
-        <a target="_blank" href="mailto:viandwicyber@gmail.com" class="duration-300 transition-all rounded px-4 py-2 border border-primary-500 text-primary-500 flex space-x-2 hover:bg-primary-500 hover:text-gray-100">
+        <a target="_blank" href="mailto:viandwi24@pm.me" class="duration-300 transition-all rounded px-4 py-2 border border-primary-500 text-primary-500 flex space-x-2 hover:bg-primary-500 hover:text-gray-100">
           <i class="bi-envelope"></i>
           <span>Email</span>
         </a>

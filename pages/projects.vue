@@ -76,89 +76,97 @@ onMounted(() => {
         </div>
         <template v-if="listingMode === 'list'">
           <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
-            <!-- project::left -->
-            <div v-if="i % 2 === 0" class="project-item relative flex items-center mb-4 pb-4 w-full">
-              <div class="w-1/2 absolute right-0 flex w-full" style="top: 50%; transform: translateY(-50%);">
-                <img :src="item.image" alt="Preview" class="">
-              </div>
-              <div class="flex-1 project-item-description left p-4 mb-4 pb-4">
-                <div class="text-primary font-mono fw-lighter mb-1">{{ item.type }}</div>
-                <div class="fw-bolder fs-4 mb-2">{{ item.name }}</div>
-                <div class="bg-slate-700 shadow-lg rounded mb-2 md:w-96">
-                  <div class="p-4">
-                    {{ item.description }}
+            <div v-if="i % 2 === 0" class="group pb-10">
+              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-green-700">
+                <div class="w-1/2 w-full h-full rounded-lg relative overflow-hidden flex">
+                  <img
+                    :src="item.image"
+                    :style="{
+                      height: '100%',
+                      width: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }"
+                  />
+                </div>
+                <div class="flex-1 flex flex-col justify-end items-end pl-8">
+                  <div class="text-primary font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
+                  <div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">{{ item.description }}</div>
+                  <div class="d-flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
+                    <span v-for="tag in item.tags" :key="Math.random()">{{ tag }}</span>
+                  </div>
+                  <div class="d-flex space-x-4">
+                    <a class="icon-link" target="_blank" :href="item.links.github">
+                      <i class="bi-github" role="img" aria-label="GitHub"></i>
+                    </a>
+                    <a class="icon-link" target="_blank" :href="item.links.demo">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
                   </div>
                 </div>
-                <div class="d-flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
-                  <span v-for="tag in item.tags" :key="Math.random()">{{ tag }}</span>
-                </div>
-                <div class="d-flex space-x-4">
-                  <a class="icon-link" target="_blank" :href="item.links.github">
-                    <i class="bi-github" role="img" aria-label="GitHub"></i>
-                  </a>
-                  <a class="icon-link" target="_blank" :href="item.links.demo">
-                    <i class="bi bi-box-arrow-up-right"></i>
-                  </a>
-                </div>
+                <!-- <img :src="item.image" alt="Preview" class=""> -->
               </div>
             </div>
-            <!-- project::right -->
-            <div v-else class="project-item relative flex items-center mb-4 pb-4">
-              <div class="w-1/2">
-                <img :src="item.image" alt="Preview" class="">
-              </div>
-              <div class="flex-1 project-item-description right mb-4 pb-4 p-4 w-100">
-                <div class="text-primary font-mono fw-lighter mb-1">{{ item.type }}</div>
-                <div class="fw-bolder fs-4 mb-2">{{ item.name }}</div>
-                <div class="shadow-lg rounded bg-slate-700 mb-2 md:w-96">
-                  <div class="p-4">
-                    {{ item.description }}
+            <div v-if="i % 2 !== 0" class="group pb-10">
+              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-green-700">
+                <div class="flex-1 flex flex-col justify-start items-start pr-8">
+                  <div class="text-primary font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
+                  <div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">{{ item.description }}</div>
+                  <div class="d-flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
+                    <span v-for="tag in item.tags" :key="Math.random()">{{ tag }}</span>
+                  </div>
+                  <div class="d-flex space-x-4">
+                    <a class="icon-link" target="_blank" :href="item.links.github">
+                      <i class="bi-github" role="img" aria-label="GitHub"></i>
+                    </a>
+                    <a class="icon-link" target="_blank" :href="item.links.demo">
+                      <i class="bi bi-box-arrow-up-right"></i>
+                    </a>
                   </div>
                 </div>
-                <div class="d-flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono">
-                  <span v-for="tag in item.tags" :key="Math.random()">{{ tag }}</span>
-                </div>
-                <div class="d-flex space-x-4">
-                  <a class="icon-link" target="_blank" :href="item.links.github">
-                    <i class="bi-github" role="img" aria-label="GitHub"></i>
-                  </a>
-                  <a class="icon-link" target="_blank" :href="item.links.demo">
-                    <i class="bi bi-box-arrow-up-right"></i>
-                  </a>
+                <div class="w-1/2 w-full h-full rounded-lg relative overflow-hidden flex">
+                  <img
+                    :src="item.image"
+                    :style="{
+                      height: '100%',
+                      width: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }"
+                  />
                 </div>
               </div>
             </div>
           </template>
         </template>
         <template v-if="listingMode === 'grid'">
-            <div class="row">
-              <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
-                <div class="col-3 px-2 py-2">
-                  <div
+          <div class="grid grid-cols-2 lg:grid-cols-4">
+            <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
+              <a class="px-2 py-2 border border-transparent hover:border-green-600 rounded-lg transition-all duration-300" :href="item.links.demo" target="_blank">
+                <div
+                  :style="{
+                    position: 'relative',
+                    height: '170px',
+                    overflow: 'hidden',
+                    borderRadius: '10px',
+                  }"
+                >
+                  <img
+                    :src="item.image"
+                    alt="Preview"
                     :style="{
-                      position: 'relative',
-                      height: '170px',
-                      overflow: 'hidden',
-                      borderRadius: '10px',
+                      position: 'absolute',
+                      display: 'block',
+                      width: '100%',
+                      transform: 'scale(1.25) translate(-50%, -50%)',
+                      left: '50%',
+                      top: '50%'
                     }"
                   >
-                    <img
-                      :src="item.image"
-                      alt="Preview"
-                      :style="{
-                        position: 'absolute',
-                        display: 'block',
-                        width: '100%',
-                        transform: 'scale(1.25) translate(-50%, -50%)',
-                        left: '50%',
-                        top: '50%'
-                      }"
-                    >
-                    <!-- <div class="card-title text-truncate">{{ item.name }}</div> -->
-                  </div>
                 </div>
-              </template>
-            </div>
+              </a>
+            </template>
+          </div>
         </template>
       </div>
     </div>

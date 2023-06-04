@@ -1,0 +1,1 @@
+@charset "UTF-8";ul.list-custom{list-style:none;padding-left:0}ul.list-custom li{margin-bottom:.5rem;padding-left:1.5rem;position:relative}ul.list-custom li:before{color:#3ba676;content:"⤀";left:0;position:absolute}
