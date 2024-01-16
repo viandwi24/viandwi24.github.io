@@ -3,7 +3,11 @@ import type { CustomAppConfig } from 'nuxt/schema'
 import type { Defu } from 'defu'
 
 
-declare const inlineConfig = {}
+declare const inlineConfig = {
+  "nuxt": {
+    "buildId": "4877f9dc-e73b-4af6-a482-d3350cc70f9c"
+  }
+}
 type ResolvedAppConfig = Defu<typeof inlineConfig, []>
 type IsAny<T> = 0 extends 1 & T ? true : false
 

@@ -1,4 +1,10 @@
 <script lang="ts" setup>
+const $loading = useLoading()
+
+useSeoMeta({
+  title: 'Projects',
+})
+
 interface Project {
   name: string
   type: string
@@ -12,12 +18,12 @@ interface Project {
 }
 
 const projects = ref<Project[]>([])
-const isLoading = ref(true)
 const listingMode = ref<'list' | 'grid'>('list')
 
 // fetch
 const fetch = async () => {
-  isLoading.value = true
+  $loading.setLoading(true)
+  await new Promise((resolve) => setTimeout(resolve, 1000))
   try {
     const url = `${window.location.href}.json`
     const data = await $fetch(url)
@@ -28,7 +34,7 @@ const fetch = async () => {
   } catch (error) {
     console.log('cannot fetch projects')
   }
-  isLoading.value = false
+  $loading.setLoading(false)
 }
 
 onMounted(() => {
@@ -44,41 +50,42 @@ onMounted(() => {
         <span>My Projects</span>
       </div>
       <div class="flex flex-col space-y-4">
-        <div class="fs-6 text-center text-muted fw-bold">
+        <div class="text-center text-xs font-semibold text-gray-500">
           Note: not all my projects are listed here. I have a lot of private projects and can't share them.
         </div>
         <div>
-          <div class="flex space-x-2">
+          <div class="flex">
             <button
-              class="text-lg rounded flex justify-center items-center"
+              class="text-lg rounded flex justify-center items-center border px-1.5 py-1"
               :class="{
-                'btn-primary': listingMode === 'list',
-                'btn-secondary': listingMode === 'grid',
+                'bg-gray-500/75': listingMode === 'list',
+                '': listingMode === 'grid',
               }"
               @click="() => listingMode = 'list'"
             >
-              <i class="bi bi-card-list"></i>
+              <Icon name="material-symbols:view-list-sharp" />
             </button>
             <button
-              class="text-lg rounded flex justify-center items-center"
+              class="text-lg rounded flex justify-center items-center border px-1.5 py-1"
               :class="{
-                'btn-primary': listingMode === 'grid',
-                'btn-secondary': listingMode === 'list',
+                'bg-gray-500/75': listingMode === 'grid',
+                '': listingMode === 'list',
               }"
               @click="() => listingMode = 'grid'"
             >
-              <i class="bi bi-grid-3x2-gap-fill"></i>
+              <Icon name="bi:grid-3x3-gap-fill" class="text-sm" />
             </button>
           </div>
         </div>
-        <div v-if="isLoading" class="text-center">
+        <div v-if="$loading.$state.isLoading" class="text-center">
           Loading, Please wait...
         </div>
+
         <template v-if="listingMode === 'list'">
-          <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
+          <template  v-if="!$loading.$state.isLoading" v-for="(item, i) in projects" :key="Math.random()">
             <div v-if="i % 2 === 0" class="group pb-10">
-              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-green-700">
-                <div class="w-1/2 w-full h-full rounded-lg relative overflow-hidden flex">
+              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
+                <div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">
                   <img
                     :src="item.image"
                     :style="{
@@ -90,17 +97,18 @@ onMounted(() => {
                   />
                 </div>
                 <div class="flex-1 flex flex-col justify-end items-end pl-8">
-                  <div class="text-primary font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
+                  <div class="text-primary text-xs font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
+                  <div class="text-primary-500 text-lg mb-4 pr-2">{{ item.name }}</div>
                   <div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">{{ item.description }}</div>
-                  <div class="d-flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
+                  <div class="flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
                     <span v-for="tag in item.tags" :key="Math.random()">{{ tag }}</span>
                   </div>
-                  <div class="d-flex space-x-4">
-                    <a class="icon-link" target="_blank" :href="item.links.github">
-                      <i class="bi-github" role="img" aria-label="GitHub"></i>
+                  <div class="flex space-x-4">
+                    <a v-if="item.links?.github" class="icon-link" target="_blank" :href="item.links?.github">
+                      <Icon class="text-lg" name="mdi:github" role="img" aria-label="GitHub" />
                     </a>
-                    <a class="icon-link" target="_blank" :href="item.links.demo">
-                      <i class="bi bi-box-arrow-up-right"></i>
+                    <a v-if="item.links?.demo" class="icon-link" target="_blank" :href="item.links?.demo">
+                      <Icon class="text-lg" name="material-symbols-light:open-in-new" />
                     </a>
                   </div>
                 </div>
@@ -108,23 +116,24 @@ onMounted(() => {
               </div>
             </div>
             <div v-if="i % 2 !== 0" class="group pb-10">
-              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-green-700">
+              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
                 <div class="flex-1 flex flex-col justify-start items-start pr-8">
-                  <div class="text-primary font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
+                  <div class="text-primary text-xs font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
+                  <div class="text-primary-500 text-lg mb-4 pr-2">{{ item.name }}</div>
                   <div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">{{ item.description }}</div>
-                  <div class="d-flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
+                  <div class="flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30">
                     <span v-for="tag in item.tags" :key="Math.random()">{{ tag }}</span>
                   </div>
-                  <div class="d-flex space-x-4">
-                    <a class="icon-link" target="_blank" :href="item.links.github">
-                      <i class="bi-github" role="img" aria-label="GitHub"></i>
+                  <div class="flex space-x-4">
+                    <a v-if="item.links?.github" class="icon-link" target="_blank" :href="item.links?.github">
+                      <Icon class="text-lg" name="mdi:github" role="img" aria-label="GitHub" />
                     </a>
-                    <a class="icon-link" target="_blank" :href="item.links.demo">
-                      <i class="bi bi-box-arrow-up-right"></i>
+                    <a v-if="item.links?.demo" class="icon-link" target="_blank" :href="item.links?.demo">
+                      <Icon class="text-lg" name="material-symbols-light:open-in-new" />
                     </a>
                   </div>
                 </div>
-                <div class="w-1/2 w-full h-full rounded-lg relative overflow-hidden flex">
+                <div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">
                   <img
                     :src="item.image"
                     :style="{
@@ -141,8 +150,8 @@ onMounted(() => {
         </template>
         <template v-if="listingMode === 'grid'">
           <div class="grid grid-cols-2 lg:grid-cols-4">
-            <template  v-if="!isLoading" v-for="(item, i) in projects" :key="Math.random()">
-              <a class="px-2 py-2 border border-transparent hover:border-green-600 rounded-lg transition-all duration-300" :href="item.links.demo" target="_blank">
+            <template  v-if="!$loading.$state.isLoading" v-for="(item, i) in projects" :key="Math.random()">
+              <a class="px-2 py-2 border border-transparent hover:border-primary-600 rounded-lg transition-all duration-300" :href="item.links?.demo || undefined" target="_blank">
                 <div
                   :style="{
                     position: 'relative',
@@ -158,7 +167,10 @@ onMounted(() => {
                       position: 'absolute',
                       display: 'block',
                       width: '100%',
+                      height: '100%',
                       transform: 'scale(1.25) translate(-50%, -50%)',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
                       left: '50%',
                       top: '50%'
                     }"

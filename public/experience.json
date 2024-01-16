@@ -1,0 +1,179 @@
+[
+  {
+    "title": "EDUCATION",
+    "description": "a College Student at",
+    "company": "@Surabaya State University",
+    "date": "Sep 2020 - Now",
+    "tasks": [
+      {
+        "header": "Elementary School",
+        "text": "SDN Kedung Maling 2",
+        "footer": "Address: dsn. Kedung Maling, Kec. Sooko, Kab. Mojokerto, Jawa Timur, Indonesia."
+      },
+      {
+        "header": "Junior Hight School",
+        "text": "SMPN 1 SOOKO",
+        "footer": "Address: Kec. Sooko, Kab. Mojokerto, Jawa Timur, Indonesia."
+      },
+      {
+        "header": "High School",
+        "text": "SMKN 1 KOTA MOJOKERTO",
+        "footer": "Field: Computer & Network Engineering\nAddress: Kec. Magersari, Mojokerto, Jawa Timur, Indonesia."
+      },
+      {
+        "header": "Bachelor's Degree (On Progress)",
+        "text": "Surabaya State University",
+        "footer": "Field: Informatics Engineering\nAddress: Jl. Ketintang, Ketintang, Kec. Gayungan, Kota Surabaya, Jawa Timur 60231."
+      }
+    ]
+  },
+  {
+    "title": "LSP SKANESA",
+    "description": "Programmer & Web Admin at",
+    "company": "@LSP SMKN 1 MOJOKERTO",
+    "date": "Sep 2019 - Now",
+    "tasks": [
+      {
+        "text": "I design and create web pages for lsp web interface."
+      },
+      {
+        "text": "I made web services api backend."
+      },
+      {
+        "text": "I maintain the server system."
+      }
+    ]
+  },
+  {
+    "title": "FLAGZ",
+    "description": "Web Game Developer at",
+    "company": "@FLAGZ",
+    "date": "Sep 2019 - Now",
+    "tasks": [
+      {
+        "text": "I am designing a multiplayer rpg top down pixel web based game using Phaser.js and Voice call"
+      }
+    ]
+  },
+  {
+    "title": "NOKIAMON",
+    "description": "Web3 Developer at",
+    "company": "@NOKIAMON",
+    "date": "Jan 2022 - Now",
+    "tasks": [
+      {
+        "text": "Maintance server"
+      },
+      {
+        "text": "Create mobile apps with react native and connect to solana wallet"
+      },
+      {
+        "text": "Create xnft apps in backpack wallet"
+      },
+      {
+        "text": "Create smart contract for Badges Features"
+      },
+      {
+        "text": "Create smart contract for Burn 2 Mint Events"
+      },
+      {
+        "text": "Create smart contract for Nokipack"
+      }
+    ]
+  },
+  {
+    "title": "VALUTAC",
+    "description": "Blockchain Developer at",
+    "company": "@Valutac Inovasi Kreasi",
+    "date": "Feb 2023 - Juni 2023",
+    "tasks": [
+      {
+        "text": "Learn blockchain platform on Solana"
+      },
+      {
+        "text": "Create basic smart contract with Rust on Solana"
+      },
+      {
+        "text": "Connect Smart Contract with Web3 on Reactjs and React Native"
+      }
+    ]
+  },
+  {
+    "title": "BANGKIT COHORT",
+    "description": "Bangkit Academy 2023 - Cloud Computing Learning Path at",
+    "company": "@Google @GoTo @Traveloka",
+    "date": "Aug 2023 - Jan 2024",
+    "tasks": [
+      {
+        "text": "Learn computer network"
+      },
+      {
+        "text": "Learn Google Cloud Platform"
+      },
+      {
+        "text": "Top 1,000 performing students in English courses & tests"
+      },
+      {
+        "text": "5 students with top interaction on Weekly Consultation"
+      },
+      {
+        "text": "Top 50 capstone project @linkdlaw"
+      },
+      {
+        "text": "Active team member of the First 150 Teams to submit team @linkdlaw"
+      },
+      {
+        "text": "Active team member of the First 150 Teams to submit Capstone Project Plan @linkdlaw"
+      }
+    ]
+  },
+  {
+    "title": "BRAINCORE.ID",
+    "description": "Blockchain Division at",
+    "company": "@BRAINCORE.ID",
+    "date": "Dec 2023 - Now",
+    "tasks": [
+      {
+        "text": "Consultant & developer in blockchain division"
+      },
+      {
+        "text": "Lead blockchain division"
+      }
+    ]
+  },
+  {
+    "title": "FREELANCER",
+    "description": "work as remote programmer at",
+    "company": "@VIANDWI24",
+    "date": "Juni 2018 - Now",
+    "tasks": [
+      {
+        "text": "Native E-Commerce"
+      },
+      {
+        "text": "Wordpress Developer (E-Commerce, Blog, etc)"
+      },
+      {
+        "text": "Food Supply Chain"
+      },
+      {
+        "text": "Telegram Bot"
+      },
+      {
+        "text": "Twitter Bot"
+      },
+      {
+        "text": "Automation Apps"
+      },
+      {
+        "text": "Scrapping Services"
+      },
+      {
+        "text": "Smart School E-Point"
+      },
+      {
+        "text": "Smart School E-Presence"
+      }
+    ]
+  }
+]

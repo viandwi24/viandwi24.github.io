@@ -1,43 +1,6 @@
-<script lang="ts" setup>
-// const navbarUpdate = async () => {
-//   const navbarEl = document.querySelector('.navbar')
-//   const checkCollapsedNavbar = document.querySelector('.navbar .navbar-collapse')
-//   if (navbarEl) {
-//     if (navbarEl.classList.contains('show')) {
-//       navbarEl.classList.add('collapsed')
-//     } else {
-//       navbarEl.classList.remove('collapsed')
-//     }
-//   }
-//   await new Promise((resolve) => setTimeout(resolve, 1))
-//   setTimeout(navbarUpdate, 1)
-// }
-// const navbarOnScroll = () => {
-//   const scrollTop = window.scrollY
-//   const navbarEl = document.querySelector('.navbar')
-//   if (navbarEl) {
-//     if (scrollTop > 0) {
-//       navbarEl.classList.add('scrolled')
-//     } else {
-//       navbarEl.classList.remove('scrolled')
-//     }
-//   }
-// }
-
-// let time: NodeJS.Timeout | undefined
-// onMounted(() => {
-//   time = setTimeout(navbarUpdate, 1)
-//   window.addEventListener('scroll', navbarOnScroll)
-// })
-// onBeforeUnmount(() => {
-//   clearTimeout(time)
-//   window.removeEventListener('scroll', navbarOnScroll)
-// })
-</script>
-
 <template>
-  <div class="w-full min-h-screen flex flex-col text-gray-100">
-    <div class="fixed top-0 left-0 w-full py-4 px-6">
+  <div class="w-full min-h-screen flex flex-col text-gray-100 bg-gray-950">
+    <div class="fixed top-0 left-0 w-full py-4 px-6 z-10 bg-gray-950">
       <div class="relative flex justify-between">
         <div class="flex">
           <NuxtLink class="" to="/">

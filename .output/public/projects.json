@@ -72,6 +72,26 @@
     }
   },
   {
+    "name": "Link D Law",
+    "type": "Community & Law",
+    "description": "A apps to provide law information and AI-based to search a law depends some problem",
+    "tags": ["Bun", "Monorepo", "Microservices"],
+    "image": "/images/projects/18.png",
+    "year": 2023,
+    "links": {
+      "github": "https://github.com/Nakama-Capstone/link-d-law",
+      "demo": "https://github.com/Nakama-Capstone/link-d-law"
+    }
+  },
+  {
+    "name": "Bot Feeds",
+    "type": "Automation",
+    "description": "A apps to automate feeds and send to bot",
+    "tags": ["Bun", "Bot", "Automation"],
+    "image": "/images/projects/19.png",
+    "year": 2024
+  },
+  {
     "name": "BSOUL",
     "type": "Game",
     "description": "A simple rpg tile down pixel art.",
@@ -216,7 +236,7 @@
     }
   },
   {
-    "name": "decognition",
+    "name": "Decognition",
     "type": "Error Handler",
     "description": "a Pretty Exception Handler for TypeScript Deno. Inspirated from Laravel & Flare Ignition.",
     "tags": ["Deno", "Typescript"],
@@ -225,6 +245,30 @@
     "links": {
       "github": "https://github.com/viandwi24/decognition",
       "demo": "https://github.com/viandwi24/decognition"
+    }
+  },
+  {
+    "name": "Denova",
+    "type": "Framework",
+    "description": "A Typescript Framework For Deno - Framework Looks Like Laravel",
+    "tags": ["Deno", "Typescript"],
+    "image": "/images/projects/21.png",
+    "year": 2020,
+    "links": {
+      "github": "https://github.com/viandwi24/denova",
+      "demo": "https://github.com/viandwi24/denova"
+    }
+  },
+  {
+    "name": "Vifa Framework",
+    "type": "Framework",
+    "description": "Framework PHP Sederhana Yang Meringankan Perkerjaan Mu.",
+    "tags": ["PHP"],
+    "image": "/images/projects/20.png",
+    "year": 2018,
+    "links": {
+      "github": "https://github.com/viandwi24/v-framework",
+      "demo": "https://github.com/viandwi24/v-framework"
     }
   }
 ]

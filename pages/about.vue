@@ -1,6 +1,11 @@
 <script lang="ts" setup>
 import { Application as Spline } from '@splinetool/runtime'
-import { useLoading } from '~/stores/loading'
+
+useSeoMeta({
+  title: 'About Me',
+})
+
+const $loading = useLoading()
 
 let spline: Spline | undefined
 
@@ -24,13 +29,13 @@ const onResize = () => {
 }
 
 onMounted(async () => {
-  useLoading().isLoading.value = true
+  $loading.setLoading(true)
   const canvas = document.getElementById('page-section-about-canvas') as HTMLCanvasElement
   if (canvas) {
     const app = new Spline(canvas)
     await app.load('/scene_2.splinecode')
     await new Promise((resolve) => setTimeout(resolve, 1000))
-    useLoading().isLoading.value = false
+    $loading.setLoading(false)
     window.addEventListener('resize', onResize)
     spline = app
   }
@@ -66,9 +71,9 @@ onBeforeUnmount(() => {
             <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
           </ul>
         </div>
-        <div class="w-2/8 px-4 flex justify-end">
-          <div class="position-relative mypic-wrapper">
-            <img src="/mypic.jpg" alt="My Avatar" class="d-block img-fluid rounded mypic">
+        <div class="w-1/4 px-4 flex justify-end">
+          <div class="relative mypic-wrapper">
+            <img src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic">
           </div>
         </div>
         <!-- <img src="https://avatars.githubusercontent.com/u/41994283?s=400&u=0e8f0bce9bc6b0edd4c43c329c8f04945d55baaa&v=4" alt="My Avatar" height="256px"> -->
@@ -88,7 +93,7 @@ onBeforeUnmount(() => {
             </p>
           </div>
         </div>
-        <div class="w-2/8 col-md-4 col-md page-section-about-canvas-wrapper h-50 flex justify-end">
+        <div class="w-1/4 col-md-4 col-md page-section-about-canvas-wrapper h-50 flex justify-end">
           <canvas id="page-section-about-canvas"></canvas>
         </div>
       </div>
