@@ -4,9 +4,14 @@ export default defineNuxtConfig({
   ssr: false,
   css: ["~/assets/sass/main.scss"],
   modules: [
+    "@nuxtjs/sitemap",
     "@nuxtjs/tailwindcss",
     "nuxt-headlessui",
     "nuxt-icon",
-    "@pinia/nuxt"
-  ]
+    "@pinia/nuxt",
+  ],
+
+  site: {
+    url: "https://viandwi24.com",
+  },
 })

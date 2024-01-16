@@ -91,6 +91,8 @@
   "include": [
     "./nuxt.d.ts",
     "../**/*",
+    "../node_modules/nuxt-site-config/dist/runtime",
+    "../node_modules/@nuxtjs/sitemap/runtime",
     "../node_modules/@nuxtjs/tailwindcss/runtime",
     "../node_modules/nuxt-headlessui/runtime",
     "../node_modules/nuxt-icon/runtime",
@@ -102,6 +104,9 @@
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/nuxt-site-config/dist",
+    "../node_modules/nuxt-site-config/dist/runtime/server",
+    "../node_modules/@nuxtjs/sitemap/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/nuxt-headlessui/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",

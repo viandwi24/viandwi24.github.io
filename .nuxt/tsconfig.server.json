@@ -59,17 +59,26 @@
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
+      ],
+      "#internal/nuxt-site-config": [
+        "../node_modules/nuxt-site-config/dist/runtime/nitro/composables"
+      ],
+      "#internal/nuxt-site-config/*": [
+        "../node_modules/nuxt-site-config/dist/runtime/nitro/composables/*"
       ]
     }
   },
   "include": [
     "./types/nitro-nuxt.d.ts",
+    "../node_modules/nuxt-site-config/dist/module.mjs/runtime/server",
+    "../node_modules/@nuxtjs/sitemap/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
     "../node_modules/nuxt-headlessui/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@pinia/nuxt/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
+    "./module/nuxt-site-config.d.ts",
     "./types/nitro.d.ts",
     "../**/*",
     "../server/**/*"
@@ -77,6 +86,7 @@
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
+    "../node_modules/nuxt-site-config/dist",
     "../dist"
   ]
 }

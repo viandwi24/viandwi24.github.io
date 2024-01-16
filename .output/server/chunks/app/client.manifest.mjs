@@ -1,15 +1,15 @@
 const client_manifest = {
-  "_nuxt-link.vU5sfNGy.js": {
+  "_nuxt-link.Tn7ks6_n.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nuxt-link.vU5sfNGy.js",
+    "file": "nuxt-link.Tn7ks6_n.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_runtime.AHWtJNfH.js": {
+  "_runtime.ySnujrDI.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -22,7 +22,7 @@ const client_manifest = {
       "node_modules/@splinetool/runtime/build/opentype.js",
       "node_modules/@splinetool/runtime/build/ui.js"
     ],
-    "file": "runtime.AHWtJNfH.js",
+    "file": "runtime.ySnujrDI.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -32,9 +32,9 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default.6Kf7wDMb.js",
+    "file": "default.Ko073oIj.js",
     "imports": [
-      "_nuxt-link.vU5sfNGy.js",
+      "_nuxt-link.Tn7ks6_n.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -48,9 +48,9 @@ const client_manifest = {
     "css": [
       "error-404.TsBWxgAa.css"
     ],
-    "file": "error-404.MOq8QLCH.js",
+    "file": "error-404.QDLOb0KW.js",
     "imports": [
-      "_nuxt-link.vU5sfNGy.js",
+      "_nuxt-link.Tn7ks6_n.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -70,7 +70,7 @@ const client_manifest = {
     "css": [
       "error-500.s2VBNbvW.css"
     ],
-    "file": "error-500.YgfdqJC-.js",
+    "file": "error-500.tEBN7Niu.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -145,7 +145,7 @@ const client_manifest = {
     "css": [
       "IconCSS.GdgQB7f8.css"
     ],
-    "file": "IconCSS.Y1LPhUcA.js",
+    "file": "IconCSS.joNq4tTn.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -171,7 +171,7 @@ const client_manifest = {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.S1dEW3rh.js",
+    "file": "entry.gmkuOfmr.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js"
   },
@@ -186,10 +186,10 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "about.Zew8p13l.js",
+    "file": "about.fhT-7iF3.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_runtime.AHWtJNfH.js"
+      "_runtime.ySnujrDI.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/about.vue"
@@ -199,7 +199,7 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "contact.jGQi3XIt.js",
+    "file": "contact.qmxcD5_a.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -214,7 +214,7 @@ const client_manifest = {
     "css": [
       "experience.XVo4KDX_.css"
     ],
-    "file": "experience.AoFjK35E.js",
+    "file": "experience.jE9v6_GD.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -232,11 +232,11 @@ const client_manifest = {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.M7aaisYh.js",
+    "file": "index.eS1H5Via.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_nuxt-link.vU5sfNGy.js",
-      "_runtime.AHWtJNfH.js"
+      "_nuxt-link.Tn7ks6_n.js",
+      "_runtime.ySnujrDI.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
@@ -249,7 +249,7 @@ const client_manifest = {
     "css": [
       "projects.oxePLknd.css"
     ],
-    "file": "projects.8Jj6Tsk-.js",
+    "file": "projects.2EEwsa0A.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
