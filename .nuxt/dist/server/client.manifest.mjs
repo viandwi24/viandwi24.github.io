@@ -1,15 +1,15 @@
 export default {
-  "_nuxt-link.Fr3By92a.js": {
+  "_nuxt-link.cYyOnavR.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "nuxt-link.Fr3By92a.js",
+    "file": "nuxt-link.cYyOnavR.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
   },
-  "_runtime.oKE74XL9.js": {
+  "_runtime.iHJucCK5.js": {
     "resourceType": "script",
     "module": true,
     "prefetch": true,
@@ -22,7 +22,7 @@ export default {
       "node_modules/@splinetool/runtime/build/opentype.js",
       "node_modules/@splinetool/runtime/build/ui.js"
     ],
-    "file": "runtime.oKE74XL9.js",
+    "file": "runtime.iHJucCK5.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ]
@@ -32,9 +32,9 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "default.MjMeo5hZ.js",
+    "file": "default.fjDxZtyg.js",
     "imports": [
-      "_nuxt-link.Fr3By92a.js",
+      "_nuxt-link.cYyOnavR.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -46,9 +46,9 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-404.FzSv1ZYu.js",
+    "file": "error-404.zyAU99d2.js",
     "imports": [
-      "_nuxt-link.Fr3By92a.js",
+      "_nuxt-link.cYyOnavR.js",
       "node_modules/nuxt/dist/app/entry.js"
     ],
     "isDynamicEntry": true,
@@ -66,7 +66,7 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "error-500.faLOtOQU.js",
+    "file": "error-500.y2FN1Sd-.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -139,7 +139,7 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "IconCSS.FCCTD6PL.js",
+    "file": "IconCSS.Azt3hX2A.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -165,7 +165,7 @@ export default {
       "node_modules/@nuxt/ui-templates/dist/templates/error-404.vue",
       "node_modules/@nuxt/ui-templates/dist/templates/error-500.vue"
     ],
-    "file": "entry.bihfH93l.js",
+    "file": "entry.3_k9Zclf.js",
     "isEntry": true,
     "src": "node_modules/nuxt/dist/app/entry.js",
     "_globalCSS": true
@@ -181,10 +181,10 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "about.V_c1OKlz.js",
+    "file": "about.AcdK7W6F.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_runtime.oKE74XL9.js"
+      "_runtime.iHJucCK5.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/about.vue"
@@ -194,7 +194,7 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "contact.C9FfJeNc.js",
+    "file": "contact.2zpK4T_X.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -207,7 +207,7 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "experience.4OYxaqMj.js",
+    "file": "experience.2xIji5DI.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
@@ -225,11 +225,11 @@ export default {
     "module": true,
     "prefetch": true,
     "preload": true,
-    "file": "index.k3kQwJ9c.js",
+    "file": "index.B1n_75Br.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js",
-      "_nuxt-link.Fr3By92a.js",
-      "_runtime.oKE74XL9.js"
+      "_nuxt-link.cYyOnavR.js",
+      "_runtime.iHJucCK5.js"
     ],
     "isDynamicEntry": true,
     "src": "pages/index.vue"
@@ -240,7 +240,7 @@ export default {
     "prefetch": true,
     "preload": true,
     "css": [],
-    "file": "projects.291P740k.js",
+    "file": "projects.5bQigHrW.js",
     "imports": [
       "node_modules/nuxt/dist/app/entry.js"
     ],
