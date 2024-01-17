@@ -1,9 +1,15 @@
 <script lang="ts" setup>
 import { useLoading } from '~/stores/loading'
 
+const meta = {
+  description: 'Hi, I\'m Alfian Dwi Nugraha (viandwi24), a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾',
+}
+
 useSeoMeta({
   titleTemplate: '%s | Alfian Dwi Nugraha (viandwi24)',
-  description: 'Hi, I\'m Alfian Dwi Nugraha (viandwi24), a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾',
+  description: meta.description,
+  ogDescription: meta.description,
+  ogImage: '/avatar_viandwi24_2024_compressed.png',
 })
 
 const $loading = useLoading()
