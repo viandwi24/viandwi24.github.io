@@ -16,4 +16,10 @@ export default defineNuxtConfig({
   site: {
     url: "https://viandwi24.com",
   },
+
+  runtimeConfig: {
+    public: {
+      baseUrl: process.env.BASE_URL || "http://localhost:3000",
+    }
+  }
 })

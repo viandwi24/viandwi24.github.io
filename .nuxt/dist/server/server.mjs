@@ -717,7 +717,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "093c42f8-0274-4762-aa1b-e393bb02e758"
+    "buildId": "b1949d46-af10-4d23-ae48-a6872894bf4f"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -2704,14 +2704,21 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
   __name: "app",
   __ssrInlineRender: true,
   setup(__props) {
+    useRoute();
+    useRouter();
+    const { public: { baseUrl } } = /* @__PURE__ */ useRuntimeConfig();
     const meta = {
+      title: "Alfian Dwi Nugraha (viandwi24)",
       description: "Hi, I'm Alfian Dwi Nugraha (viandwi24), a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾"
     };
     useSeoMeta({
       titleTemplate: "%s | Alfian Dwi Nugraha (viandwi24)",
       description: meta.description,
+      ogTitle: meta.title,
       ogDescription: meta.description,
-      ogImage: "/avatar_viandwi24_2024_compressed.png"
+      ogImage: `${baseUrl}/avatar_viandwi24_2024_compressed.png`,
+      ogUrl: baseUrl,
+      ogType: "website"
     });
     const $loading = useLoading();
     return (_ctx, _push, _parent, _attrs) => {
