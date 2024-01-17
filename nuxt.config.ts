@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: true,
+  
   css: ["~/assets/sass/main.scss"],
+
   modules: [
     "@nuxtjs/sitemap",
     "@nuxtjs/tailwindcss",

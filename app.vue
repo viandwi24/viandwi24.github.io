@@ -3,7 +3,7 @@ import { useLoading } from '~/stores/loading'
 
 useSeoMeta({
   titleTemplate: '%s | Alfian Dwi Nugraha (viandwi24)',
-  description: 'Hi, I\'m Alfian Dwi Nugraha (viandwi24), a passionate self-taught FrontEnd web developer from Indonesia.',
+  description: 'Hi, I\'m Alfian Dwi Nugraha (viandwi24), a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾',
 })
 
 const $loading = useLoading()
