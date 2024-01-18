@@ -10,6 +10,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import 'ipx';
 import 'devalue';
 import '@unhead/ssr';
 import 'unhead';

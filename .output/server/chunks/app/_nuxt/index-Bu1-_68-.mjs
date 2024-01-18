@@ -1,5 +1,5 @@
-import { _ as __nuxt_component_0 } from './nuxt-link-y0IqEwxm.mjs';
-import { a as useSeoMeta, b as useLoading, d as __nuxt_component_0$1 } from '../server.mjs';
+import { _ as __nuxt_component_0 } from './nuxt-link-n17X0W_2.mjs';
+import { a as useSeoMeta, b as useLoading, j as __nuxt_component_0$1 } from '../server.mjs';
 import { defineComponent, mergeProps, unref, withCtx, createVNode, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderStyle, ssrInterpolate, ssrRenderComponent } from 'vue/server-renderer';
 import '../../nitro/node-server.mjs';
@@ -9,6 +9,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import 'ipx';
 import 'unhead';
 import '@unhead/shared';
 import 'vue-router';
@@ -64,4 +65,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=index-T7QW3tpb.mjs.map
+//# sourceMappingURL=index-Bu1-_68-.mjs.map

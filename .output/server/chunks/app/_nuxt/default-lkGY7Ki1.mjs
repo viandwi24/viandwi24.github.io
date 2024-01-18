@@ -1,4 +1,4 @@
-import { _ as __nuxt_component_0 } from './nuxt-link-y0IqEwxm.mjs';
+import { _ as __nuxt_component_0 } from './nuxt-link-n17X0W_2.mjs';
 import { mergeProps, withCtx, openBlock, createBlock, createVNode, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent, ssrRenderSlot } from 'vue/server-renderer';
 import { _ as _export_sfc } from '../server.mjs';
@@ -9,6 +9,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import 'ipx';
 import 'unhead';
 import '@unhead/shared';
 import 'vue-router';
@@ -124,14 +125,31 @@ function _sfc_ssrRender(_ctx, _push, _parent, _attrs) {
   _push(`</li><li>`);
   _push(ssrRenderComponent(_component_NuxtLink, {
     class: "text-white font-semibold",
+    to: "/blog"
+  }, {
+    default: withCtx((_, _push2, _parent2, _scopeId) => {
+      if (_push2) {
+        _push2(`<span class="text-primary-500"${_scopeId}>05.</span><span${_scopeId}>// Blog</span>`);
+      } else {
+        return [
+          createVNode("span", { class: "text-primary-500" }, "05."),
+          createVNode("span", null, "// Blog")
+        ];
+      }
+    }),
+    _: 1
+  }, _parent));
+  _push(`</li><li>`);
+  _push(ssrRenderComponent(_component_NuxtLink, {
+    class: "text-white font-semibold",
     to: "/contact"
   }, {
     default: withCtx((_, _push2, _parent2, _scopeId) => {
       if (_push2) {
-        _push2(`<span class="text-primary-500"${_scopeId}>05.</span><span${_scopeId}>// Contact</span>`);
+        _push2(`<span class="text-primary-500"${_scopeId}>06.</span><span${_scopeId}>// Contact</span>`);
       } else {
         return [
-          createVNode("span", { class: "text-primary-500" }, "05."),
+          createVNode("span", { class: "text-primary-500" }, "06."),
           createVNode("span", null, "// Contact")
         ];
       }
@@ -151,4 +169,4 @@ _sfc_main.setup = (props, ctx) => {
 const _default = /* @__PURE__ */ _export_sfc(_sfc_main, [["ssrRender", _sfc_ssrRender]]);
 
 export { _default as default };
-//# sourceMappingURL=default-6CRy17Xk.mjs.map
+//# sourceMappingURL=default-lkGY7Ki1.mjs.map

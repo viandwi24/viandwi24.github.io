@@ -1,4 +1,4 @@
-import { _ as _export_sfc, e as useAppConfig, r as resolveIconName } from '../server.mjs';
+import { _ as _export_sfc, k as useAppConfig, r as resolveIconName } from '../server.mjs';
 import { useSSRContext, defineComponent, computed, mergeProps } from 'vue';
 import { ssrRenderAttrs } from 'vue/server-renderer';
 import '../../nitro/node-server.mjs';
@@ -8,6 +8,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import 'ipx';
 import 'unhead';
 import '@unhead/shared';
 import 'vue-router';
@@ -82,4 +83,4 @@ _sfc_main.setup = (props, ctx) => {
 const IconCSS = /* @__PURE__ */ _export_sfc(_sfc_main, [["__scopeId", "data-v-41e8d397"]]);
 
 export { IconCSS as default };
-//# sourceMappingURL=IconCSS-6w5dj2Fj.mjs.map
+//# sourceMappingURL=IconCSS-HSg-OzDh.mjs.map

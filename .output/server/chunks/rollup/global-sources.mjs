@@ -20,6 +20,9 @@ const sources = [
                 "loc": "/about"
             },
             {
+                "loc": "/blog"
+            },
+            {
                 "loc": "/contact"
             },
             {

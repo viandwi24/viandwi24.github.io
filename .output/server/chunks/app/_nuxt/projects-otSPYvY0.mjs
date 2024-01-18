@@ -1,4 +1,4 @@
-import { b as useLoading, a as useSeoMeta, d as __nuxt_component_0 } from '../server.mjs';
+import { b as useLoading, a as useSeoMeta, j as __nuxt_component_0 } from '../server.mjs';
 import { defineComponent, ref, mergeProps, unref, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderClass, ssrRenderComponent, ssrRenderList, ssrRenderAttr, ssrRenderStyle, ssrInterpolate } from 'vue/server-renderer';
 import '../../nitro/node-server.mjs';
@@ -8,6 +8,7 @@ import 'fs';
 import 'path';
 import 'node:fs';
 import 'node:url';
+import 'ipx';
 import 'unhead';
 import '@unhead/shared';
 import 'vue-router';
@@ -179,4 +180,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=projects-wty2tS-t.mjs.map
+//# sourceMappingURL=projects-otSPYvY0.mjs.map

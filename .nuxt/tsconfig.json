@@ -72,7 +72,7 @@
         "../node_modules/@nuxt/image/dist/runtime/*"
       ],
       "#icon-collections": [
-        "./icon-collections"
+        "./icon-collections.mjs"
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
