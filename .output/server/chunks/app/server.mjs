@@ -675,7 +675,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/about-ZiUGxYKI.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/about-4be4irzF.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -707,7 +707,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./_nuxt/index-Bu1-_68-.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-pwcrqh5W.mjs').then((m) => m.default || m)
   },
   {
     name: "projects",
@@ -822,7 +822,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "1cdd2837-86c2-4d48-a63c-b0de1413d9f7"
+    "buildId": "171f82c4-317f-48d5-b4c9-5b2ce8f50065"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -1995,7 +1995,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     const { public: { baseUrl } } = /* @__PURE__ */ useRuntimeConfig();
     const meta = {
       title: "Alfian Dwi Nugraha (viandwi24)",
-      description: "Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾"
+      description: "im a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾"
     };
     useSeoMeta({
       titleTemplate: "%s | Alfian Dwi Nugraha (viandwi24)",

@@ -33,7 +33,8 @@ onMounted(async () => {
   const canvas = document.getElementById('page-section-about-canvas') as HTMLCanvasElement
   if (canvas) {
     const app = new Spline(canvas)
-    await app.load('/scene_2.splinecode')
+    // await app.load('/scene_2.splinecode')
+    await app.load('https://prod.spline.design/6802b1zHNeLBVZJK/scene.splinecode')
     await new Promise((resolve) => setTimeout(resolve, 1000))
     $loading.setLoading(false)
     window.addEventListener('resize', onResize)
@@ -71,7 +72,7 @@ onBeforeUnmount(() => {
             <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
           </ul>
         </div>
-        <div class="w-1/4 px-4 flex justify-end">
+        <div class="w-1/4 pl-4 flex justify-end">
           <div class="relative mypic-wrapper">
             <img src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic">
           </div>
@@ -93,7 +94,7 @@ onBeforeUnmount(() => {
             </p>
           </div>
         </div>
-        <div class="w-1/4 col-md-4 col-md page-section-about-canvas-wrapper h-50 flex justify-end">
+        <div class="w-1/4 col-md-4 col-md page-section-about-canvas-wrapper h-50 flex justify-end pl-4">
           <canvas id="page-section-about-canvas"></canvas>
         </div>
       </div>

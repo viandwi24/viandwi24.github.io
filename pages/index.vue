@@ -65,7 +65,7 @@ onBeforeUnmount(() => {
         <div class="wrapper-with-tag">
           <div class="container-with-tag" style="--tag: 'h1';">
             <div class="mb-4">
-              <div class="text-primary font-mono">Hi, my name is {{ $loading.$state.isLoading }}</div>
+              <div class="text-primary font-mono">Hi, my name is</div>
             </div>
             <div class="text-[3.5rem] font-bold mb-4 leading-[4rem]">
               <div class="text-blue-200">Alfian Dwi Nugraha.</div>

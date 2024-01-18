@@ -5,7 +5,7 @@ const { public: { baseUrl } }  = useRuntimeConfig()
 
 const meta = {
   title: 'Alfian Dwi Nugraha (viandwi24)',
-  description: 'Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾',
+  description: 'im a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾',
 }
 
 useSeoMeta({
