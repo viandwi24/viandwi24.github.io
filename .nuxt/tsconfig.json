@@ -65,8 +65,14 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "#image": [
+        "../node_modules/@nuxt/image/dist/runtime"
+      ],
+      "#image/*": [
+        "../node_modules/@nuxt/image/dist/runtime/*"
+      ],
       "#icon-collections": [
-        "./icon-collections.mjs"
+        "./icon-collections"
       ],
       "pinia": [
         "../node_modules/pinia/dist/pinia"
@@ -94,6 +100,7 @@
     "../node_modules/nuxt-site-config/dist/runtime",
     "../node_modules/@nuxtjs/sitemap/runtime",
     "../node_modules/@nuxtjs/tailwindcss/runtime",
+    "../node_modules/@nuxt/image/runtime",
     "../node_modules/nuxt-headlessui/runtime",
     "../node_modules/nuxt-icon/runtime",
     "../node_modules/@pinia/nuxt/runtime",
@@ -108,6 +115,7 @@
     "../node_modules/nuxt-site-config/dist/runtime/server",
     "../node_modules/@nuxtjs/sitemap/runtime/server",
     "../node_modules/@nuxtjs/tailwindcss/runtime/server",
+    "../node_modules/@nuxt/image/runtime/server",
     "../node_modules/nuxt-headlessui/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@pinia/nuxt/runtime/server",

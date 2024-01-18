@@ -42,8 +42,14 @@
               </NuxtLink>
             </li>
             <li>
-              <NuxtLink class="text-white font-semibold" to="/contact">
+              <NuxtLink class="text-white font-semibold" to="/blog">
                 <span class="text-primary-500">05.</span>
+                <span>// Blog</span>
+              </NuxtLink>
+            </li>
+            <li>
+              <NuxtLink class="text-white font-semibold" to="/contact">
+                <span class="text-primary-500">06.</span>
                 <span>// Contact</span>
               </NuxtLink>
             </li>

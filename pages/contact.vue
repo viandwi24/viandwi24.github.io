@@ -13,7 +13,7 @@ onMounted(() => {
 <template>
   <section class="flex-1 flex flex-col justify-center page-section page-section-experience">
     <div class="flex-1 flex flex-col justify-center items-center w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4 py-10">
-      <div class="text-custom-1 text-primary mb-2">05. Contact Me?</div>
+      <div class="text-custom-1 text-primary mb-2">06. Contact Me?</div>
       <div class="text-6xl mb-4 font-bold">
         <div class="">Get In Touch</div>
       </div>

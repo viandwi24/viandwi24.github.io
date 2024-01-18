@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   modules: [
     "@nuxtjs/sitemap",
     "@nuxtjs/tailwindcss",
+    "@nuxt/image",
     "nuxt-headlessui",
     "nuxt-icon",
     "@pinia/nuxt",
@@ -17,7 +18,23 @@ export default defineNuxtConfig({
     url: "https://viandwi24.com",
   },
 
+  vite: {
+    optimizeDeps: {
+      include: ["dayjs", "jsdom", "rss-parser"],
+    },
+  },
+
   runtimeConfig: {
+    feed: {
+      sources: {
+        medium: {
+          name: "Medium",
+          url: "https://viandwi24.medium.com/feed",
+          updateInterval: 60 * 1000,
+        },
+      },
+      active: ['medium', 'static']
+    },
     public: {
       baseUrl: process.env.BASE_URL || "http://localhost:3000",
     }

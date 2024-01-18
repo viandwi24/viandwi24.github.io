@@ -1,6 +1,6 @@
 export const useLoading = defineStore('loading', {
   state: () => ({
-    isLoading: true
+    isLoading: false
   }),
   actions: {
     setLoading(isLoading: boolean) {
