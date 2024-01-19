@@ -604,7 +604,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/experience-zDUWBZm4.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/experience-nloW9TcP.js").then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "index",
@@ -620,7 +620,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/projects-loArPVFT.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/projects-rHudRz8Q.js").then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -727,7 +727,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "3b609c83-a1e0-4a40-b0af-60de829303ec"
+    "buildId": "fb3fa7ef-a7f9-4a77-846f-ba6cf776db8d"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);

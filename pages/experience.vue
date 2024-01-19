@@ -94,6 +94,16 @@ const techStacks = ref<{
     ]
   },
   {
+    category: 'Operating System',
+    items: [
+      ['Windows', 2010, 'https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg'],
+      ['Ubuntu', 2017, 'https://www.vectorlogo.zone/logos/ubuntu/ubuntu-icon.svg'],
+      ['Debian', 2018, 'https://www.vectorlogo.zone/logos/debian/debian-icon.svg'],
+      ['CentOS', 2020, 'https://www.vectorlogo.zone/logos/centos/centos-icon.svg'],
+      ['MacOS', 2020, 'https://www.vectorlogo.zone/logos/apple/apple-icon.svg'],
+    ]
+  },
+  {
     category: 'Cloud',
     items: [
       // list: aws-2019, gcp-2021
