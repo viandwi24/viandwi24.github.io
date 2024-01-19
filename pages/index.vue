@@ -41,7 +41,7 @@ onMounted(async () => {
     await app.load('https://prod.spline.design/ftN8iqMHiFJT3atP/scene.splinecode')
     await new Promise((resolve) => setTimeout(resolve, 1000))
     $loading.setLoading(false)
-    window.addEventListener('resize', onResize)
+    // window.addEventListener('resize', onResize)
     spline = app
   }
 })
@@ -50,7 +50,7 @@ onBeforeUnmount(() => {
   if (spline) {
     spline.dispose()
     spline = undefined
-    window.removeEventListener('resize', onResize)
+    // window.removeEventListener('resize', onResize)
   }
 })
 </script>
@@ -61,7 +61,7 @@ onBeforeUnmount(() => {
       <div class="page-section-home-canvas-wrapper">
         <canvas id="page-section-home-canvas"></canvas>
       </div>
-      <div class="w-full sm:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 pb-20">
+      <div class="w-full sm:max-w-screen-sm lg:max-w-screen-xl mx-auto px-4 lg:pb-20">
         <div class="wrapper-with-tag">
           <div class="container-with-tag" style="--tag: 'h1';">
             <div class="mb-4">

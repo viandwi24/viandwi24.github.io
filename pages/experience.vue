@@ -214,7 +214,7 @@ const techStackSearch = ref('')
                   
                   <!-- tech stack -->
                   <HeadlessTabPanel class="flex flex-col">
-                    <div class="flex justify-end items-center">
+                    <div class="flex justify-end items-center mb-4">
                       <input
                         v-model="techStackSearch"
                         type="text"

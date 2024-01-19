@@ -1,3 +1,32 @@
+<script lang="ts" setup>
+const menu = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'About',
+    path: '/about',
+  },
+  {
+    name: 'Experience',
+    path: '/experience',
+  },
+  {
+    name: 'Projects',
+    path: '/projects',
+  },
+  {
+    name: 'Blog',
+    path: '/blog',
+  },
+  {
+    name: 'Contact',
+    path: '/contact',
+  },
+]
+</script>
+
 <template>
   <div class="w-full min-h-screen flex flex-col text-gray-100 bg-gray-950">
     <div class="fixed top-0 left-0 w-full py-4 px-6 z-10 bg-gray-950">
@@ -15,45 +44,20 @@
             </svg>
           </NuxtLink>
         </div>
-        <div class="flex-1 flex justify-center items-center pr-6">
+        <div class="hidden flex-1 lg:flex justify-center items-center pr-6">
           <ul class="flex space-x-5 text-sm font-mono">
-            <li>
-              <NuxtLink class="text-white font-semibold" to="/">
-                <span class="text-primary-500">01.</span>
-                <span>// Home</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink class="text-white font-semibold" to="/about">
-                <span class="text-primary-500">02.</span>
-                <span>// About</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink class="text-white font-semibold" to="/experience">
-                <span class="text-primary-500">03.</span>
-                <span>// Experience</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink class="text-white font-semibold" to="/projects">
-                <span class="text-primary-500">04.</span>
-                <span>// Projects</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink class="text-white font-semibold" to="/blog">
-                <span class="text-primary-500">05.</span>
-                <span>// Blog</span>
-              </NuxtLink>
-            </li>
-            <li>
-              <NuxtLink class="text-white font-semibold" to="/contact">
-                <span class="text-primary-500">06.</span>
-                <span>// Contact</span>
+            <li v-for="item, i in menu" :key="item.name">
+              <NuxtLink class="text-white font-semibold" :to="item.path">
+                <span class="text-primary-500">0{{ i+1 }}.</span>
+                <span>// {{ item.name }}</span>
               </NuxtLink>
             </li>
           </ul>
+        </div>
+        <div>
+          <button class="lg:hidden" @click="">
+            <Icon name="ic:outline-menu" class="w-6 h-6" />
+          </button>
         </div>
       </div>
     </div>

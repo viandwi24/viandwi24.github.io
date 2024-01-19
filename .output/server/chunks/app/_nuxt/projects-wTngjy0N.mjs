@@ -1,5 +1,5 @@
-import { b as useLoading, a as useSeoMeta, h as __nuxt_component_0 } from '../server.mjs';
-import { _ as __nuxt_component_1 } from './nuxt-img-ncrCwSjj.mjs';
+import { b as useLoading, a as useSeoMeta, h as __nuxt_component_1 } from '../server.mjs';
+import { _ as __nuxt_component_1$1 } from './nuxt-img-ncrCwSjj.mjs';
 import { defineComponent, ref, mergeProps, unref, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderClass, ssrRenderComponent, ssrRenderList, ssrRenderAttr, ssrRenderStyle, ssrInterpolate } from 'vue/server-renderer';
 import '../../nitro/node-server.mjs';
@@ -27,8 +27,8 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     const projects = ref([]);
     const listingMode = ref("list");
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_Icon = __nuxt_component_0;
-      const _component_NuxtImg = __nuxt_component_1;
+      const _component_Icon = __nuxt_component_1;
+      const _component_NuxtImg = __nuxt_component_1$1;
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "flex-1 flex flex-col justify-center page-section page-section-experienc" }, _attrs))}><div class="w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4"><div class="page-section-header mb-4 text-custom-1"><span>04.</span><span>My Projects</span></div><div class="flex flex-col space-y-4"><div class="text-center text-xs font-semibold text-gray-500"> Note: not all my projects are listed here. I have a lot of private projects and can&#39;t share them. </div><div><div class="flex"><button class="${ssrRenderClass([{
         "bg-gray-500/75": unref(listingMode) === "list",
         "": unref(listingMode) === "grid"
@@ -232,4 +232,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=projects-rHudRz8Q.mjs.map
+//# sourceMappingURL=projects-wTngjy0N.mjs.map

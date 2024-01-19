@@ -691,7 +691,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/contact-mBT6XEKW.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-tPBC8_Wk.mjs').then((m) => m.default || m)
   },
   {
     name: "experience",
@@ -707,7 +707,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./_nuxt/index-rNH2uNlG.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-wnQ2w5vT.mjs').then((m) => m.default || m)
   },
   {
     name: "projects",
@@ -715,7 +715,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/projects-rHudRz8Q.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/projects-wTngjy0N.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -822,7 +822,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "fb3fa7ef-a7f9-4a77-846f-ba6cf776db8d"
+    "buildId": "49c1b18f-a0b4-4612-88ad-998c656f1cbd"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -1516,7 +1516,7 @@ function useLoadingIndicator(opts = {}) {
   const indicator = nuxtApp._loadingIndicator = nuxtApp._loadingIndicator || createLoadingIndicator(opts);
   return indicator;
 }
-const __nuxt_component_0$1 = defineComponent({
+const __nuxt_component_0 = defineComponent({
   name: "NuxtLoadingIndicator",
   props: {
     throttle: {
@@ -1570,7 +1570,7 @@ const __nuxt_component_0$1 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import('./_nuxt/default-C8ttHxY3.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-qGlH8VhA.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -1584,7 +1584,7 @@ const LayoutLoader = defineComponent({
     return () => h(LayoutComponent, props.layoutProps, context.slots);
   }
 });
-const __nuxt_component_1 = defineComponent({
+const __nuxt_component_1$1 = defineComponent({
   name: "NuxtLayout",
   inheritAttrs: false,
   props: {
@@ -1832,10 +1832,10 @@ _sfc_main$3.setup = (props, ctx) => {
   (ssrContext.modules || (ssrContext.modules = /* @__PURE__ */ new Set())).add("node_modules/nuxt-icon/dist/runtime/Icon.vue");
   return _sfc_setup$3 ? _sfc_setup$3(props, ctx) : void 0;
 };
-const __nuxt_component_0 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-bd832875"]]);
+const __nuxt_component_1 = /* @__PURE__ */ _export_sfc(_sfc_main$3, [["__scopeId", "data-v-bd832875"]]);
 const Icon = /* @__PURE__ */ Object.freeze({
   __proto__: null,
-  default: __nuxt_component_0
+  default: __nuxt_component_1
 });
 const RouteProvider = defineComponent({
   props: {
@@ -2008,9 +2008,9 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     });
     const $loading = useLoading();
     return (_ctx, _push, _parent, _attrs) => {
-      const _component_NuxtLoadingIndicator = __nuxt_component_0$1;
-      const _component_NuxtLayout = __nuxt_component_1;
-      const _component_Icon = __nuxt_component_0;
+      const _component_NuxtLoadingIndicator = __nuxt_component_0;
+      const _component_NuxtLayout = __nuxt_component_1$1;
+      const _component_Icon = __nuxt_component_1;
       const _component_NuxtPage = __nuxt_component_3;
       _push(`<div${ssrRenderAttrs(_attrs)}><div class="z-[60] w-screen top-0 left-0 fixed h-4">`);
       _push(ssrRenderComponent(_component_NuxtLoadingIndicator, {
@@ -2164,5 +2164,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useSeoMeta as a, useLoading as b, createError as c, asyncDataDefaults as d, entry$1 as default, useNuxtApp as e, fetchDefaults as f, useRequestFetch as g, __nuxt_component_0 as h, useRequestEvent as i, useRuntimeConfig as j, useAppConfig as k, useRouter as l, navigateTo as m, nuxtLinkDefaults as n, resolveIconName as r, useHead as u };
+export { _export_sfc as _, useSeoMeta as a, useLoading as b, createError as c, asyncDataDefaults as d, entry$1 as default, useNuxtApp as e, fetchDefaults as f, useRequestFetch as g, __nuxt_component_1 as h, useRequestEvent as i, useRuntimeConfig as j, useAppConfig as k, useRouter as l, navigateTo as m, nuxtLinkDefaults as n, resolveIconName as r, useHead as u };
 //# sourceMappingURL=server.mjs.map
