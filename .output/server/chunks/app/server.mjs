@@ -683,7 +683,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/blog-wyr-b3t2.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/blog-0M4rkD0Q.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",
@@ -691,7 +691,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/contact-Gvr-nhjD.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-nFkPp1c7.mjs').then((m) => m.default || m)
   },
   {
     name: "experience",
@@ -822,7 +822,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "1f05fd0a-f108-4ede-a922-ead913c775d5"
+    "buildId": "03563823-80ea-4799-a60d-a254f09f3765"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -1978,7 +1978,7 @@ function hasChildrenRoutes(fork, newRoute, Component) {
 }
 const useLoading = defineStore("loading", {
   state: () => ({
-    isLoading: false
+    isLoading: true
   }),
   actions: {
     setLoading(isLoading) {

@@ -3,6 +3,8 @@ useSeoMeta({
   title: 'Blog',
 })
 
+useLoading().setLoading(false)
+
 const { data } = await useFetch('/api/feed')
 </script>
 

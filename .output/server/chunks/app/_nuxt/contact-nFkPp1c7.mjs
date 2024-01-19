@@ -20,6 +20,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
   __ssrInlineRender: true,
   setup(__props) {
     useLoading();
+    useLoading().setLoading(false);
     useSeoMeta({
       title: "Contact Me"
     });
@@ -45,4 +46,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=contact-Gvr-nhjD.mjs.map
+//# sourceMappingURL=contact-nFkPp1c7.mjs.map

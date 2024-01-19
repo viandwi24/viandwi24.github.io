@@ -1,4 +1,4 @@
-import { u as useHead, a as useSeoMeta, f as fetchDefaults, e as useNuxtApp, d as asyncDataDefaults, g as useRequestFetch, i as useRuntimeConfig, c as createError } from '../server.mjs';
+import { u as useHead, a as useSeoMeta, b as useLoading, f as fetchDefaults, e as useNuxtApp, d as asyncDataDefaults, g as useRequestFetch, i as useRuntimeConfig, c as createError } from '../server.mjs';
 import { defineComponent, ref, computed, h, withAsyncContext, mergeProps, unref, useSSRContext, toValue, reactive, shallowRef, toRef, getCurrentInstance, onServerPrefetch } from 'vue';
 import { y as hash, z as encodeParam, n as hasProtocol, A as withLeadingSlash, j as joinURL, p as parseURL, r as defu, B as encodePath } from '../../nitro/node-server.mjs';
 import { ssrRenderAttrs, ssrRenderList, ssrInterpolate, ssrRenderAttr, ssrRenderComponent } from 'vue/server-renderer';
@@ -765,6 +765,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     useSeoMeta({
       title: "Blog"
     });
+    useLoading().setLoading(false);
     const { data } = ([__temp, __restore] = withAsyncContext(() => useFetch("/api/feed", "$5sKWOZt1n5")), __temp = await __temp, __restore(), __temp);
     return (_ctx, _push, _parent, _attrs) => {
       var _a;
@@ -806,4 +807,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=blog-wyr-b3t2.mjs.map
+//# sourceMappingURL=blog-0M4rkD0Q.mjs.map

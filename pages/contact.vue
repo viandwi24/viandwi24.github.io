@@ -1,12 +1,10 @@
 <script lang="ts" setup>
 const $loading = useLoading()
 
+useLoading().setLoading(false)
+
 useSeoMeta({
   title: 'Contact Me',
-})
-
-onMounted(() => {
-  $loading.setLoading(false)
 })
 </script>
 
