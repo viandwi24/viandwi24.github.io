@@ -71,9 +71,15 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         items: [
           // list all of this : nodejs-2019, deno-2019, bunjs-2023, codeigniter-2017, laravel-2018
           ["Codeigniter", 2017, "https://codeigniter.com/assets/icons/44521256.png"],
+          ["Bootstrap", 2017, "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"],
+          ["JQuery", 2017, "https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg"],
           ["Laravel", 2018, "https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg"],
+          ["Unity", 2018, "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"],
           ["Vue", 2019, "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg"],
           ["Nuxt", 2019, "https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg"],
+          ["Tailwind", 2019, "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"],
+          ["Flutter", 2019, "https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg"],
+          ["Phaser", 2020, "https://www.vectorlogo.zone/logos/phaserio/phaserio-icon.svg"],
           ["Flask", 2021, "https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg"],
           ["Express", 2021, "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg"],
           ["React", 2021, "https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"],
@@ -122,6 +128,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         ]
       }
     ]);
+    ref("");
     return (_ctx, _push, _parent, _attrs) => {
       const _component_ClientOnly = __nuxt_component_0;
       _push(`<section${ssrRenderAttrs(mergeProps({ class: "flex-1 flex flex-col justify-center page-section page-section-experience" }, _attrs))}><div class="flex-1 flex flex-col w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4 py-10 justify-center"><div class="page-section-header mb-4 text-custom-1"><span>03.</span><span>My Experience</span></div><div class="px-4 pr-6 flex flex-col"><div>`);
@@ -138,4 +145,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=experience-e9gYRGLr.mjs.map
+//# sourceMappingURL=experience-zDUWBZm4.mjs.map

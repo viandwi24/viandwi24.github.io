@@ -45,9 +45,15 @@ const techStacks = ref<{
     items: [
       // list all of this : nodejs-2019, deno-2019, bunjs-2023, codeigniter-2017, laravel-2018
       ['Codeigniter', 2017, 'https://codeigniter.com/assets/icons/44521256.png'],
+      ['Bootstrap', 2017, 'https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg'],
+      ['JQuery', 2017, 'https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg'],
       ['Laravel', 2018, 'https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg'],
+      ['Unity', 2018, 'https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg'],
       ['Vue', 2019, 'https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg'],
       ['Nuxt', 2019, 'https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg'],
+      ['Tailwind', 2019, 'https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg'],
+      ['Flutter', 2019, 'https://www.vectorlogo.zone/logos/flutterio/flutterio-icon.svg'],
+      ['Phaser', 2020, 'https://www.vectorlogo.zone/logos/phaserio/phaserio-icon.svg'],
       ['Flask', 2021, 'https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg'],
       ['Express', 2021, 'https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg'],
       ['React', 2021, 'https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg'],
@@ -117,6 +123,9 @@ const fetch = async () => {
 onMounted(() => {
   fetch()
 })
+
+
+const techStackSearch = ref('')
 </script>
 
 <template>
@@ -194,34 +203,48 @@ onMounted(() => {
                   </HeadlessTabPanel>
                   
                   <!-- tech stack -->
-                  <HeadlessTabPanel class="flex flex-col gap-8">
-                    <div v-for="(item, i) in techStacks" :key="i">
-                      <div class="font-bold text-xl mb-4">
-                        # {{ item.category }}
-                      </div>
-                      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-4">
+                  <HeadlessTabPanel class="flex flex-col">
+                    <div class="flex justify-end items-center">
+                      <input
+                        v-model="techStackSearch"
+                        type="text"
+                        class="border border-gray-500/50 rounded px-4 py-2 text-sm bg-gray-900/50 text-slate-400 font-mono"
+                        placeholder="search"
+                      />
+                    </div>
+                    <div
+                      class="flex flex-col gap-8"
+                    >
+                      <div v-for="(item, i) in techStacks" :key="i">
+                        <div class="font-bold text-xl mb-4">
+                          # {{ item.category }}
+                        </div>
                         <div
-                          v-for="(tech, j) in item.items"
-                          :key="j"
-                          class="transition-all duration-300 flex flex-col items-center justify-center border p-4 rounded bg-gray-900 border-gray-500/50 hover:border-primary-500/50 hover:bg-primary-500/50"
+                          class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-7 gap-2"
                         >
-                          <div class="font-semibold text-sm text-slate-400 font-mono mb-3 text-center">
-                            {{ tech[0] }}
-                          </div>
-                          <div class="w-12 h-12 mb-3">
-                            <NuxtImg
-                              :src="tech[2]"
-                              :alt="tech[0]"
-                              :style="{
-                                width: '100%',
-                                height: '100%',
-                                objectFit: 'cover',
-                                objectPosition: 'center'
-                              }"
-                            />
-                          </div>
-                          <div class="text-[10px] text-slate-400 font-mono mb-2 text-center">
-                            learn on {{ tech[1] }}
+                          <div
+                            v-for="(tech, j) in item.items.filter((tech) => tech[0].toLowerCase().includes(techStackSearch.toLowerCase()))"
+                            :key="j"
+                            class="transition-all duration-300 flex flex-col items-center justify-center border p-4 rounded bg-gray-900 border-gray-500/50 hover:border-primary-500/50 hover:bg-primary-500/50"
+                          >
+                            <div class="font-semibold text-sm text-slate-400 font-mono mb-3 text-center">
+                              {{ tech[0] }}
+                            </div>
+                            <div class="w-12 h-12 mb-3">
+                              <NuxtImg
+                                :src="tech[2]"
+                                :alt="tech[0]"
+                                :style="{
+                                  width: '100%',
+                                  height: '100%',
+                                  objectFit: 'cover',
+                                  objectPosition: 'center'
+                                }"
+                              />
+                            </div>
+                            <div class="text-[10px] text-slate-400 font-mono mb-2 text-center">
+                              learn on {{ tech[1] }}
+                            </div>
                           </div>
                         </div>
                       </div>
