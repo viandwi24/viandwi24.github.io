@@ -41,7 +41,7 @@ onMounted(() => {
 
 <template>
   <section class="flex-1 flex flex-col justify-center page-section page-section-experience">
-    <div class="flex-1 flex flex-col w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4 py-10 flex flex-col justify-center">
+    <div class="flex-1 flex flex-col w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4 py-10 justify-center">
       <div class="page-section-header mb-4 text-custom-1">
         <span>03.</span>
         <span>My Experience</span>

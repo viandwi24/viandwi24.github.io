@@ -604,7 +604,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/experience-dCFcHeMX.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/experience-XM8E98pg.js").then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "index",
@@ -727,7 +727,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "171f82c4-317f-48d5-b4c9-5b2ce8f50065"
+    "buildId": "cf872a04-bdcc-4f42-8157-8f2fd0301c4b"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
