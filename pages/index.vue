@@ -76,15 +76,15 @@ onBeforeUnmount(() => {
               programming. now focusing on the web front end & solana web3.
             </div>
             <div class="mb-4 flex flex-col space-y-4 sm:flex-row sm:space-y-0 sm:space-x-4 font-mono justify-start items-start">
-              <NuxtLink to="about" class="w-auto flex items-center px-4 py-2 rounded bg-primary-400 inline-block sm:flex space-x-1">
+              <NuxtLink to="about" class="w-auto flex items-center px-4 py-2 rounded bg-primary-400 sm:flex space-x-1">
                 <Icon name="ic:sharp-emoji-people" />
                 <span>About Me</span>
               </NuxtLink>
-              <a href="https://linktr.ee/viandwi24" target="_blank" class="w-auto flex items-center px-4 py-2 rounded bg-green-400 inline-block sm:flex space-x-1">
+              <a href="https://linktr.ee/viandwi24" target="_blank" class="w-auto flex items-center px-4 py-2 rounded bg-green-400 sm:flex space-x-1">
                 <Icon name="mdi:pine-tree-variant-outline" />
                 <span>Linktr.ee</span>
               </a>
-              <a href="https://github.com/viandwi24" target="_blank" class="w-auto flex items-center px-4 py-2 rounded bg-gray-600 inline-block sm:flex space-x-1">
+              <a href="https://github.com/viandwi24" target="_blank" class="w-auto flex items-center px-4 py-2 rounded bg-gray-600 sm:flex space-x-1">
                 <Icon name="bi:github" class="mr-2" />
                 <span>Github</span>
               </a>
