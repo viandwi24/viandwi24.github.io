@@ -1,4 +1,4 @@
-import { b as useLoading, a as useSeoMeta, j as __nuxt_component_0 } from '../server.mjs';
+import { b as useLoading, a as useSeoMeta, h as __nuxt_component_0 } from '../server.mjs';
 import { defineComponent, mergeProps, useSSRContext } from 'vue';
 import { ssrRenderAttrs, ssrRenderComponent } from 'vue/server-renderer';
 import '../../nitro/node-server.mjs';
@@ -46,4 +46,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=contact-nFkPp1c7.mjs.map
+//# sourceMappingURL=contact-FK1ytrtB.mjs.map

@@ -87,7 +87,20 @@ onMounted(() => {
               <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
                 <div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">
                   <img
+                    v-if="item.image.split('.').pop() === 'gif'"
                     :src="item.image"
+                    :alt="`Preview of ${item.name}`"
+                    :style="{
+                      height: '100%',
+                      width: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }"
+                  />
+                  <NuxtImg
+                    v-else
+                    :src="item.image"
+                    :alt="`Preview of ${item.name}`"
                     :style="{
                       height: '100%',
                       width: '100%',
@@ -135,7 +148,20 @@ onMounted(() => {
                 </div>
                 <div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">
                   <img
+                    v-if="item.image.split('.').pop() === 'gif'"
                     :src="item.image"
+                    :alt="`Preview of ${item.name}`"
+                    :style="{
+                      height: '100%',
+                      width: '100%',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                    }"
+                  />
+                  <NuxtImg
+                    v-else
+                    :src="item.image"
+                    :alt="`Preview of ${item.name}`"
                     :style="{
                       height: '100%',
                       width: '100%',
@@ -161,8 +187,9 @@ onMounted(() => {
                   }"
                 >
                   <img
+                    v-if="item.image.split('.').pop() === 'gif'"
                     :src="item.image"
-                    alt="Preview"
+                    :alt="`Preview of ${item.name}`"
                     :style="{
                       position: 'absolute',
                       display: 'block',
@@ -174,7 +201,23 @@ onMounted(() => {
                       left: '50%',
                       top: '50%'
                     }"
-                  >
+                  />
+                  <NuxtImg
+                    v-else
+                    :src="item.image"
+                    :alt="`Preview of ${item.name}`"
+                    :style="{
+                      position: 'absolute',
+                      display: 'block',
+                      width: '100%',
+                      height: '100%',
+                      transform: 'scale(1.25) translate(-50%, -50%)',
+                      objectFit: 'cover',
+                      objectPosition: 'center',
+                      left: '50%',
+                      top: '50%'
+                    }"
+                  />
                 </div>
               </a>
             </template>

@@ -74,7 +74,7 @@ onBeforeUnmount(() => {
         </div>
         <div class="w-1/4 pl-4 flex justify-end">
           <div class="relative mypic-wrapper">
-            <img src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic">
+            <NuxtImg src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic" />
           </div>
         </div>
         <!-- <img src="https://avatars.githubusercontent.com/u/41994283?s=400&u=0e8f0bce9bc6b0edd4c43c329c8f04945d55baaa&v=4" alt="My Avatar" height="256px"> -->

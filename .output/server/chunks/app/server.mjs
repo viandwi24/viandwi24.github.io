@@ -675,7 +675,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/about-4be4irzF.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/about-8fXgULP_.mjs').then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -683,7 +683,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/blog-0M4rkD0Q.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/blog-Sjy5jJZA.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",
@@ -691,7 +691,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/contact-nFkPp1c7.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-FK1ytrtB.mjs').then((m) => m.default || m)
   },
   {
     name: "experience",
@@ -707,7 +707,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./_nuxt/index-R1bIQBuR.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-rNH2uNlG.mjs').then((m) => m.default || m)
   },
   {
     name: "projects",
@@ -715,7 +715,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/projects-otSPYvY0.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/projects-loArPVFT.mjs').then((m) => m.default || m)
   }
 ];
 const _wrapIf = (component, props, slots) => {
@@ -822,7 +822,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "03563823-80ea-4799-a60d-a254f09f3765"
+    "buildId": "9dcadca6-687e-4401-8ce4-a10391e06c1f"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -1570,7 +1570,7 @@ const __nuxt_component_0$1 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import('./_nuxt/default-lkGY7Ki1.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-C8ttHxY3.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",
@@ -2083,7 +2083,7 @@ const _sfc_main$1 = {
     const statusMessage = _error.statusMessage ?? (is404 ? "Page Not Found" : "Internal Server Error");
     const description = _error.message || _error.toString();
     const stack = void 0;
-    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404--A7UfHn-.mjs').then((r) => r.default || r));
+    const _Error404 = defineAsyncComponent(() => import('./_nuxt/error-404-ch8c65_E.mjs').then((r) => r.default || r));
     const _Error = defineAsyncComponent(() => import('./_nuxt/error-500-_DdEEOsb.mjs').then((r) => r.default || r));
     const ErrorTemplate = is404 ? _Error404 : _Error;
     return (_ctx, _push, _parent, _attrs) => {
@@ -2164,5 +2164,5 @@ let entry;
 }
 const entry$1 = (ssrContext) => entry(ssrContext);
 
-export { _export_sfc as _, useSeoMeta as a, useLoading as b, createError as c, asyncDataDefaults as d, entry$1 as default, useNuxtApp as e, fetchDefaults as f, useRequestFetch as g, useRequestEvent as h, useRuntimeConfig as i, __nuxt_component_0 as j, useAppConfig as k, useRouter as l, navigateTo as m, nuxtLinkDefaults as n, resolveIconName as r, useHead as u };
+export { _export_sfc as _, useSeoMeta as a, useLoading as b, createError as c, asyncDataDefaults as d, entry$1 as default, useNuxtApp as e, fetchDefaults as f, useRequestFetch as g, __nuxt_component_0 as h, useRequestEvent as i, useRuntimeConfig as j, useAppConfig as k, useRouter as l, navigateTo as m, nuxtLinkDefaults as n, resolveIconName as r, useHead as u };
 //# sourceMappingURL=server.mjs.map
