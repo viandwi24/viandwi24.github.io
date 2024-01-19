@@ -30,7 +30,7 @@ export default defineNuxtConfig({
         medium: {
           name: "Medium",
           url: "https://viandwi24.medium.com/feed",
-          updateInterval: 60 * 1000,
+          updateInterval: 1000 * 60 * 60 * 24, // 1 day
         },
       },
       active: ['medium', 'static']

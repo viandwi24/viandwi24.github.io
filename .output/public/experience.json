@@ -28,6 +28,23 @@
     ]
   },
   {
+    "title": "TMD",
+    "description": "Web Developer at",
+    "company": "@TEAM MOJOKERTO DEVELOPER",
+    "date": "Sep 2019 - Now",
+    "tasks": [
+      {
+        "text": "I create e-commerce web."
+      },
+      {
+        "text": "I create food supply chain web."
+      },
+      {
+        "text": "I create e-laundry web."
+      }
+    ]
+  },
+  {
     "title": "LSP SKANESA",
     "description": "Programmer & Web Admin at",
     "company": "@LSP SMKN 1 MOJOKERTO",
