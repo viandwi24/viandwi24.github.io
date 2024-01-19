@@ -707,7 +707,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./_nuxt/index-pwcrqh5W.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-R1bIQBuR.mjs').then((m) => m.default || m)
   },
   {
     name: "projects",
@@ -822,7 +822,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "cf872a04-bdcc-4f42-8157-8f2fd0301c4b"
+    "buildId": "1f05fd0a-f108-4ede-a922-ead913c775d5"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
