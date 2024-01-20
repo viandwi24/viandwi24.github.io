@@ -1,4 +1,7 @@
 <script lang="ts" setup>
+const $router = useRouter()
+const $winsize = useWindowSize()
+
 const menu = [
   {
     name: 'Home',
@@ -25,6 +28,16 @@ const menu = [
     path: '/contact',
   },
 ]
+
+
+const navbarCollapse = ref(false)
+const oldRoute = ref($router.currentRoute.value.path)
+watch($router.currentRoute, (to, from) => {
+  if (to.path !== oldRoute.value) {
+    navbarCollapse.value = false
+    oldRoute.value = to.path
+  }
+})
 </script>
 
 <template>
@@ -45,7 +58,10 @@ const menu = [
           </NuxtLink>
         </div>
         <div class="hidden flex-1 lg:flex justify-center items-center pr-6">
-          <ul class="flex space-x-5 text-sm font-mono">
+          <ul
+            v-if="!navbarCollapse || $winsize.width.value > 768"
+            class="flex space-x-5 text-sm font-mono"
+          >
             <li v-for="item, i in menu" :key="item.name">
               <NuxtLink class="text-white font-semibold" :to="item.path">
                 <span class="text-primary-500">0{{ i+1 }}.</span>
@@ -55,10 +71,24 @@ const menu = [
           </ul>
         </div>
         <div>
-          <button class="lg:hidden" @click="">
-            <Icon name="ic:outline-menu" class="w-6 h-6" />
+          <button class="lg:hidden" @click="navbarCollapse = !navbarCollapse">
+            <Icon v-if="!navbarCollapse" name="ic:outline-menu" class="w-6 h-6" />
+            <Icon v-else name="ic:outline-close" class="w-6 h-6" />
           </button>
         </div>
+      </div>
+      <div
+        v-if="navbarCollapse && $winsize.width.value <= 768"
+        class="flex mt-4"
+      >
+        <ul class="flex flex-col space-y-2 text-sm font-mono justify-center items-center w-full">
+          <li v-for="item, i in menu" :key="item.name">
+            <NuxtLink class="text-white font-semibold" :to="item.path">
+              <span class="text-primary-500">0{{ i+1 }}.</span>
+              <span>// {{ item.name }}</span>
+            </NuxtLink>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="flex-1 flex flex-col pt-16 min-h-full">

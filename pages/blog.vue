@@ -21,11 +21,11 @@ const { data } = await useFetch('/api/feed')
           <div class="flex flex-col gap-2 mt-4">
             <a
               v-for="(item, j) in type.feed.items || []" :key="j"
-              class="px-4 py-2 border border-gray-500/50 rounded flex flex-row gap-4 hover:bg-gray-500/10"
+              class="p-4 border border-gray-500/50 rounded flex flex-col lg:flex-row gap-4 hover:bg-gray-500/10"
               :href="item.link"
               target="_blank"
             >
-              <div v-if="(item as any)['img']" class="rounded relative overflow-hidden max-w-[200px] h-auto">
+              <div v-if="(item as any)['img']" class="rounded relative overflow-hidden w-full lg:max-w-[200px] h-auto">
                 <NuxtImg
                   :src="(item as any)['img']" :alt="item.title"
                   :style="{

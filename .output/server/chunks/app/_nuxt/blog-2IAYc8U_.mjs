@@ -233,9 +233,9 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       ssrRenderList(((_a = unref(data)) == null ? void 0 : _a.data) || [], (type, i) => {
         _push(`<div><div class="text-lg font-semibold">${ssrInterpolate(type.typeName)}</div><div class="flex flex-col gap-2 mt-4"><!--[-->`);
         ssrRenderList(type.feed.items || [], (item, j) => {
-          _push(`<a class="px-4 py-2 border border-gray-500/50 rounded flex flex-row gap-4 hover:bg-gray-500/10"${ssrRenderAttr("href", item.link)} target="_blank">`);
+          _push(`<a class="p-4 border border-gray-500/50 rounded flex flex-col lg:flex-row gap-4 hover:bg-gray-500/10"${ssrRenderAttr("href", item.link)} target="_blank">`);
           if (item["img"]) {
-            _push(`<div class="rounded relative overflow-hidden max-w-[200px] h-auto">`);
+            _push(`<div class="rounded relative overflow-hidden w-full lg:max-w-[200px] h-auto">`);
             _push(ssrRenderComponent(_component_NuxtImg, {
               src: item["img"],
               alt: item.title,
@@ -266,4 +266,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=blog-Sjy5jJZA.mjs.map
+//# sourceMappingURL=blog-2IAYc8U_.mjs.map

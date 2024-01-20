@@ -83,6 +83,7 @@
     "../node_modules/nuxt-headlessui/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@pinia/nuxt/runtime/server",
+    "../node_modules/@vueuse/nuxt/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./module/nuxt-site-config.d.ts",

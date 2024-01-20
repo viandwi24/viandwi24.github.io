@@ -683,7 +683,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/blog-Sjy5jJZA.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/blog-2IAYc8U_.mjs').then((m) => m.default || m)
   },
   {
     name: "contact",
@@ -691,7 +691,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/contact-tPBC8_Wk.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/contact-56TtsBaF.mjs').then((m) => m.default || m)
   },
   {
     name: "experience",
@@ -699,7 +699,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import('./_nuxt/experience-nloW9TcP.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/experience-PrUMZatU.mjs').then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "index",
@@ -707,7 +707,7 @@ const _routes = [
     meta: __nuxt_page_meta || {},
     alias: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.alias) || [],
     redirect: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.redirect) || void 0,
-    component: () => import('./_nuxt/index-wnQ2w5vT.mjs').then((m) => m.default || m)
+    component: () => import('./_nuxt/index-ksK9Gock.mjs').then((m) => m.default || m)
   },
   {
     name: "projects",
@@ -822,7 +822,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "49c1b18f-a0b4-4612-88ad-998c656f1cbd"
+    "buildId": "a3178f37-d69c-44a1-a8fa-254f47058d73"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -1570,7 +1570,7 @@ const __nuxt_component_0 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import('./_nuxt/default-qGlH8VhA.mjs').then((m) => m.default || m)
+  default: () => import('./_nuxt/default-eq6pcxAz.mjs').then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

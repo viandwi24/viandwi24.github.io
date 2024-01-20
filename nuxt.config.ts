@@ -12,6 +12,7 @@ export default defineNuxtConfig({
     "nuxt-headlessui",
     "nuxt-icon",
     "@pinia/nuxt",
+    "@vueuse/nuxt"
   ],
 
   site: {

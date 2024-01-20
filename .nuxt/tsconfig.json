@@ -104,6 +104,7 @@
     "../node_modules/nuxt-headlessui/runtime",
     "../node_modules/nuxt-icon/runtime",
     "../node_modules/@pinia/nuxt/runtime",
+    "../node_modules/@vueuse/nuxt/runtime",
     "../node_modules/@nuxt/devtools/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
@@ -119,6 +120,7 @@
     "../node_modules/nuxt-headlessui/runtime/server",
     "../node_modules/nuxt-icon/runtime/server",
     "../node_modules/@pinia/nuxt/runtime/server",
+    "../node_modules/@vueuse/nuxt/runtime/server",
     "../node_modules/@nuxt/devtools/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",

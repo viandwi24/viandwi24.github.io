@@ -13,6 +13,7 @@
   "devDependencies": {
     "@nuxtjs/tailwindcss": "latest",
     "@pinia/nuxt": "latest",
+    "@vueuse/nuxt": "latest",
     "nuxt": "^3.9.1",
     "nuxt-headlessui": "latest",
     "nuxt-icon": "latest",

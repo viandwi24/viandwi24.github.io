@@ -5,6 +5,7 @@
 /// <reference types="nuxt-headlessui" />
 /// <reference types="nuxt-icon" />
 /// <reference types="@pinia/nuxt" />
+/// <reference types="@vueuse/nuxt" />
 /// <reference types="@nuxt/devtools" />
 /// <reference types="@nuxt/telemetry" />
 /// <reference types="nuxt" />

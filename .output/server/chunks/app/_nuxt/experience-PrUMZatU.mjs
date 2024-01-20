@@ -69,7 +69,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       {
         category: "Frameworks",
         items: [
-          // list all of this : nodejs-2019, deno-2019, bunjs-2023, codeigniter-2017, laravel-2018
           ["Codeigniter", 2017, "https://codeigniter.com/assets/icons/44521256.png"],
           ["Bootstrap", 2017, "https://www.vectorlogo.zone/logos/getbootstrap/getbootstrap-icon.svg"],
           ["JQuery", 2017, "https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg"],
@@ -98,7 +97,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       {
         category: "DevOps",
         items: [
-          // list : docker-2020, github-action-2021, kubernetes-2023, terraform-2023, jenkins-2024
           ["Docker", 2020, "https://www.vectorlogo.zone/logos/docker/docker-icon.svg"],
           ["PM2", 2020, "https://www.vectorlogo.zone/logos/pm2io/pm2io-icon.svg"],
           ["GAction", 2021, "https://www.vectorlogo.zone/logos/github/github-icon.svg"],
@@ -110,7 +108,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       {
         category: "Database",
         items: [
-          // list : mysql-2017, postgresql-2018, mongodb-2020, redis-2020, sqlite-2021
           ["Mysql", 2017, "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg"],
           ["Postgresql", 2018, "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg"],
           ["Firebase", 2019, "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg"],
@@ -132,8 +129,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
       {
         category: "Cloud",
         items: [
-          // list: aws-2019, gcp-2021
-          ["AWS", 2019, "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"],
+          ["AWS", 2020, "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"],
           ["GCP", 2021, "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"]
         ]
       }
@@ -155,4 +151,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=experience-nloW9TcP.mjs.map
+//# sourceMappingURL=experience-PrUMZatU.mjs.map
