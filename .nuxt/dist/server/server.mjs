@@ -727,7 +727,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "48b326c9-39a8-4a75-8de0-b3db204cbee4"
+    "buildId": "ecd22284-ad39-405a-9d05-883a624a0cac"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -2298,7 +2298,7 @@ const __nuxt_component_0 = defineComponent({
   }
 });
 const layouts = {
-  default: () => import("./_nuxt/default-eq6pcxAz.js").then((m) => m.default || m)
+  default: () => import("./_nuxt/default--QSVG4mi.js").then((m) => m.default || m)
 };
 const LayoutLoader = defineComponent({
   name: "LayoutLoader",

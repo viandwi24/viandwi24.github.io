@@ -259,6 +259,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           _push(`<li>`);
           _push(ssrRenderComponent(_component_NuxtLink, {
             class: "text-white font-semibold",
+            "active-class": "border-b border-dotted border-primary-500 pb-1",
             to: item.path
           }, {
             default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -298,6 +299,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           _push(`<li>`);
           _push(ssrRenderComponent(_component_NuxtLink, {
             class: "text-white font-semibold",
+            "active-class": "border-b border-dotted border-primary-500 pb-1",
             to: item.path
           }, {
             default: withCtx((_, _push2, _parent2, _scopeId) => {
@@ -332,4 +334,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=default-eq6pcxAz.mjs.map
+//# sourceMappingURL=default--QSVG4mi.mjs.map

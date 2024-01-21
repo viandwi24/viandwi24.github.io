@@ -63,7 +63,11 @@ watch($router.currentRoute, (to, from) => {
             class="flex space-x-5 text-sm font-mono"
           >
             <li v-for="item, i in menu" :key="item.name">
-              <NuxtLink class="text-white font-semibold" :to="item.path">
+              <NuxtLink
+                class="text-white font-semibold"
+                active-class="border-b border-dotted border-primary-500 pb-1"
+                :to="item.path"
+              >
                 <span class="text-primary-500">0{{ i+1 }}.</span>
                 <span>// {{ item.name }}</span>
               </NuxtLink>
@@ -83,7 +87,11 @@ watch($router.currentRoute, (to, from) => {
       >
         <ul class="flex flex-col space-y-2 text-sm font-mono justify-center items-center w-full">
           <li v-for="item, i in menu" :key="item.name">
-            <NuxtLink class="text-white font-semibold" :to="item.path">
+            <NuxtLink
+              class="text-white font-semibold"
+              active-class="border-b border-dotted border-primary-500 pb-1"
+              :to="item.path"
+            >
               <span class="text-primary-500">0{{ i+1 }}.</span>
               <span>// {{ item.name }}</span>
             </NuxtLink>
