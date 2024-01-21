@@ -74,6 +74,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           ["JQuery", 2017, "https://www.vectorlogo.zone/logos/jquery/jquery-icon.svg"],
           ["Laravel", 2018, "https://www.vectorlogo.zone/logos/laravel/laravel-icon.svg"],
           ["Unity", 2018, "https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg"],
+          ["Semantic UI", 2018, "https://seeklogo.com/images/S/semantic-ui-logo-AFDC4C7E31-seeklogo.com.png"],
           ["Vue", 2019, "https://www.vectorlogo.zone/logos/vuejs/vuejs-icon.svg"],
           ["Nuxt", 2019, "https://www.vectorlogo.zone/logos/nuxtjs/nuxtjs-icon.svg"],
           ["Tailwind", 2019, "https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg"],
@@ -117,6 +118,21 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
         ]
       },
       {
+        category: "Cloud",
+        items: [
+          ["AWS", 2020, "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"],
+          ["GCP", 2021, "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"]
+        ]
+      },
+      {
+        category: "Serverless",
+        items: [
+          ["Heroku", 2019, "https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg"],
+          ["Netlify", 2019, "https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg"],
+          ["Vercel", 2020, "https://www.vectorlogo.zone/logos/vercel/vercel-icon.svg"]
+        ]
+      },
+      {
         category: "Operating System",
         items: [
           ["Windows", 2010, "https://www.vectorlogo.zone/logos/microsoft/microsoft-icon.svg"],
@@ -124,13 +140,6 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
           ["Debian", 2018, "https://www.vectorlogo.zone/logos/debian/debian-icon.svg"],
           ["CentOS", 2020, "https://www.vectorlogo.zone/logos/centos/centos-icon.svg"],
           ["MacOS", 2020, "https://www.vectorlogo.zone/logos/apple/apple-icon.svg"]
-        ]
-      },
-      {
-        category: "Cloud",
-        items: [
-          ["AWS", 2020, "https://www.vectorlogo.zone/logos/amazon_aws/amazon_aws-icon.svg"],
-          ["GCP", 2021, "https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg"]
         ]
       }
     ]);
@@ -151,4 +160,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=experience-PrUMZatU.mjs.map
+//# sourceMappingURL=experience-N2zmhfpX.mjs.map
