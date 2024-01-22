@@ -56,7 +56,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
             var _a, _b, _c, _d, _e, _f, _g, _h;
             _push(`<!--[-->`);
             if (i % 2 === 0) {
-              _push(`<div class="group pb-10"><div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700"><div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">`);
+              _push(`<div class="group pb-10"><div class="relative flex flex-col lg:flex-row items-center w-full h-[500px] lg:h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700"><div class="w-full lg:w-1/2 h-full rounded-lg relative overflow-hidden flex mb-4 lg:mb-0">`);
               if (item.image.split(".").pop() === "gif") {
                 _push(`<img${ssrRenderAttr("src", item.image)}${ssrRenderAttr("alt", `Preview of ${item.name}`)} style="${ssrRenderStyle({
                   height: "100%",
@@ -108,7 +108,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               _push(`<!---->`);
             }
             if (i % 2 !== 0) {
-              _push(`<div class="group pb-10"><div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700"><div class="flex-1 flex flex-col justify-start items-start pr-8"><div class="text-primary text-xs font-mono fw-lighter mb-1 pr-2">${ssrInterpolate(item.type)}</div><div class="text-primary-500 text-lg mb-4 pr-2">${ssrInterpolate(item.name)}</div><div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">${ssrInterpolate(item.description)}</div><div class="flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30"><!--[-->`);
+              _push(`<div class="group pb-10"><div class="relative flex flex-col-reverse lg:flex-row items-center w-full h-[500px] lg:h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700"><div class="flex-1 flex flex-col justify-start items-start lg:pr-8"><div class="text-primary text-xs font-mono fw-lighter mb-1 pr-2">${ssrInterpolate(item.type)}</div><div class="text-primary-500 text-lg mb-4 pr-2">${ssrInterpolate(item.name)}</div><div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">${ssrInterpolate(item.description)}</div><div class="flex space-x-4 fw-lighter text-custom-1 mb-2 font-mono z-30"><!--[-->`);
               ssrRenderList(item.tags, (tag) => {
                 _push(`<span>${ssrInterpolate(tag)}</span>`);
               });
@@ -135,7 +135,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
               } else {
                 _push(`<!---->`);
               }
-              _push(`</div></div><div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">`);
+              _push(`</div></div><div class="w-full lg:w-1/2 h-full rounded-lg relative overflow-hidden flex mb-4 lg:mb-0">`);
               if (item.image.split(".").pop() === "gif") {
                 _push(`<img${ssrRenderAttr("src", item.image)}${ssrRenderAttr("alt", `Preview of ${item.name}`)} style="${ssrRenderStyle({
                   height: "100%",
@@ -232,4 +232,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=projects-wTngjy0N.mjs.map
+//# sourceMappingURL=projects-TExAKtQa.mjs.map

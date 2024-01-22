@@ -58,8 +58,8 @@ onBeforeUnmount(() => {
         <span>02.</span>
         <span>About Me</span>
       </div>
-      <div class="flex">
-        <div class="px-4 flex-1 pr-6 mb-4">
+      <div class="flex flex-col-reverse lg:flex-row">
+        <div class="px-4 flex-1 lg:pr-6 mb-4">
           <p>
             Hello, my name is <span class="text-primary">Alfian Dwi Nugraha</span>! I have a passion in
             the internet world since I was 10 years old. I was browsing blogs
@@ -71,8 +71,11 @@ onBeforeUnmount(() => {
             <li>🌱 I’m currently learning Golang, Python and Web3 Solana</li>
             <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
           </ul>
+          <p>
+            You can see detail of my journey and experiences <NuxtLink to="/experience" class="border-b hover:bg-yellow-300/50 border-primary-500 border-dotted">clik this</NuxtLink>.
+          </p>
         </div>
-        <div class="w-1/4 pl-4 flex justify-end">
+        <div class="w-full lg:w-1/4 lg:pl-4 flex justify-center items-center lg:justify-end flex-1 mb-4 lg:mb-0">
           <div class="relative mypic-wrapper">
             <NuxtImg src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic" />
           </div>
@@ -81,11 +84,11 @@ onBeforeUnmount(() => {
       </div>
     </div>
     <div class="w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4">
-      <div class="flex">
+      <div class="page-section-header mb-4">
+        <span>My Avatar</span>
+      </div>
+      <div class="flex flex-col-reverse lg:flex-row">
         <div class="flex-1 pr-6 col-md">
-          <div class="page-section-header mb-4">
-            <span>My Avatar</span>
-          </div>
           <div>
             <p>
               The <span class="text-purple">avatars</span> that I use on almost a lot of social media, are taken from some anime characters that I like.
@@ -94,7 +97,7 @@ onBeforeUnmount(() => {
             </p>
           </div>
         </div>
-        <div class="w-1/4 col-md-4 col-md page-section-about-canvas-wrapper h-50 flex justify-end pl-4">
+        <div class="w-full lg:w-1/4 col-md-4 col-md page-section-about-canvas-wrapper h-50 flex justify-center lg:justify-end lg:pl-4 mb-4 lg:mb-0">
           <canvas id="page-section-about-canvas"></canvas>
         </div>
       </div>

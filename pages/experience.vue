@@ -155,9 +155,9 @@ const techStackSearch = ref('')
           <ClientOnly>
             <div class="flex flex-col min-h-[500px]">
               <HeadlessTabGroup :vertical="true">
-                <HeadlessTabList class="w-full lg:w-1/4 flex justify-start items-start">
+                <HeadlessTabList class="w-full flex justify-start items-start">
                   <HeadlessTab 
-                      v-for="(item, i) in ['Journey', 'Tech Stack']"
+                      v-for="(item, i) in ['My Journey', 'Tech Stack']"
                       :key="i"
                       #="{ selected }"
                     >

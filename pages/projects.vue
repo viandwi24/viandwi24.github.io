@@ -84,8 +84,8 @@ onMounted(() => {
         <template v-if="listingMode === 'list'">
           <template  v-if="!$loading.$state.isLoading" v-for="(item, i) in projects" :key="Math.random()">
             <div v-if="i % 2 === 0" class="group pb-10">
-              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
-                <div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">
+              <div class="relative flex flex-col lg:flex-row items-center w-full h-[500px] lg:h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
+                <div class="w-full lg:w-1/2 h-full rounded-lg relative overflow-hidden flex mb-4 lg:mb-0">
                   <img
                     v-if="item.image.split('.').pop() === 'gif'"
                     :src="item.image"
@@ -129,8 +129,8 @@ onMounted(() => {
               </div>
             </div>
             <div v-if="i % 2 !== 0" class="group pb-10">
-              <div class="relative flex items-center w-full h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
-                <div class="flex-1 flex flex-col justify-start items-start pr-8">
+              <div class="relative flex flex-col-reverse lg:flex-row items-center w-full h-[500px] lg:h-[300px] transition-all duration-300 group-hover:rounded-lg group-hover:p-4 group-hover:border border-primary-700">
+                <div class="flex-1 flex flex-col justify-start items-start lg:pr-8">
                   <div class="text-primary text-xs font-mono fw-lighter mb-1 pr-2">{{ item.type }}</div>
                   <div class="text-primary-500 text-lg mb-4 pr-2">{{ item.name }}</div>
                   <div class="pl-4 text-right px-6 py-4 bg-slate-800 rounded-lg mb-4">{{ item.description }}</div>
@@ -146,7 +146,7 @@ onMounted(() => {
                     </a>
                   </div>
                 </div>
-                <div class="w-1/2 h-full rounded-lg relative overflow-hidden flex">
+                <div class="w-full lg:w-1/2 h-full rounded-lg relative overflow-hidden flex mb-4 lg:mb-0">
                   <img
                     v-if="item.image.split('.').pop() === 'gif'"
                     :src="item.image"
