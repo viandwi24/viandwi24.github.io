@@ -66,7 +66,7 @@ onBeforeUnmount(() => {
             and then trying to make some desktop applications, then again
             met this web-based programming.
           </p>
-          <ul>
+          <ul class="mt-4">
             <li>🔭 I’m currently working on Freelance as <span class="text-primary">Web Dev Programmer</span></li>
             <li>🌱 I’m currently learning Golang, Python and Web3 Solana</li>
             <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
@@ -75,9 +75,9 @@ onBeforeUnmount(() => {
             You can see detail of my journey and experiences <NuxtLink to="/experience" class="border-b hover:bg-yellow-300/50 border-primary-500 border-dotted">clik this</NuxtLink>.
           </p>
         </div>
-        <div class="w-full lg:w-1/4 lg:pl-4 flex justify-center items-center lg:justify-end flex-1 mb-4 lg:mb-0">
-          <div class="relative mypic-wrapper">
-            <NuxtImg src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic" />
+        <div class="lg:pl-4 flex justify-center items-center lg:justify-end mb-4 lg:mb-0">
+          <div class="relative mypic-wrapper bg-red-500">
+            <NuxtImg src="/mypic.jpg" alt="My Avatar" class="block w-auto rounded mypic h-[400px]" />
           </div>
         </div>
         <!-- <img src="https://avatars.githubusercontent.com/u/41994283?s=400&u=0e8f0bce9bc6b0edd4c43c329c8f04945d55baaa&v=4" alt="My Avatar" height="256px"> -->

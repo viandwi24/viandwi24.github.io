@@ -48,21 +48,9 @@
     }
   },
   {
-    "name": "LSP SMKN 1 Mojokerto",
-    "type": "Game",
-    "description": "a information web app for LSP SMKN 1 Mojokerto",
-    "tags": ["Nuxt", "Laravel"],
-    "image": "/images/projects/15.png",
-    "year": 2019,
-    "links": {
-      "github": "-",
-      "demo": "-"
-    }
-  },
-  {
     "name": "Nokiamon",
     "type": "Information",
-    "description": "a dex for nokiamon nft",
+    "description": "a dex for digital collectible in solana blockchain",
     "tags": ["React", "Express", "MongoDB", "GraphQL", "Web3"],
     "image": "/images/projects/16.png",
     "year": 2019,
@@ -72,15 +60,63 @@
     }
   },
   {
-    "name": "Link D Law",
-    "type": "Community & Law",
-    "description": "A apps to provide law information and AI-based to search a law depends some problem",
-    "tags": ["Bun", "Monorepo", "Microservices"],
-    "image": "/images/projects/18.png",
+    "name": "Hatofit",
+    "type": "Sport",
+    "description": "Hatofit is a platform that helps you to be fit and healthy, help you to track and monitoring your health.",
+    "tags": ["Nuxt", "MongoDB", "Express", "NodeJS", "PostgreSQL", "Flutter"],
+    "image": "/images/projects/23.jpeg",
+    "year": 2024,
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "name": "Porseni MA 2023",
+    "type": "Information",
+    "description": "a information web app for register pekan olahraga dan seni jawa timur 2023",
+    "tags": ["NextJS"],
+    "image": "/images/projects/25.jpeg",
     "year": 2023,
     "links": {
-      "github": "https://github.com/Nakama-Capstone/link-d-law",
-      "demo": "https://github.com/Nakama-Capstone/link-d-law"
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "name": "Web3 Blog",
+    "type": "Blog",
+    "description": "a decentral blog made using nuxt and solana with web3 concept",
+    "tags": ["Nuxt", "Web3"],
+    "image": "/images/projects/24.png",
+    "year": 2024,
+    "links": {
+      "github": "https://github.com/viandwi24/nuxt3-blog-web3-solana",
+      "demo": "https://nuxt3-blog-web3-solana-client.vercel.app"
+    }
+  },
+  {
+    "name": "LSP SMKN 1 Mojokerto",
+    "type": "School",
+    "description": "a information web app for LSP SMKN 1 Mojokerto",
+    "tags": ["Nuxt", "Laravel"],
+    "image": "/images/projects/15.png",
+    "year": 2019,
+    "links": {
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "name": "E-Point School",
+    "type": "School",
+    "description": "a system information to manage achievement points and violations in school",
+    "tags": ["Laravel"],
+    "image": "/images/projects/22.png",
+    "year": 2024,
+    "links": {
+      "github": null,
+      "demo": null
     }
   },
   {
@@ -90,18 +126,6 @@
     "tags": ["Bun", "Bot", "Automation"],
     "image": "/images/projects/19.png",
     "year": 2024
-  },
-  {
-    "name": "BSOUL",
-    "type": "Game",
-    "description": "A simple rpg tile down pixel art.",
-    "tags": ["React", "Phaser"],
-    "image": "/images/projects/5.png",
-    "year": 2022,
-    "links": {
-      "github": "https://github.com/viandwi24/bsoul",
-      "demo": "https://github.com/viandwi24/bsoul"
-    }
   },
   {
     "name": "Bootsarc",
@@ -128,6 +152,30 @@
     }
   },
   {
+    "name": "Link D Law",
+    "type": "Community & Law",
+    "description": "A apps to provide law information and AI-based to search a law depends some problem",
+    "tags": ["Bun", "Monorepo", "Microservices"],
+    "image": "/images/projects/18.png",
+    "year": 2023,
+    "links": {
+      "github": "https://github.com/Nakama-Capstone/link-d-law",
+      "demo": "https://github.com/Nakama-Capstone/link-d-law"
+    }
+  },
+  {
+    "name": "BSOUL",
+    "type": "Game",
+    "description": "A simple rpg tile down pixel art.",
+    "tags": ["React", "Phaser"],
+    "image": "/images/projects/5.png",
+    "year": 2022,
+    "links": {
+      "github": "https://github.com/viandwi24/bsoul",
+      "demo": "https://github.com/viandwi24/bsoul"
+    }
+  },
+  {
     "name": "Github Profile Editor",
     "type": "Tools",
     "description": "a github profile editor with drag and drop!!!",
@@ -137,6 +185,102 @@
     "links": {
       "github": "https://github.com/viandwi24/github-profile-editor",
       "demo": "https://github-profile-editor.vercel.app"
+    }
+  },
+  {
+    "name": "Vilacore",
+    "type": "Module",
+    "description": "Laravel 5.8 dengan konsep modular plugin.",
+    "tags": ["Laravel", "PHP"],
+    "image": "/images/projects/12.png",
+    "year": 2019,
+    "links": {
+      "github": "https://github.com/viandwi24/vilacore",
+      "demo": "https://github.com/viandwi24/vilacore"
+    }
+  },
+  {
+    "name": "Animid",
+    "type": "Template",
+    "description": "Redesign MyAnimeList made by me",
+    "tags": ["Nuxt", "Tailwind CSS"],
+    "image": "/images/projects/14.png",
+    "year": 2020,
+    "links": {
+      "github": "https://github.com/viandwi24/asteroid-guard-java",
+      "demo": "https://viandwi24.github.io/animid/"
+    }
+  },
+  {
+    "name": "Decognition",
+    "type": "Error Handler",
+    "description": "a Pretty Exception Handler for TypeScript Deno. Inspirated from Laravel & Flare Ignition.",
+    "tags": ["Deno", "Typescript"],
+    "image": "/images/projects/17.png",
+    "year": 2020,
+    "links": {
+      "github": "https://github.com/viandwi24/decognition",
+      "demo": "https://github.com/viandwi24/decognition"
+    }
+  },
+  {
+    "name": "Denova",
+    "type": "Framework",
+    "description": "A Typescript Framework For Deno - Framework Looks Like Laravel",
+    "tags": ["Deno", "Typescript"],
+    "image": "/images/projects/21.png",
+    "year": 2020,
+    "links": {
+      "github": "https://github.com/viandwi24/denova",
+      "demo": "https://github.com/viandwi24/denova"
+    }
+  },
+  {
+    "name": "Vifa Framework",
+    "type": "Framework",
+    "description": "Framework PHP Sederhana Yang Meringankan Perkerjaan Mu.",
+    "tags": ["PHP"],
+    "image": "/images/projects/20.png",
+    "year": 2018,
+    "links": {
+      "github": "https://github.com/viandwi24/v-framework",
+      "demo": "https://github.com/viandwi24/v-framework"
+    }
+  },
+  {
+    "name": "Flappy Bird AI",
+    "type": "Machine Learning",
+    "description": "machine learning for self play flappy bird with neural network and evolution algorithm",
+    "tags": ["React", "Canvas"],
+    "image": "/images/projects/27.png",
+    "year": 2023,
+    "links": {
+      "github": "https://github.com/viandwi24/flappy-bird-evolution-neural-network",
+      "demo": null
+    }
+  },
+  {
+    "name": "Quot22",
+    "type": "Fun",
+    "description": "just fun website for a collection of quotes from our campus class",
+    "tags": ["Nuxt"],
+    "image": "/images/projects/26.png",
+    "year": 2023,
+    "links": {
+      "github": "https://github.com/viandwi24/quot22",
+      "demo": null
+    }
+  },
+  {
+    "name": "Karaoke-chan",
+    "type": "Simulator",
+    "description": "Simulation of Karaoke Machine",
+    "tags": ["React"],
+    "image": "/images/projects/13.gif",
+    "year": 2019,
+    "links": {
+      "github": "https://github.com/viandwi24/karaoke-chan",
+      "demo": "https://github.com/viandwi24/karaoke-chan"
     }
   },
   {
@@ -176,39 +320,63 @@
     }
   },
   {
-    "name": "Vilacore",
-    "type": "Module",
-    "description": "Laravel 5.8 dengan konsep modular plugin.",
+    "name": "Vimedic",
+    "type": "Health",
+    "description": "simple app Rekam medis pasien",
     "tags": ["Laravel", "PHP"],
-    "image": "/images/projects/12.png",
+    "image": "/images/projects/0.png",
     "year": 2019,
     "links": {
-      "github": "https://github.com/viandwi24/vilacore",
-      "demo": "https://github.com/viandwi24/vilacore"
+      "github": null,
+      "demo": null
     }
   },
   {
-    "name": "Karaoke-chan",
-    "type": "Simulator",
-    "description": "Simulation of Karaoke Machine",
-    "tags": ["React"],
-    "image": "/images/projects/13.gif",
+    "name": "QRObat",
+    "type": "Health",
+    "description": "simple recipe digital online with qr code",
+    "tags": ["Laravel", "PHP"],
+    "image": "/images/projects/0.png",
     "year": 2019,
     "links": {
-      "github": "https://github.com/viandwi24/karaoke-chan",
-      "demo": "https://github.com/viandwi24/karaoke-chan"
+      "github": null,
+      "demo": null
     }
   },
   {
-    "name": "Animid",
-    "type": "Template",
-    "description": "Redesign MyAnimeList made by me",
-    "tags": ["Nuxt", "Tailwind CSS"],
-    "image": "/images/projects/14.png",
-    "year": 2020,
+    "name": "ESHIP",
+    "type": "Information",
+    "description": "public information for harbor in gresik, indonesia",
+    "tags": ["Laravel", "PHP"],
+    "image": "/images/projects/0.png",
+    "year": 2019,
     "links": {
-      "github": "https://github.com/viandwi24/asteroid-guard-java",
-      "demo": "https://viandwi24.github.io/animid/"
+      "github": null,
+      "demo": null
+    }
+  },
+  {
+    "name": "Makhamr",
+    "type": "Information",
+    "description": "advanced search for kampus merdeka programs",
+    "tags": ["Nuxt"],
+    "image": "/images/projects/0.png",
+    "year": 2023,
+    "links": {
+      "github": "https://github.com/viandwi24/makhamr",
+      "demo": null
+    }
+  },
+  {
+    "name": "Paint IO",
+    "type": "Game",
+    "description": "try to clone online draw game like gartic.io",
+    "tags": ["Nuxt"],
+    "image": "/images/projects/0.png",
+    "year": 2023,
+    "links": {
+      "github": "https://github.com/viandwi24/paint-io",
+      "demo": null
     }
   },
   {
@@ -233,42 +401,6 @@
     "links": {
       "github": "https://github.com/viandwi24/asteroid-guard-java",
       "demo": "https://github.com/viandwi24/asteroid-guard-java"
-    }
-  },
-  {
-    "name": "Decognition",
-    "type": "Error Handler",
-    "description": "a Pretty Exception Handler for TypeScript Deno. Inspirated from Laravel & Flare Ignition.",
-    "tags": ["Deno", "Typescript"],
-    "image": "/images/projects/17.png",
-    "year": 2020,
-    "links": {
-      "github": "https://github.com/viandwi24/decognition",
-      "demo": "https://github.com/viandwi24/decognition"
-    }
-  },
-  {
-    "name": "Denova",
-    "type": "Framework",
-    "description": "A Typescript Framework For Deno - Framework Looks Like Laravel",
-    "tags": ["Deno", "Typescript"],
-    "image": "/images/projects/21.png",
-    "year": 2020,
-    "links": {
-      "github": "https://github.com/viandwi24/denova",
-      "demo": "https://github.com/viandwi24/denova"
-    }
-  },
-  {
-    "name": "Vifa Framework",
-    "type": "Framework",
-    "description": "Framework PHP Sederhana Yang Meringankan Perkerjaan Mu.",
-    "tags": ["PHP"],
-    "image": "/images/projects/20.png",
-    "year": 2018,
-    "links": {
-      "github": "https://github.com/viandwi24/v-framework",
-      "demo": "https://github.com/viandwi24/v-framework"
     }
   }
 ]
