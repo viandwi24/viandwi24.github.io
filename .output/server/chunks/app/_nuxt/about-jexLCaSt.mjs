@@ -28,7 +28,7 @@ const _sfc_main = /* @__PURE__ */ defineComponent({
     return (_ctx, _push, _parent, _attrs) => {
       const _component_NuxtLink = __nuxt_component_0;
       const _component_NuxtImg = __nuxt_component_1;
-      _push(`<section${ssrRenderAttrs(mergeProps({ class: "flex-1 flex flex-col justify-center page-section page-section-about" }, _attrs))}><div class="w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4"><div class="page-section-header mb-4 text-custom-1"><span>02.</span><span>About Me</span></div><div class="flex flex-col-reverse lg:flex-row"><div class="px-4 flex-1 lg:pr-6 mb-4"><p> Hello, my name is <span class="text-primary">Alfian Dwi Nugraha</span>! I have a passion in the internet world since I was 10 years old. I was browsing blogs and then trying to make some desktop applications, then again met this web-based programming. </p><ul class="mt-4"><li>\u{1F52D} I\u2019m currently working on Freelance as <span class="text-primary">Web Dev Programmer</span></li><li>\u{1F331} I\u2019m currently learning Golang, Python and Web3 Solana</li><li>\u{1F393} I\u2019m currently studying at the <span class="text-primary">Surabaya State University</span></li></ul><p> You can see detail of my journey and experiences `);
+      _push(`<section${ssrRenderAttrs(mergeProps({ class: "flex-1 flex flex-col justify-center page-section page-section-about" }, _attrs))}><div class="w-full sm:max-w-screen-sm lg:max-w-screen-lg mx-auto px-4 mb-4"><div class="page-section-header mb-4 text-custom-1"><span>02.</span><span>About Me</span></div><div class="flex flex-col-reverse lg:flex-row"><div class="px-4 flex-1 lg:pr-6 mb-4"><p> Hello, my name is <span class="text-primary">Alfian Dwi Nugraha</span>! I have a passion in the internet world since I was 10 years old. I was browsing blogs and then trying to make some desktop applications, then again met this web-based programming. </p><ul class="mt-4"><li>\u{1F52D} I\u2019m currently working on Freelance as <span class="text-primary">Web Dev Programmer</span></li><li>\u{1F331} I\u2019m currently learning Golang, Python and Web3 Solana</li><li>\u{1F393} I\u2019m currently studying at the <span class="text-primary">Surabaya State University</span></li></ul><p class="mt-4"> You can see detail of my journey and experiences `);
       _push(ssrRenderComponent(_component_NuxtLink, {
         to: "/experience",
         class: "border-b hover:bg-yellow-300/50 border-primary-500 border-dotted"
@@ -62,4 +62,4 @@ _sfc_main.setup = (props, ctx) => {
 };
 
 export { _sfc_main as default };
-//# sourceMappingURL=about-EBXJZhYX.mjs.map
+//# sourceMappingURL=about-jexLCaSt.mjs.map

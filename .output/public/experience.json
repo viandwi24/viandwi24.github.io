@@ -74,27 +74,33 @@
   },
   {
     "title": "NOKIAMON",
-    "description": "Web3 Developer at",
+    "description": "Blockchain Developer at",
     "company": "@NOKIAMON",
     "date": "Jan 2022 - Now",
     "tasks": [
       {
-        "text": "Maintance server"
+        "text": "Maintance a server",
+        "tags": ["System Admin"]
       },
       {
-        "text": "Create mobile apps with react native and connect to solana wallet"
+        "text": "Create Mobile Apps with react native and connect to Solana wallet",
+        "tags": ["Mobile Developer"]
       },
       {
-        "text": "Create xnft apps in backpack wallet"
+        "text": "Create xNFT Apps in backpack on Solana",
+        "tags": ["Blockchain Developer"]
       },
       {
-        "text": "Create smart contract for Badges Features"
+        "text": "Create Smart Contract for Badges Features on Solana",
+        "tags": ["Blockchain Developer"]
       },
       {
-        "text": "Create smart contract for Burn 2 Mint Events"
+        "text": "Create Smart Contract for Burn 2 Mint Events on Solana",
+        "tags": ["Blockchain Developer"]
       },
       {
-        "text": "Create smart contract for Nokipack"
+        "text": "Create Smart Contract for Nokipack Events on Solana",
+        "tags": ["Blockchain Developer"]
       }
     ]
   },
@@ -161,6 +167,12 @@
       },
       {
         "text": "Lead blockchain division"
+      },
+      {
+        "text": "Create Smart Contract for Presence dApps on Ethereum"
+      },
+      {
+        "text": "Create Smart Contract for Digital Identity on Ethereum"
       }
     ]
   },

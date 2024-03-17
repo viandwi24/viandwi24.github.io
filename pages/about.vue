@@ -71,7 +71,7 @@ onBeforeUnmount(() => {
             <li>🌱 I’m currently learning Golang, Python and Web3 Solana</li>
             <li>🎓 I’m currently studying at the <span class="text-primary">Surabaya State University</span></li>
           </ul>
-          <p>
+          <p class="mt-4">
             You can see detail of my journey and experiences <NuxtLink to="/experience" class="border-b hover:bg-yellow-300/50 border-primary-500 border-dotted">clik this</NuxtLink>.
           </p>
         </div>

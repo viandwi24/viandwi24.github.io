@@ -580,7 +580,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/about-EBXJZhYX.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/about-jexLCaSt.js").then((m) => m.default || m)
   },
   {
     name: "blog",
@@ -604,7 +604,7 @@ const _routes = [
     meta: {},
     alias: [],
     redirect: void 0,
-    component: () => import("./_nuxt/experience-N2zmhfpX.js").then((m) => m.default || m)
+    component: () => import("./_nuxt/experience-JXiHGTNZ.js").then((m) => m.default || m)
   },
   {
     name: (__nuxt_page_meta == null ? void 0 : __nuxt_page_meta.name) ?? "index",
@@ -727,7 +727,7 @@ const validate = /* @__PURE__ */ defineNuxtRouteMiddleware(async (to) => {
 });
 const inlineConfig = {
   "nuxt": {
-    "buildId": "08686731-1d77-4562-ab61-a0047d3a02fa"
+    "buildId": "3744f558-3076-44bf-8a2e-7c1c361e3857"
   }
 };
 const __appConfig = /* @__PURE__ */ defuFn(inlineConfig);
@@ -2723,7 +2723,7 @@ const _sfc_main$2 = /* @__PURE__ */ defineComponent({
     const { public: { baseUrl } } = /* @__PURE__ */ useRuntimeConfig();
     const meta = {
       title: "Alfian Dwi Nugraha (viandwi24)",
-      description: "im a Fullstack Web 🧑🏼‍💻 • Blockchain Developer 🌐 • Pixel Arts Enthusiast 👾"
+      description: "I am a web developer, who can handle web design, server side web, web games, and some desktop programming. now focusing on the web front end & solana web3."
     };
     useSeoMeta({
       titleTemplate: "%s | Alfian Dwi Nugraha (viandwi24)",

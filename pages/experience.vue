@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import dayjs from 'dayjs'
+
 const $loading = useLoading()
 
 useSeoMeta({
@@ -157,7 +159,7 @@ const techStackSearch = ref('')
               <HeadlessTabGroup :vertical="true">
                 <HeadlessTabList class="w-full flex justify-start items-start">
                   <HeadlessTab 
-                      v-for="(item, i) in ['My Journey', 'Tech Stack']"
+                      v-for="(item, i) in ['My Journey', 'Tech Stack', 'Timelines']"
                       :key="i"
                       #="{ selected }"
                     >
@@ -264,6 +266,115 @@ const techStackSearch = ref('')
                         </div>
                       </div>
                     </div>
+                  </HeadlessTabPanel>
+
+                  <!-- timeline -->
+                  <HeadlessTabPanel class="flex flex-col">
+                    <!-- <div class="transition-all duration-300 flex flex-col items-center justify-center border border-gray-500/50 rounded overflow-hidden">
+                      <div class="w-full bg-gray-900 border-gray-500/50 p-4 border-b">
+                        <div class="font-bold text-xl"># Blockchain Developer</div>
+                      </div>
+                      <div class="flex flex-1 w-full">
+                        <Timeline
+                          :lines="[
+                            {
+                              title: `Web3 Game @FLAGZ`,
+                              description: 'I am designing a multiplayer rpg top down pixel web based game using Phaser.js and Voice call, connect data from solana on-chain.',
+                              dayjs: dayjs('2021-12-21')
+                            },
+                            {
+                              title: 'Learn Blokchain on Solana @UDEMY',
+                              description: 'Solana Blockchain Developer Bootcamp with Rust + JavaScript',
+                              dayjs: dayjs('2023-01-04')
+                            },
+                            {
+                              title: 'Badges Features @NOKIAMON',
+                              description: 'Create a smart contract to mint badges that depend on predetermined tasks in Solana',
+                              dayjs: dayjs('2023-02-04')
+                            },
+                            {
+                              title: 'Burn2Mint Event @NOKIAMON',
+                              description: 'Create a smart contract to burn a nft and mint a reward nft in Solana',
+                              dayjs: dayjs('2023-06-01')
+                            },
+                            {
+                              title: 'Presence dApps @BRAINCORE.ID',
+                              description: 'Create a smart contract to manage a presence data in Ethereum, and create a dApps to manage the data',
+                              dayjs: dayjs('2024-02-01')
+                            },
+                            {
+                              title: 'Nokipack Event @NOKIAMON',
+                              description: 'Create a smart contract to manage a NFT Pack in Solana, NFT Pack can be opened to get a random NFT',
+                              dayjs: dayjs('2024-03-08')
+                            },
+                            {
+                              title: 'Digital Identifier @BRAINCORE.ID',
+                              description: 'Create a smart contract to manage a digital identifier in Ethereum and store the data in IPFS',
+                              dayjs: dayjs('2024-03-18')
+                            },
+                          ]"
+                        />
+                      </div>
+                    </div> -->
+
+                    <HeadlessDisclosure>
+                      <div class="transition-all duration-300 flex flex-col items-center justify-center border border-gray-500/50 rounded overflow-hidden">
+                        <HeadlessDisclosureButton class="w-full bg-gray-900 border-gray-500/50 p-4 border-b text-left">
+                          <div class="font-bold text-xl"># Blockchain Developer</div>
+                        </HeadlessDisclosureButton>
+                        <HeadlessDisclosurePanel class="flex flex-1 w-full">
+                          <Timeline
+                            :lines="[
+                              {
+                                title: `Web3 Game @FLAGZ`,
+                                description: 'I am designing a multiplayer rpg top down pixel web based game using Phaser.js and Voice call, connect data from solana on-chain.',
+                                dayjs: dayjs('2021-12-21')
+                              },
+                              {
+                                title: 'Learn Blokchain on Solana @UDEMY',
+                                description: 'Solana Blockchain Developer Bootcamp with Rust + JavaScript',
+                                dayjs: dayjs('2023-01-04')
+                              },
+                              {
+                                title: 'Badges Features @NOKIAMON',
+                                description: 'Create a smart contract to mint badges that depend on predetermined tasks in Solana',
+                                dayjs: dayjs('2023-02-04')
+                              },
+                              {
+                                title: 'Nokiamon xNFT @NOKIAMON',
+                                description: 'Create Nokiamon apps for xNFT, a NFT that represent a executable app in Solana',
+                                dayjs: dayjs('2023-02-24')
+                              },
+                              {
+                                title: 'Mobile Apps For Solana Android/Saga @NOKIAMON',
+                                description: 'Create a mobile apps with React Native use Solana SDK for mobile and release on Solana Saga Mobile',
+                                dayjs: dayjs('2023-03-09')
+                              },
+                              {
+                                title: 'Burn2Mint Event @NOKIAMON',
+                                description: 'Create a smart contract to burn a nft and mint a reward nft in Solana',
+                                dayjs: dayjs('2023-06-01')
+                              },
+                              {
+                                title: 'Presence dApps @BRAINCORE.ID',
+                                description: 'Create a smart contract to manage a presence data in Ethereum, and create a dApps to manage the data',
+                                dayjs: dayjs('2024-02-01')
+                              },
+                              {
+                                title: 'Nokipack Event @NOKIAMON',
+                                description: 'Create a smart contract to manage a NFT Pack in Solana, NFT Pack can be opened to get a random NFT',
+                                dayjs: dayjs('2024-03-08')
+                              },
+                              {
+                                title: 'Digital Identifier @BRAINCORE.ID',
+                                description: 'Create a smart contract to manage a digital identifier in Ethereum and store the data in IPFS',
+                                dayjs: dayjs('2024-03-18')
+                              },
+                            ]"
+                          />
+                        </HeadlessDisclosurePanel>
+                      </div>
+                    </HeadlessDisclosure>
                   </HeadlessTabPanel>
                 </HeadlessTabPanels>
               </HeadlessTabGroup>
