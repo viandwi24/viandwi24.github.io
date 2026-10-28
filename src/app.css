@@ -1,0 +1,76 @@
+@import '@fontsource/silkscreen/400.css';
+@import '@fontsource/pixelify-sans/400.css';
+@import '@fontsource/pixelify-sans/600.css';
+
+:root {
+  --ink: #3d2312;
+  --ink-soft: #6e4527;
+  --paper: #fbefd9;
+  --paper-2: #f3dfbd;
+  --accent: #c56e43;
+  --accent-dark: #8f4426;
+  --drop: rgba(61, 35, 18, 0.22);
+  --pixel: 'Silkscreen', ui-monospace, monospace;
+  --body: 'Pixelify Sans', ui-rounded, system-ui, sans-serif;
+  font-family: var(--body);
+  color: var(--ink);
+  color-scheme: light;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  background: radial-gradient(circle at 50% 45%, #f0c27f 0%, #dfa25a 55%, #c98a45 100%);
+  overflow: hidden;
+}
+
+#app {
+  height: 100%;
+}
+
+/* Box with stepped pixel corners: four hard shadows form the border */
+.pixel-box {
+  background: var(--paper);
+  box-shadow:
+    0 -4px 0 0 var(--ink),
+    0 4px 0 0 var(--ink),
+    -4px 0 0 0 var(--ink),
+    4px 0 0 0 var(--ink),
+    0 12px 0 0 var(--drop);
+}
+
+.pixel-btn {
+  font-family: var(--pixel);
+  font-size: 13px;
+  text-transform: uppercase;
+  color: var(--ink);
+  background: var(--paper);
+  border: 0;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow:
+    0 -3px 0 0 var(--ink),
+    0 3px 0 0 var(--ink),
+    -3px 0 0 0 var(--ink),
+    3px 0 0 0 var(--ink),
+    0 7px 0 0 var(--drop);
+  transition: transform 0.12s steps(2);
+}
+.pixel-btn:hover {
+  transform: translateY(-2px);
+}
+.pixel-btn:active {
+  transform: translateY(2px);
+}
+.pixel-btn[aria-current='page'],
+.pixel-btn.primary {
+  background: var(--accent);
+  color: var(--paper);
+}
+.pixel-btn:focus-visible {
+  outline: 3px dashed var(--accent-dark);
+  outline-offset: 6px;
+}
