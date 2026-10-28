@@ -1,5 +1,5 @@
 // Imported from the previous site (refs/viandwi24.github.io/public/projects.json).
-import type { Project } from '../content'
+import type { Project } from '../content.ts'
 
 export const projects: Project[] = [
   {

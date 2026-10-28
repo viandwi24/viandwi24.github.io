@@ -74,3 +74,23 @@ body {
   outline: 3px dashed var(--accent-dark);
   outline-offset: 6px;
 }
+
+/* Plain-HTML version of the site, shown only when JavaScript is off (and read by crawlers) */
+.static {
+  max-width: 720px;
+  margin: 40px auto;
+  padding: 0 20px 60px;
+  font-size: 17px;
+  line-height: 1.5;
+}
+.static img {
+  image-rendering: pixelated;
+}
+.static h1,
+.static h2 {
+  font-family: var(--pixel);
+  font-weight: 400;
+}
+.static a {
+  color: var(--accent-dark);
+}

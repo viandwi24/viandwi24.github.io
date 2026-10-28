@@ -20,7 +20,7 @@ export interface Project {
   cartridge?: string
 }
 
-export { projects } from './data/projects'
+export { projects } from './data/projects.ts'
 
 export const profile = {
   name: 'Alfian Dwi Nugraha',

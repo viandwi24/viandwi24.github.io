@@ -6,6 +6,7 @@
   import { createGarden } from './lib/scenes/garden'
   import { House } from './lib/scenes/house'
   import { createTown } from './lib/scenes/town'
+  import { profile, projects } from './lib/content'
   import { createLivingRoom } from './lib/scenes/livingRoom'
   import { createWorkshop } from './lib/scenes/workshop'
   import Controls from './lib/ui/Controls.svelte'
@@ -59,6 +60,15 @@
     else if (route.room) navigate({ room: null, item: null })
   }
 
+
+  // Tab title follows the room (and the open project), for history and shared links
+  const ROOM_TITLES: Record<string, string> = { about: 'About me', projects: 'Projects', garden: 'Garden', experience: 'Experience', contact: 'Contact' }
+  const baseTitle = document.title
+  $effect(() => {
+    const project = route.room === 'projects' ? projects.find((p) => p.id === route.item) : undefined
+    const place = project?.title ?? (route.room ? ROOM_TITLES[route.room] : null)
+    document.title = place ? `${place} · ${profile.name}` : baseTitle
+  })
 
   const audio = new Ambience()
   let world: World | undefined
